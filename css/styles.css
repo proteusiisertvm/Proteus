@@ -1,0 +1,226 @@
+/* normal tag selectors */
+
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+/* title section */
+
+#title {
+  background-color: #fff;
+  text-align: center;
+  padding: 3% 8%;
+}
+
+#website-title {
+  font-family: 'Merienda One', cursive;
+  font-size: 2rem;
+  color: #000;
+}
+
+.logo {
+  border-radius: 100%;
+  width: 25%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.page-head {
+  color: #81b214;
+  font-family: 'Merriweather', serif;
+  font-size: 4rem;
+}
+
+.sub-head {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  color: #393b44;
+  padding: 40px 0;
+}
+
+.row-width {
+  padding: 10% 15%;
+}
+
+.parallax {
+
+    /* the background image used */
+    background-image: url("../images/website-cover.png");
+
+    /* Full height of page */
+    height: 100%;
+
+    /* creating parallax effect */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* buttons */
+
+.btn-position {
+  margin: 0 10px 0 10px;
+}
+
+
+
+/* Navigation bar */
+
+.nav-icon {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+
+
+/* features section */
+
+#feature-1 {
+  text-align: left;
+  padding: 10% 8%;
+}
+
+#feature-2 {
+  background-color: #ecf4f3;
+  text-align: left;
+  padding: 10% 8%;
+}
+
+#feature-3 {
+  text-align: left;
+  padding: 10% 8%;
+}
+
+.head-1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  margin: 35px 0 20px 0;
+}
+
+.sub-head-1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.pic-1 {
+  width: 90%;
+  border-radius: 5%;
+}
+
+
+/* testimonials section */
+
+#testimonials {
+  background-color: #ecf4f3;
+  text-align: center;
+  padding: 10% 10%;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+  margin: 5%;
+}
+
+.name{
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.appreciation {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+}
+
+/* horizontal line */
+
+.line {
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 8px;
+  border-color: #a6a6a4;
+  margin: 10% auto;
+  width: 10%;
+}
+
+.contact-section {
+  margin-top: 10%;
+}
+
+.contact-head {
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+}
+
+.contact-sub-head {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  margin: 40px 0 40px 0;
+}
+
+
+
+/* footer section */
+
+#footer {
+  text-align: left;
+  background-color: #4c4c4c;
+  padding: 3% 8%;
+}
+
+.icon-position {
+  padding: 20px 20px;
+}
+
+.icon {
+  margin: 20px 20px 0 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.icon:hover {
+  color: #81b214;
+}
+
+.footer-head-main {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.footer-head {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.terms {
+  text-decoration: none;
+  color: #ecf4f3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.terms:hover {
+  color: #81b214;
+}
+
+.div-position {
+  margin: 30px auto;
+}
+
+.line-2 {
+  border-top: 1px solid white;
+  width: 97%;
+  margin-top: 50px;
+}
+
+.footer-repost {
+  font-family: 'Merienda One', cursive;
+  font-size: 2rem;
+  color: #fff;
+}
