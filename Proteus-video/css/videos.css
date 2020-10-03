@@ -42,3 +42,7 @@
   background: #ddd;
   color: black;
 }
+
+.darkmode-layer, .darkmode-toggle {
+  z-index: 500;
+}
