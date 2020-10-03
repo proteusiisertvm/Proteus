@@ -28,7 +28,12 @@
   cursor: pointer;
 }
 
-.btn {
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+#return-btn {
   width: 200px;
   font-size: 18px;
   padding: 10px;
@@ -38,7 +43,7 @@
   cursor: pointer;
 }
 
-#myBtn:hover {
+#return-btn:hover {
   background: #ddd;
   color: black;
 }
