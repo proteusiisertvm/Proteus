@@ -1,4 +1,5 @@
 // Like buttons, needs debugging
+/*
 var count = 0
 
 for (var i = 0; i <= document.querySelectorAll(".btn").length; i++) {
@@ -12,11 +13,12 @@ for (var i = 0; i <= document.querySelectorAll(".btn").length; i++) {
 
   });
 }
+*/
+const options = {
+  saveInCookies: true, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
 
-// For dark mode, needs debugging
-// function darkMode () {
-//
-//   var element = document.body;
-//   element.classList.toggle("dark");
-//
-// }
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
