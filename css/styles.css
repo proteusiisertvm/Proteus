@@ -225,11 +225,27 @@ html,body {
   color: #fff;
 }
 
-
+/* All darkMode adjustments */
 .darkmode--activated h2 {
   color: #fff;
 }
 
 .darkmode--activated p {
+  color: #fff;
+}
+
+.darkmode--activated .icon-color{
+  color: #fff;
+}
+
+.darkmode--activated .icon-color:hover{
+  color: grey;
+}
+
+.darkmode--activated #website-title {
+  color: #fff;
+}
+
+.darkmode--activated .name {
   color: #fff;
 }
