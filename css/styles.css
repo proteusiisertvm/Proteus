@@ -224,3 +224,12 @@ html,body {
   font-size: 2rem;
   color: #fff;
 }
+
+
+.darkmode--activated h2 {
+  color: #fff;
+}
+
+.darkmode--activated p {
+  color: #fff;
+}
