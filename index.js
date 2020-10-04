@@ -6,3 +6,8 @@ const options = {
 
 const darkmode = new Darkmode(options);
 darkmode.showWidget();
+
+// for tooltips
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
