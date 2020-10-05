@@ -27,7 +27,7 @@ navigation bar  */
 }
 
 #website-title {
-  font-family: 'Merienda One', cursive;
+  font-family: 'David Libre', serif;
   font-size: 2rem;
 }
 
@@ -98,16 +98,13 @@ navigation bar  */
 
 .card-body {
   text-align: center;
-}
-
-.card-pos {
-  text-align: left;
+  color: grey;
 }
 
 .style {
   width: 18rem;
-  margin: 5% 20%;
-  filter: drop-shadow(8px 8px 10px gray);
+  margin: 5% auto;
+  filter: drop-shadow(0 0 5px #eeeeee);
 }
 
 .icon-a {
@@ -120,12 +117,11 @@ navigation bar  */
   color: #81b214;
 }
 
-.pop-article-link {
-  text-decoration: none;
+.references {
   color: #000;
 }
 
-.pop-article-link:hover {
+.references:hover {
   color: #81b214;
 }
 
@@ -193,7 +189,12 @@ navigation bar  */
 }
 
 .footer-repost {
-  font-family: 'Merienda One', cursive;
+  font-family: 'David Libre', serif;
   font-size: 2rem;
+  color: #fff;
+}
+
+/* darkmode adjustments */
+.darkmode--activated .article-blog {
   color: #fff;
 }
