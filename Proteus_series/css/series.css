@@ -8,6 +8,9 @@ html,body {
     overflow-x: hidden;
 }
 
+p {
+  color: grey;
+}
 
 /* Title section and
 navigation bar  */
@@ -22,7 +25,7 @@ navigation bar  */
 }
 
 #website-title {
-  font-family: 'Merienda One', cursive;
+  font-family: 'David Libre', serif;
   font-size: 2rem;
 }
 
@@ -72,11 +75,6 @@ navigation bar  */
   font-size: 3.6rem;
 }
 
-/* Position of like buttons */
-.btn {
-  margin-left: 20px;
-}
-
 /* For authors of articles */
 .card-text-2 {
   font-family: 'Open Sans', sans-serif;
@@ -105,8 +103,9 @@ navigation bar  */
 }
 
 /* For postion of pagination */
-.page-navigator {
-  margin: 50px 15px;
+
+.position-pagination {
+  margin: 50px auto;
 }
 
 
@@ -166,7 +165,7 @@ navigation bar  */
 }
 
 .footer-repost {
-  font-family: 'Merienda One', cursive;
+  font-family: 'David Libre', serif;
   font-size: 2rem;
   color: #fff;
 }
