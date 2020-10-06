@@ -7,6 +7,9 @@ html,body {
     overflow-x: hidden;
 }
 
+p {
+  color: grey;
+}
 
 
 /* title section */
@@ -40,7 +43,6 @@ html,body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3rem;
   color: #393b44;
-  padding: 40px 0;
 }
 
 .row-width {
