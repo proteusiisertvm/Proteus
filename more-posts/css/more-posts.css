@@ -1,0 +1,135 @@
+/* normal tag selectors */
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+p {
+  color: grey;
+}
+
+/* Title section and
+navigation bar  */
+#container-position {
+  padding: 0 ;
+}
+
+#title {
+  text-align: center;
+}
+
+#website-title {
+  font-family: 'David Libre', serif;
+  font-size: 2rem;
+}
+
+.logo {
+  border: 2px solid green;
+  border-radius: 100%;
+  width: 25%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-icon {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.navbar-opacity {
+  opacity: 0.8;
+}
+
+/* Title section */
+#page-title {
+  padding: 10% 8%;
+  background-image: url("../images/website-cover.png");
+}
+
+.heading1 {
+  margin: 5% 0 2% 0;
+  font-family: 'Merriweather', serif;
+  font-size: 3.6rem;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #4c4c4c;
+}
+
+/* Posts section */
+#all-posts {
+  padding: 3% 8%;
+  line-height: 2;
+}
+
+/* Footer section */
+#footer {
+  text-align: left;
+  background-color: #4c4c4c;
+  padding: 3% 8%;
+}
+
+.icon {
+  margin: 20px 20px 0 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.icon:hover {
+  color: #81b214;
+}
+
+.footer-head-main {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.footer-head {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.terms {
+  text-decoration: none;
+  color: #ecf4f3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.terms:hover {
+  color: #81b214;
+}
+
+.div-position {
+  margin: 30px auto;
+}
+
+.line {
+  border-top: 1px solid white;
+  width: 97%;
+  margin-top: 50px;
+}
+
+.footer-repost {
+  font-family: 'David Libre', serif;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Darkmode styling */
+.darkmode--activated body {
+  color: #fff;
+}
+
+.darkmode--activated h1 {
+  color: #fff;
+}
+
+.darkmode--activated p {
+  color: #fff;
+}
