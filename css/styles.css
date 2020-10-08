@@ -38,7 +38,6 @@ p {
   color: #f38181;
   font-family: 'Merriweather', serif;
   font-size: 4rem;
-  margin: 3% auto;
 }
 
 .sub-head {
@@ -112,9 +111,7 @@ p {
 }
 
 .pic-1 {
-  width: 90%;
-  border-radius: 5%;
-  box-shadow: 10px 10px 50px 3px grey;
+  width: 100%;
 }
 
 
