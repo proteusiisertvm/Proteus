@@ -69,14 +69,12 @@ p {
 }
 
 
-
 /* Navigation bar */
 
 .nav-icon {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-
 
 
 /* features section */
@@ -112,6 +110,7 @@ p {
 .pic-1 {
   width: 90%;
   border-radius: 5%;
+  box-shadow: 10px 10px 50px 3px grey;
 }
 
 
@@ -139,19 +138,11 @@ p {
   font-size: 2.5rem;
 }
 
-/* horizontal line */
+/* contact section */
 
-.line {
-  border-style: none;
-  border-top-style: dotted;
-  border-width: 8px;
-  border-color: #a6a6a4;
-  margin: 10% auto;
-  width: 10%;
-}
-
-.contact-section {
-  margin-top: 10%;
+#contact {
+  text-align: center;
+  padding: 10% 15%;
 }
 
 .contact-head {
@@ -166,17 +157,12 @@ p {
 }
 
 
-
 /* footer section */
 
 #footer {
   text-align: left;
   background-color: #4c4c4c;
   padding: 3% 8%;
-}
-
-.icon-position {
-  padding: 20px 20px;
 }
 
 .icon {
@@ -250,4 +236,8 @@ p {
 
 .darkmode--activated .name {
   color: #fff;
+}
+
+.darkmode--activated .pic-1 {
+  box-shadow: none;
 }

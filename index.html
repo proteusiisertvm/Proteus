@@ -11,6 +11,9 @@
   <!-- css stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
 
+  <!-- AOS library cdn -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- bootsrap stylesheet -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -47,7 +50,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-blog fa-2x icon-color"></i>
+                <i class="fab fa-blogger-b fa-2x icon-color"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="Proteus_series/series.html">SERIES</a>
@@ -85,10 +88,10 @@
 
   <section id="feature-1">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="flip-left" data-aos-duration="1000">
         <img class="pic-1" src="images/feature-pic-1.jpg" alt="feature-pic">
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-left">
         <h2 class="head-1">Series</h2>
         <p class="sub-head-1">
           Erevna: An exploration of papers through the ages, acknowledging the ground-breaking
@@ -100,13 +103,13 @@
 
   <section id="feature-2">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-right">
         <h2 class="head-1">Events</h2>
         <p class="sub-head-1">
           Keep an eye out for our new events, from talk series to debates!
         </p>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="flip-right" data-aos-duration="1000">
         <img class="pic-1" src="images/feature-pic-1.jpg" alt="feature-pic">
       </div>
     </div>
@@ -114,10 +117,10 @@
 
   <section id="feature-3">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="flip-left" data-aos-duration="1000">
         <img class="pic-1" src="images/feature-pic-1.jpg" alt="feature-pic">
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-left">
         <h2 class="head-1">Opportunities</h2>
         <p class="sub-head-1">
           A network of IISER-TVM alumni, spread across the globe
@@ -127,7 +130,7 @@
   </section>
 
   <section id="testimonials">
-    <div id="carousel" class="carousel slide" data-ride="false">
+    <div id="carousel" class="carousel slide" data-ride="false" data-aos="zoom-out">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <h2 class="appreciation">A wonderful initiatve, best wishes to blogger mania!</h2>
@@ -155,9 +158,11 @@
       </a>
     </div>
 
-    <hr class="line">
+  </section>
 
-    <div class="col-lg-12 contact-section">
+  <section id="contact">
+
+    <div class="col-lg-12 contact-section" data-aos="zoom-in">
       <h2 class="contact-head">Get in touch</h2>
       <p class="contact-sub-head">
         Ready to start your journey? Proteus welcomes you to engage with the
@@ -165,7 +170,11 @@
       </p>
       <button type="button" class="btn btn-lg btn-outline-success"><i class="fas fa-address-book"></i> Join our community</button>
     </div>
+
   </section>
+
+
+
 
   <section id="footer">
     <div class="row">
@@ -209,9 +218,18 @@
 
   </section>
 
-<!-- javascript -->
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script> <!--HAS TO BE ABOVE THE OTHER JS SCRIPT-->
-<script type="text/javascript" src="index.js" charset="utf-8"></script>
+  <!-- javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <!--HAS TO BE ABOVE THE OTHER JS SCRIPT-->
+
+  <!-- AOS libarary js cdn -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script type="text/javascript" src="index.js" charset="utf-8"></script>
 
 </body>
 
