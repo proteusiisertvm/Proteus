@@ -120,11 +120,16 @@ p {
 
 /* testimonials section */
 
-#testimonials {
+#team {
   box-shadow: 10px 10px 50px 3px grey;
   background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
   text-align: center;
   padding: 10% 10%;
+}
+
+.team-head {
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
 }
 
 .image {
@@ -133,14 +138,15 @@ p {
   margin: 5%;
 }
 
+.image:hover {
+  height: 200px;
+  width: 200px;
+}
+
 .name{
   color: #000;
   font-size: 1.2rem;
-}
-
-.appreciation {
-  font-family: 'Merriweather', serif;
-  font-size: 2.5rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* contact section */
