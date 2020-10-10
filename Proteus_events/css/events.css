@@ -58,7 +58,7 @@ navigation bar  */
 .heading1 {
   font-size: 3.6rem;
   font-family: 'Merriweather', serif;
-  margin: 20%
+  padding: 35% 8%;
 }
 
 /* Events section */
