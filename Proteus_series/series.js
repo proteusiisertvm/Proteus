@@ -12,7 +12,8 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.database();
 const blog0001 =  document.getElementById('blog0001')
-const dblike = firebase.database().ref().child('blog0001');
+const dblike = firebase.database().ref().child('blog0001/likes');
+console.log(snap.val())
 dblike.on('value', snap => {
   blog0001.textContent = JSON.stringify(snap.val());
 })
