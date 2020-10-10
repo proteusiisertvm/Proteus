@@ -1,3 +1,4 @@
+//database
 var firebaseConfig = {
   apiKey: "AIzaSyApNi5rYeVsVkyzs_URaNRISwRu8TXdNZM",
   authDomain: "proteus-blog-7bf97.firebaseapp.com",
@@ -10,14 +11,25 @@ var firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-firebase.database();
-const blog0001 =  document.getElementById('blog0001')
-const dblike = firebase.database().ref().child('blog0001/likes');
-console.log(snap.val())
-dblike.on('value', snap => {
-  blog0001.textContent = JSON.stringify(snap.val());
-})
+database = firebase.database();
 
+var ref = database.ref('blogposts');
+
+ref.on('value', succ, fail){
+
+}
+//if value retrieval is success
+function succ(data){
+//set text value
+  console.log(data.val());
+}
+//if value retrieval fails
+function fail(data){
+//set to 0 no need to throw error
+  console.log("error");
+}
+
+//darkmode
 const options = {
   saveInCookies: true, // default: true,
   label: '🌓', // default: ''
