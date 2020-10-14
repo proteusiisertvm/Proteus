@@ -13,16 +13,16 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 database = firebase.database();
 
+function getLikes(bpid){
+  var bp = database.ref('blogposts/blog'+bpid+'/');
+  var templikes = 0;
+  bp.on('value', snap => {
+    templikes = snap.val().likes;
+  });
+  return templikes;
+}
 
-var blogpostid = "0001"
-//to make sure that it doesnt have to get every object
-var bp = database.ref('/blogposts/').orderByChild('blogid').equalTo(blogpostid);
-bp.on('value', snap => {
-  console.log(snap.val().blog0001.likes);
-  //likes are stored in this
-});
-
-
+console.log(getLikes("0001"));
 
 //darkmode
 const options = {
