@@ -13,21 +13,16 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 database = firebase.database();
 
-var ref = database.ref('blogposts');
 
-ref.on('value', succ, fail){
+var blogpostid = "0001"
+//to make sure that it doesnt have to get every object
+var bp = database.ref('/blogposts/').orderByChild('blogid').equalTo(blogpostid);
+bp.on('value', snap => {
+  console.log(snap.val().blog0001.likes);
+  //likes are stored in this
+});
 
-}
-//if value retrieval is success
-function succ(data){
-//set text value
-  console.log(data.val());
-}
-//if value retrieval fails
-function fail(data){
-//set to 0 no need to throw error
-  console.log("error");
-}
+
 
 //darkmode
 const options = {
