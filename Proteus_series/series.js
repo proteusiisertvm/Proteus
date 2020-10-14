@@ -13,16 +13,37 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 database = firebase.database();
 
-function getLikes(bpid){
+function getLikesOnButton(bpid){
   var bp = database.ref('blogposts/blog'+bpid+'/');
   var templikes = 0;
   bp.on('value', snap => {
     templikes = snap.val().likes;
+    document.getElementById("blog"+bpid+"counter").innerText = templikes;
   });
+  //for debugging purposes
   return templikes;
 }
 
-console.log(getLikes("0001"));
+getLikesOnButton("0001");
+getLikesOnButton("0002");
+
+//boo = whether button is liked
+/*
+function updateLikes(bpid, boo){
+  var bp = database.ref('blogposts/blog'+bpid+'/');
+  bp.transaction(function(post){
+    if(boo){
+      bp.likes--;
+    }
+    else{
+      bp.likes++;
+    }
+    return post;
+  });
+}
+
+console.log(updateLikes("0001", false));
+*/
 
 //darkmode
 const options = {
