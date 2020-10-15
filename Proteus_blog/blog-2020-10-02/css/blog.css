@@ -1,6 +1,4 @@
-
 /* normal tag selectors */
-
 html,body {
     width: 100%;
     margin: 0;
@@ -10,20 +8,17 @@ html,body {
 
 p {
   color: grey;
-  font-family: 'Open Sans', sans-serif;
 }
-
 
 /* Title section and
 navigation bar  */
-
 
 #container-position {
   padding: 0 ;
 }
 
-#title {
-  text-align: center;
+#navigation-bar {
+  text-align: center; 
 }
 
 #website-title {
@@ -32,7 +27,6 @@ navigation bar  */
 }
 
 .logo {
-  border: 2px solid green;
   border-radius: 100%;
   width: 25%;
   margin-right: 10px;
@@ -48,91 +42,63 @@ navigation bar  */
   opacity: 0.8;
 }
 
-/* header section */
+/* content */
 
-#header {
-  text-align: center;
-  padding: 20% 8%;
-  background-image: url("../images/cover.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+#title {
+  text-align: left;
+  padding: 12% 15% 0 15%;
 }
 
-.blog-title {
-  font-family: 'Merriweather', serif;
-  font-size: 3.5rem;
-}
-
-
-/* article section */
-
-#article {
-  text-align: justify;
-  padding: 8% 10%;
-}
-
-.handler {
-  padding: 10px 0;
-  font-size: 12px;
+.sub-head {
+  margin: 2% 0;
   color: grey;
-  text-transform: uppercase;
-}
-
-.article-blog {
   font-family: 'Open Sans', sans-serif;
-  color: #000;
-  line-height: 2;
 }
 
-.crazy {
-  text-decoration: line-through;
-}
-
-/* Articles section cards styling */
-
-.card-title {
-  color: grey;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.card-body {
-  text-align: center;
-  color: grey;
-}
-
-.style {
-  width: 18rem;
+.cover-img {
   margin: 5% auto;
-  filter: drop-shadow(0 0 5px #eeeeee);
+  width: 80%;
 }
 
-.icon-a {
-  margin: 20px 10px;
-  color: #000;
-  font-size: 1.5rem;
+#blog-post {
+  padding: 2% 15%;
 }
 
-.icon-a:hover {
-  color: #81b214;
-}
-
-.references {
+#blog-post p {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2;
   color: #000;
 }
 
-.references:hover {
-  color: #81b214;
+#blog-post .figure {
+  border: 2px solid #000;
+  display: block;
+  margin: 4% auto;
+  width: 60%;
 }
 
-/* pictures in blogs */
-
-.img {
-  text-align: center;
-  border: 2px solid black;
-  width: 100%;
-  margin: 5% 0;
+#reference {
+  text-align: left;
+  padding: 2% 15% 5% 15%;
+  font-family: 'Open Sans', sans-serif;
 }
+
+.line {
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 10px;
+  border-color: #dddddd;
+  width: 10%;
+}
+
+/* Comment section */
+
+#comment-box {
+  padding: 5% 15%;
+  font-family: 'Open Sans', sans-serif;
+}
+
 
 /* Footer section */
 
@@ -140,10 +106,6 @@ navigation bar  */
   text-align: left;
   background-color: #4c4c4c;
   padding: 3% 8%;
-}
-
-.icon-position {
-  padding: 20px 20px;
 }
 
 .icon {
