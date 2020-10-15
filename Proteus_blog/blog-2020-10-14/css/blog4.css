@@ -60,11 +60,12 @@ navigation bar  */
   margin: 10% auto;
 }
 
-#blog-post {
+#blog-post p {
   text-align: left;
   padding: 2% 15%;
   font-family: 'Open Sans', sans-serif;
   line-height: 2;
+  color: #000;
 }
 
 #reference {
