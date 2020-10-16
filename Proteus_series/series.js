@@ -13,6 +13,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 database = firebase.database();
 
+//fetches likes
 function getLikesOnButton(bpid){
   var bp = database.ref('blogposts/blog'+bpid+'/likes_count');
   var templikes = 0;
@@ -36,11 +37,7 @@ if (localStorage.getItem("likey")===null){
   localStorage.setItem("likey", acc);
 }
 
-//for all buttons
-getLikesOnButton("0001");
-getLikesOnButton("0002");
-
-
+//toggles liked/unliked
 function updateLikes(bpid){
   var dbRef= firebase.database().ref("/blogposts/blog"+bpid+'/likes');
   checkLiked(bpid, function(boo){
@@ -64,23 +61,7 @@ function updateLikes(bpid){
   });
 }
 
-//do for every button
-checkLiked("0001", function(boo){
-  if (boo){
-    //set to liked heart
-  }
-  else{
-    //set to unliked heart
-  }
-});
-
-
-
-document.getElementById("b0001button").addEventListener("click", function(){
-  updateLikes("0001");
-});
-
-
+//callback function to return boolean (true=liked, false=not liked)
 function checkLiked(bpid, callback){
   var boo;
   var bp = firebase.database().ref("/blogposts/blog"+bpid+"/likes/").child(localStorage["likey"]);
@@ -102,6 +83,38 @@ function checkLiked(bpid, callback){
     }
   });
 }
+
+//to be completed
+
+//do for every button
+//blog post 1
+getLikesOnButton("0001");
+checkLiked("0001", function(boo){
+  if (boo){
+    //set to liked heart
+  }
+  else{
+    //set to unliked heart
+  }
+});
+document.getElementById("b0001button").addEventListener("click", function(){
+  updateLikes("0001");
+});
+
+//blog post 2
+getLikesOnButton("0002");
+checkLiked("0002", function(boo){
+  if (boo){
+    //set to liked heart
+  }
+  else{
+    //set to unliked heart
+  }
+});
+document.getElementById("b0002button").addEventListener("click", function(){
+  updateLikes("0002");
+});
+
 
 //darkmode
 const options = {
