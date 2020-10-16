@@ -1,0 +1,174 @@
+/* normal tag selectors */
+
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+p {
+  color: grey;
+}
+
+/* Title section and
+navigation bar  */
+
+#container-position {
+  padding: 0 ;
+}
+
+#navigation-bar {
+  text-align: center;
+}
+
+#website-title {
+  font-family: 'David Libre', serif;
+  font-size: 2rem;
+}
+
+.logo {
+  border-radius: 100%;
+  width: 25%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-icon {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.nav-opacity {
+  opacity: 0.8;
+}
+
+/* content */
+
+#title {
+  text-align: left;
+  padding: 12% 15% 0 15%;
+}
+
+.sub-head {
+  margin: 2% 0;
+  color: grey;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cover-img {
+  margin: 10% auto;
+}
+
+#blog-post p {
+  text-align: left;
+  padding: 2% 15%;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2;
+  color: #000;
+}
+
+#reference {
+  text-align: left;
+  padding: 2% 15% 5% 15%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.line {
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 10px;
+  border-color: #dddddd;
+  width: 10%;
+}
+
+/* Comment section */
+
+#comment-box {
+  padding: 5% 15%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* More posts */
+
+#more-posts {
+  padding: 5% 5%;
+}
+
+#more-posts .col-md-6 {
+  padding: 5%;
+}
+
+#more-posts h3 {
+  padding-top: 5%;
+}
+
+.figure {
+  width: 100%;
+  box-shadow: 3px 3px 60px grey;
+}
+
+.figure:hover {
+  box-shadow: 5px 5px 60px 5px grey;
+}
+
+/* footer section */
+
+#footer {
+  box-shadow: 10px 10px 50px 3px grey;
+  text-align: left;
+  background-color: #4c4c4c;
+  padding: 3% 8%;
+}
+
+.icon {
+  margin: 20px 20px 0 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.icon:hover {
+  color: #81b214;
+}
+
+.footer-head-main {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.footer-head {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.terms {
+  text-decoration: none;
+  color: #ecf4f3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.terms:hover {
+  color: #81b214;
+}
+
+.div-position {
+  margin: 30px auto;
+}
+
+.line-2 {
+  border-top: 1px solid white;
+  width: 97%;
+  margin-top: 50px;
+}
+
+.footer-repost {
+  font-family: 'David Libre', serif;
+  font-size: 2rem;
+  color: #fff;
+}
+
+darkmode--activated body {
+  color: #fff;
+}

@@ -18,7 +18,7 @@ navigation bar  */
 }
 
 #navigation-bar {
-  text-align: center; 
+  text-align: center;
 }
 
 #website-title {
@@ -53,6 +53,7 @@ navigation bar  */
   margin: 2% 0;
   color: grey;
   font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
 }
 
 .cover-img {
