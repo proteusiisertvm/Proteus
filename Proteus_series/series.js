@@ -143,6 +143,106 @@ document.getElementById("b0004button").addEventListener("click", function(){
   updateLikes("0004");
 });
 
+//blog post 5
+getLikesOnButton("0005");
+checkLiked("0005", function(boo){
+  if (boo){
+    //set to liked heart
+  }
+  else{
+    //set to unliked heart
+  }
+});
+document.getElementById("b0005button").addEventListener("click", function(){
+  updateLikes("0005");
+});
+
+//blog post 6
+getLikesOnButton("0006");
+checkLiked("0006", function(boo){
+  if (boo){
+    //set to liked heart
+  }
+  else{
+    //set to unliked heart
+  }
+});
+document.getElementById("b0006button").addEventListener("click", function(){
+  updateLikes("0006");
+});
+
+//blog post 7
+getLikesOnButton("0007");
+checkLiked("0007", function(boo){
+  if (boo){
+    //set to liked heart
+  }
+  else{
+    //set to unliked heart
+  }
+});
+document.getElementById("b0007button").addEventListener("click", function(){
+  updateLikes("0007");
+});
+
+//blog post 8
+getLikesOnButton("0008");
+checkLiked("0008", function(boo){
+  if (boo){
+    //set to liked heart
+  }
+  else{
+    //set to unliked heart
+  }
+});
+document.getElementById("b0008button").addEventListener("click", function(){
+  updateLikes("0008");
+});
+
+//blog post 9
+getLikesOnButton("0009");
+checkLiked("0009", function(boo){
+  if (boo){
+    //set to liked heart
+  }
+  else{
+    //set to unliked heart
+  }
+});
+document.getElementById("b0009button").addEventListener("click", function(){
+  updateLikes("0009");
+});
+
+//blog post 10
+getLikesOnButton("0010");
+checkLiked("0004", function(boo){
+  if (boo){
+    //set to liked heart
+  }
+  else{
+    //set to unliked heart
+  }
+});
+document.getElementById("b0010button").addEventListener("click", function(){
+  updateLikes("0010");
+});
+
+//blog post 11
+getLikesOnButton("0011");
+checkLiked("0011", function(boo){
+  if (boo){
+    //set to liked heart
+  }
+  else{
+    //set to unliked heart
+  }
+});
+document.getElementById("b0011button").addEventListener("click", function(){
+  updateLikes("0011");
+});
+
+
+
 //darkmode
 const options = {
   saveInCookies: true, // default: true,
