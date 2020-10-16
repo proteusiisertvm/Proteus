@@ -176,6 +176,6 @@ navigation bar  */
   color: #fff;
 }
 
-darkmode--activated body {
+darkmode--activated body, h3 {
   color: #fff;
 }
