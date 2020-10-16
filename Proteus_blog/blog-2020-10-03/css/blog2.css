@@ -53,7 +53,7 @@ navigation bar  */
   margin: 2% 0;
   color: grey;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 1.12rem;
 }
 
 .cover-img {
@@ -72,7 +72,7 @@ navigation bar  */
   color: #000;
 }
 
-#blog-post .figure {
+#blog-post .img {
   border: 2px solid #000;
   display: block;
   margin: 4% auto;
@@ -97,6 +97,29 @@ navigation bar  */
 #comment-box {
   padding: 5% 15%;
   font-family: 'Open Sans', sans-serif;
+}
+
+/* More posts */
+
+#more-posts {
+  padding: 5% 5%;
+}
+
+#more-posts .col-md-6 {
+  padding: 5%;
+}
+
+#more-posts h3 {
+  padding-top: 5%;
+}
+
+.figure {
+  width: 100%;
+  box-shadow: 3px 3px 60px grey;
+}
+
+.figure:hover {
+  box-shadow: 5px 5px 60px 5px grey;
 }
 
 
