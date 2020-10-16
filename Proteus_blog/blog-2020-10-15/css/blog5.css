@@ -54,6 +54,13 @@ navigation bar  */
   margin: 2% 0;
   color: grey;
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.12rem;
+}
+
+.icon2 {
+  color: #000;
+  padding: 10% 4% 0 0;
+  font-size: 1.5rem;
 }
 
 .cover-img {
