@@ -89,6 +89,28 @@ navigation bar  */
   font-family: 'Open Sans', sans-serif;
 }
 
+/* More posts */
+
+#more-posts {
+  padding: 5% 5%;
+}
+
+#more-posts .col-md-6 {
+  padding: 5%;
+}
+
+#more-posts h3 {
+  padding-top: 5%;
+}
+
+.figure {
+  width: 100%;
+  box-shadow: 3px 3px 60px grey;
+}
+
+.figure:hover {
+  box-shadow: 5px 5px 60px 5px grey;
+}
 
 /* footer section */
 
@@ -144,5 +166,9 @@ navigation bar  */
 .footer-repost {
   font-family: 'David Libre', serif;
   font-size: 2rem;
+  color: #fff;
+}
+
+darkmode--activated body {
   color: #fff;
 }
