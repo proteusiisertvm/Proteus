@@ -48,7 +48,8 @@ function updateLikes(bpid){
       firebase.database().ref("/blogposts/blog"+bpid+'/likes_count').transaction(function(value) {
         return (value || 0) - 1;
       });
-      console.log("removing");
+      //console.log("removing");
+      //set to unliked heart
       firebase.database().ref("/blogposts/blog"+bpid+'/likes/'+localStorage["likey"]).remove();
     }
     else{
@@ -57,12 +58,27 @@ function updateLikes(bpid){
       });
       var updates = {};
       updates[localStorage["likey"]]="";
+      //set to liked heart
       firebase.database().ref("/blogposts/blog"+bpid+'/likes/').update(updates);
     }
   });
 }
 
-//document.getElementById("b0001button").
+//do for every button
+checkLiked("0001", function(boo){
+  if (boo){
+    //set to liked heart
+  }
+  else{
+    //set to unliked heart
+  }
+});
+
+
+
+document.getElementById("b0001button").addEventListener("click", function(){
+  updateLikes("0001");
+});
 
 
 function checkLiked(bpid, callback){
@@ -71,13 +87,17 @@ function checkLiked(bpid, callback){
   bp.once("value", snap => {
     var obj = snap.val();
     if (obj === null){
-      console.log("not liked");
+      //console.log("not liked");
       boo = false;
+      //set to unclicked heart
+
       callback(boo);
     }
     else{
-      console.log("liked");
+      //console.log("liked");
       boo= true;
+      //set to clicked heart
+
       callback(boo);
     }
   });
