@@ -115,6 +115,33 @@ document.getElementById("b0002button").addEventListener("click", function(){
   updateLikes("0002");
 });
 
+//blog post 3
+getLikesOnButton("0003");
+checkLiked("0003", function(boo){
+  if (boo){
+    //set to liked heart
+  }
+  else{
+    //set to unliked heart
+  }
+});
+document.getElementById("b0003button").addEventListener("click", function(){
+  updateLikes("0003");
+});
+
+//blog post 4
+getLikesOnButton("0004");
+checkLiked("0004", function(boo){
+  if (boo){
+    //set to liked heart
+  }
+  else{
+    //set to unliked heart
+  }
+});
+document.getElementById("b0004button").addEventListener("click", function(){
+  updateLikes("0004");
+});
 
 //darkmode
 const options = {
