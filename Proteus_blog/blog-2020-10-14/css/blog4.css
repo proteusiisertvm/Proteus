@@ -1,5 +1,4 @@
 /* normal tag selectors */
-
 html,body {
     width: 100%;
     margin: 0;
@@ -13,25 +12,16 @@ p {
 
 /* Title section and
 navigation bar  */
-
-#container-position {
-  padding: 0 ;
-}
-
-#navigation-bar {
-  text-align: center;
-}
-
-#website-title {
+#navigation-bar .navbar-brand {
   font-family: 'David Libre', serif;
   font-size: 2rem;
+  padding-left: 2%;
 }
 
 .logo {
   border-radius: 100%;
   width: 25%;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 0 10px 10px 0;
 }
 
 .nav-icon {
@@ -50,14 +40,20 @@ navigation bar  */
   padding: 12% 15% 0 15%;
 }
 
-.sub-head {
+#title i {
+  color: #000;
+  margin: 4% 2% 0 0;
+  font-size: 1.5rem;
+}
+
+#title p {
   margin: 2% 0;
   color: grey;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 1.12rem;
 }
 
-.cover-img {
+#title img {
   margin: 10% auto;
 }
 
@@ -84,14 +80,12 @@ navigation bar  */
 }
 
 /* Comment section */
-
 #comment-box {
   padding: 5% 15%;
   font-family: 'Open Sans', sans-serif;
 }
 
 /* More posts */
-
 #more-posts {
   padding: 5% 5%;
 }
@@ -114,7 +108,6 @@ navigation bar  */
 }
 
 /* footer section */
-
 #footer {
   box-shadow: 10px 10px 50px 3px grey;
   text-align: left;
@@ -132,7 +125,7 @@ navigation bar  */
   color: #81b214;
 }
 
-.footer-head-main {
+#footer h2 {
   color: #fff;
   font-size: 2.2rem;
 }
@@ -158,7 +151,7 @@ navigation bar  */
   margin: 30px auto;
 }
 
-.line-2 {
+#footer hr {
   border-top: 1px solid white;
   width: 97%;
   margin-top: 50px;
@@ -170,6 +163,7 @@ navigation bar  */
   color: #fff;
 }
 
+/* darkmode */
 darkmode--activated body {
   color: #fff;
 }
