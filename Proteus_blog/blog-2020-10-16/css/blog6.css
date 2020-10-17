@@ -189,3 +189,7 @@ navigation bar  */
 .darkmode--activated body {
   color: #fff;
 }
+
+.darkmode--activated h3 {
+  color: #fff;
+}
