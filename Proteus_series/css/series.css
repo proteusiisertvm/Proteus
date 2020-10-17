@@ -1,6 +1,4 @@
-
 /* normal tag selectors */
-
 html,body {
     width: 100%;
     margin: 0;
@@ -12,29 +10,21 @@ p {
   color: grey;
 }
 
-/* Title section and
-navigation bar  */
-
-
-#container-position {
-  padding: 0 ;
+/*navigation bar  */
+#navigation-bar {
+  background-image: url("../images/cover.png");
 }
 
-#title {
-  text-align: center;
-}
-
-#website-title {
+#navigation-bar .navbar-brand {
   font-family: 'David Libre', serif;
   font-size: 2rem;
+  padding-left: 2%;
 }
 
 .logo {
-  border: 2px solid green;
   border-radius: 100%;
   width: 25%;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 0 10px 8px 0;
 }
 
 .nav-icon {
@@ -46,12 +36,16 @@ navigation bar  */
   opacity: 0.8;
 }
 
-
 /* Event sections */
-
 #event-1 {
   text-align: left;
   padding: 10% 8%;
+}
+
+#event-1 h1 {
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 3.6rem;
 }
 
 #event-2 {
@@ -60,59 +54,55 @@ navigation bar  */
   padding: 10% 8%;
 }
 
+#event-2 h1 {
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 3.6rem;
+}
+
 #event-3 {
   text-align: left;
   padding: 10% 8%;
 }
 
-.head-1-position {
-  padding: 50px;
-}
-
-/* For all event headings  */
-.head-1 {
+#event-3 h1 {
+  margin: 50px auto;
   font-family: 'Merriweather', serif;
   font-size: 3.6rem;
 }
 
-/* For authors of articles */
+/* article authors */
 .card-text-2 {
   font-family: 'Open Sans', sans-serif;
   display: inline-block;
   margin-bottom: 0;
 }
 
-/* For position of all the cards */
+/* position & card details */
 .card-position {
   padding: 6% 0;
 }
 
 .sub-card:hover {
-  filter: drop-shadow(8px 8px 10px gray);
+  box-shadow: 5px 5px 50px 1px gray;
 }
 
 .card-img {
   opacity: 0.7;
 }
 
-.card-title {
-  color: #000;
-}
-.card-text {
+.card-title, .card-text {
   color: #000;
 }
 
-/* For postion of pagination */
-
-.position-pagination {
+/* pagination position*/
+#event-3 .pagination {
   margin: 50px auto;
 }
 
-
-
 /* Footer section */
-
 #footer {
+  box-shadow: 10px 10px 50px 3px grey;
   text-align: left;
   background-color: #4c4c4c;
   padding: 3% 8%;
@@ -128,12 +118,12 @@ navigation bar  */
   color: #81b214;
 }
 
-.footer-head-main {
+#footer h2 {
   color: #fff;
   font-size: 2.2rem;
 }
 
-.footer-head {
+#footer h3 {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   font-size: 1.2rem;
@@ -154,7 +144,7 @@ navigation bar  */
   margin: 30px auto;
 }
 
-.line-2 {
+#footer hr {
   border-top: 1px solid white;
   width: 97%;
   margin-top: 50px;
@@ -167,7 +157,6 @@ navigation bar  */
 }
 
 /* Dark mode website */
-
 .darkmode--activated h1 {
   color: #fff;
 }
