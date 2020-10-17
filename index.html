@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@500&family=Merriweather:wght@700&family=Open+Sans&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@500&family=Merriweather:wght@700&family=Open+Sans&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
   <!-- javascript and jquery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -31,26 +31,23 @@
 </head>
 
 <body>
-
-  <section id="title" class="parallax">
+  <section id="navigation-bar" class="parallax">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" id="website-title" href=""><img class="logo" src="images/proteus-logo.png" alt="logo">Proteus</a>
+        <a class="navbar-brand" href=""><img class="logo" src="images/proteus-logo.png" alt="logo">Proteus</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
           <ul class="navbar-nav ml-auto">
             <li class="nav-item nav-icon">
               <a class="nav-link" href="index.html">
-                <i class="fas fa-home fa-2x icon-color"></i>
+                <strong>Home</strong>
               </a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="far fa-newspaper fa-2x icon-color"></i>
+                <strong>Activities</strong>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="Proteus_series/series.html">SERIES</a>
@@ -61,35 +58,35 @@
             </li>
             <li class="nav-item nav-icon">
               <a class="nav-link" href="">
-                <i class="fas fa-link fa-2x icon-color"></i>
+                <strong>Contact us</strong>
               </a>
             </li>
           </ul>
         </div>
     </div>
+  </section>
 
-    <div class="row row-width">
+  <section id="title" class="parallax">
+    <div class="row">
       <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1000">
-        <h1 class="page-head">Biology Club of IISER Thiruvananthapuram</h1>
+        <h1 class="page-head">Bio Club</h1>
         <p class="sub-head">
           To create a thriving community of biologists, where knowledge is shared across all levels
           and like the field of biology itself, to continue to grow and evolve
         </p>
-        <a href="Proteus-video/videos.html"><button type="button" class="btn btn-lg btn-dark btn-position" data-toggle="tooltip" data-placement="top" title="Welcome address"><i class="fas fa-sign-in-alt"></i> Get Started</button></a>
-        <button type="button" class="btn btn-lg btn-outline-success btn-position"><i class="fas fa-cloud-download-alt"></i> Download</button>
+        <a href="Proteus-video/videos.html"><button type="button" class="btn btn-lg btn-outline-dark"><i class="fas fa-play-circle"></i> Welcome</button></a>
       </div>
     </div>
-
   </section>
 
-  <section id="feature-1">
+  <section id="feature">
     <div class="row">
       <div class="col-lg-6" data-aos="flip-left" data-aos-duration="1000">
-        <img class="pic-1" src="images/blogs.svg" alt="feature-pic">
+        <img class="illustration" src="images/blog.svg" alt="feature-pic">
       </div>
       <div class="col-lg-6" data-aos="fade-left">
-        <h2 class="head-1">Series</h2>
-        <p class="sub-head-1">
+        <h2>Series</h2>
+        <p>
           Erevna: An exploration of papers through the ages, acknowledging the ground-breaking
           work that has shaped the field, both past and present
         </p>
@@ -97,28 +94,28 @@
     </div>
   </section>
 
-  <section id="feature-2">
+  <section id="feature" class="background-img">
     <div class="row">
       <div class="col-lg-6" data-aos="fade-right">
-        <h2 class="head-1">Events</h2>
-        <p class="sub-head-1">
+        <h2>Events</h2>
+        <p>
           Keep an eye out for our new events, from talk series to debates!
         </p>
       </div>
       <div class="col-lg-6" data-aos="flip-right" data-aos-duration="1000">
-        <img class="pic-1" src="images/event.svg" alt="feature-pic">
+        <img class="illustration" src="images/event.svg" alt="feature-pic">
       </div>
     </div>
   </section>
 
-  <section id="feature-3">
+  <section id="feature">
     <div class="row">
       <div class="col-lg-6" data-aos="flip-left" data-aos-duration="1000">
-        <img class="pic-1" src="images/opportunity.svg" alt="feature-pic">
+        <img class="illustration" src="images/opportunity.svg" alt="feature-pic">
       </div>
       <div class="col-lg-6" data-aos="fade-left">
-        <h2 class="head-1">Opportunities</h2>
-        <p class="sub-head-1">
+        <h2>Opportunities</h2>
+        <p>
           A network of IISER-TVM alumni, spread across the globe
         </p>
       </div>
@@ -126,9 +123,9 @@
   </section>
 
   <section id="team">
-    <div id="carousel" class="carousel slide" data-ride="false" data-aos="zoom-out" data-aos-duration="1000">
+    <div id="carousel" class="carousel slide" data-ride="false">
       <div class="carousel-inner">
-        <h2 class="team-head">Our Crew</h2>
+        <h2>Our Crew</h2>
         <!--Shivi-->
         <div class="carousel-item active">
           <img src="images/siddharth.png" class="image" alt="crew member"><br>
@@ -242,32 +239,28 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-
   </section>
 
-  <section id="contact">
-
+  <section id="form">
     <div class="col-lg-12 contact-section" data-aos="zoom-in" data-aos-duration="1000">
-      <h2 class="contact-head">Get in touch</h2>
-      <p class="contact-sub-head">
+      <h2>Get in touch</h2>
+      <p>
         Ready to start your journey? Proteus welcomes you to engage with the
         student community at IISER. Feel free to contact us
       </p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdamxsiDGKTwnwNec6h4N9lvI-efoL1VmqiWWHIBzmSIKOEkg/viewform"><button type="button" class="btn btn-position btn-lg btn-outline-success"><i class="fas fa-address-book"></i> Join us</button></a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfx0YxCOYJrNYsleRMf9r-9mSqNrMG2UIOrY-fXhEX78eHiyA/viewform"><button type="button" class="btn btn-position btn-lg btn-dark"><i class="fas fa-address-book"></i> Alumni</button></a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdamxsiDGKTwnwNec6h4N9lvI-efoL1VmqiWWHIBzmSIKOEkg/viewform"><button type="button" class="btn btn-lg btn-outline-success"><i class="fas fa-arrow-right"></i> Join us</button></a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfx0YxCOYJrNYsleRMf9r-9mSqNrMG2UIOrY-fXhEX78eHiyA/viewform"><button type="button" class="btn btn-lg btn-dark"><i class="fas fa-address-book"></i> Alumni</button></a>
     </div>
-
   </section>
 
   <section id="footer">
     <div class="row">
       <div class="col-lg-3 col-md-12">
-        <h2 class="footer-head-main">Find us on</h2>
+        <h2>Find us on</h2>
         <a href="https://www.youtube.com/channel/UCl2xFz0fNma-cW679jgjE0A"><i class="fab fa-youtube icon"></i></a>
         <a href="https://www.instagram.com/proteus.iisertvm/?hl=en"><i class="fab fa-instagram icon"></i></a>
         <a href="https://twitter.com/proteusiisertvm"><i class="fab fa-twitter icon"></i></a>
         <a href="https://www.facebook.com/proteus.iisertvm"><i class="fab fa-facebook-square icon"></i></a>
-        <a href="mailto:proteus@iisertvm.ac.in"><i class="far fa-envelope icon"></i></a>
       </div>
 
       <div class="col-lg-3">
@@ -290,7 +283,7 @@
         <a class="terms" href="">Acknowledgements</a><br>
       </div>
 
-      <hr class="line-2">
+      <hr>
 
       <div class="col-lg-12 div-position">
         <h2 class="footer-repost">Proteus</h2>
@@ -298,18 +291,10 @@
           © Proteus, 2020 @iisertvm. All rights reserved.
         </p>
       </div>
-
   </section>
-
-  <!-- javascript -->
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script><!--HAS TO BE ABOVE THE OTHER JS SCRIPT-->
 
   <!-- AOS libarary js cdn -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script>
-    AOS.init();
-  </script>
 
   <script type="text/javascript" src="index.js" charset="utf-8"></script>
 

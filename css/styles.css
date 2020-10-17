@@ -1,5 +1,4 @@
 /* normal tag selectors */
-
 html,body {
     width: 100%;
     margin: 0;
@@ -11,17 +10,14 @@ p {
   color: grey;
 }
 
-
 /* title section */
-
-#title {
+#navigation-bar {
   background-color: #fff;
-  text-align: center;
-  padding: 3% 8%;
+  padding: 3% 6%;
   box-shadow: 10px 10px 50px 3px grey;
 }
 
-#website-title {
+#navigation-bar .navbar-brand {
   font-family: 'David Libre', serif;
   font-size: 2rem;
   color: #000;
@@ -30,114 +26,89 @@ p {
 .logo {
   border-radius: 100%;
   width: 25%;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 0 10px 10px 0;
 }
-
-.page-head {
-  color: #0C6060;
-  font-family: 'Merriweather', serif;
-  font-size: 4rem;
-}
-
-.sub-head {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.3rem;
-  color: #393b44;
-  margin: 4% auto;
-}
-
-.row-width {
-  padding: 5% 15%;
-}
-
-.parallax {
-
-    /* the background image used */
-    background-image: url("../images/channel-cover.png");
-
-    /* Full height of page */
-    height: 100%;
-
-    /* creating parallax effect */
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-/* buttons */
-
-.btn-position {
-  margin: 2%;
-}
-
-
-/* Navigation bar */
 
 .nav-icon {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
+/* Title section */
+#title {
+  padding: 4% 8%;
+}
+
+.page-head {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8rem;
+}
+
+.sub-head {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  color: #000;
+  padding: 0 1%;
+  width: 60%;
+}
+
+#title button {
+  margin: 0 1%;
+}
+
+.parallax {
+    /* the background image used */
+    background-image: url("../images/cover.jpg");
+    /* Full height of page */
+    height: 100%;
+    /* creating parallax effect */
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 /* features section */
-
-#feature-1 {
+#feature {
   text-align: left;
   padding: 10% 8%;
 }
 
-#feature-2 {
-
-  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
-  text-align: left;
-  padding: 10% 8%;
+.background-img {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
-#feature-3 {
-  text-align: left;
-  padding: 10% 8%;
-}
-
-.head-1 {
+#feature h2 {
   font-family: 'Merriweather', serif;
   font-size: 2.5rem;
   margin: 35px 0 20px 0;
 }
 
-.sub-head-1 {
+#feature p {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3rem;
   color: #000;
 }
 
-.pic-1 {
-  width: 100%;
+.illustration {
+  width: 90%;
 }
 
-
-/* Our Crew section */
-
+/* Crew section */
 #team {
-
-  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   text-align: center;
   padding: 10% 10%;
 }
 
-.team-head {
+#team h2 {
   font-family: 'Merriweather', serif;
   font-size: 3rem;
 }
 
 .image {
-  height: 240px;
-  width: 240px;
+  height: 200px;
+  width: 200px;
   margin: 5%;
-}
-
-.image:hover {
-  height: 300px;
-  width: 300px;
 }
 
 .name{
@@ -146,26 +117,28 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* contact section */
-
-#contact {
+/* Forms section */
+#form{
   text-align: center;
   padding: 12% 15%;
 }
 
-.contact-head {
+#form h2 {
   font-family: 'Merriweather', serif;
   font-size: 3.6rem;
 }
 
-.contact-sub-head {
+#form p {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3rem;
   margin: 40px 0 40px 0;
 }
 
-/* footer section */
+#form button {
+  margin: 2%;
+}
 
+/* footer section */
 #footer {
   box-shadow: 10px 10px 50px 3px grey;
   text-align: left;
@@ -183,7 +156,7 @@ p {
   color: #81b214;
 }
 
-.footer-head-main {
+#footer h2 {
   color: #fff;
   font-size: 2.2rem;
 }
@@ -209,7 +182,7 @@ p {
   margin: 30px auto;
 }
 
-.line-2 {
+#footer hr {
   border-top: 1px solid white;
   width: 97%;
   margin-top: 50px;
@@ -219,33 +192,4 @@ p {
   font-family: 'David Libre', serif;
   font-size: 2rem;
   color: #fff;
-}
-
-/* All darkMode adjustments */
-.darkmode--activated h2 {
-  color: #fff;
-}
-
-.darkmode--activated p {
-  color: #fff;
-}
-
-.darkmode--activated .icon-color{
-  color: #fff;
-}
-
-.darkmode--activated .icon-color:hover{
-  color: grey;
-}
-
-.darkmode--activated #website-title {
-  color: #fff;
-}
-
-.darkmode--activated .name {
-  color: #fff;
-}
-
-.darkmode--activated .pic-1 {
-  box-shadow: none;
 }
