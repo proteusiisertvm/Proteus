@@ -49,11 +49,17 @@ navigation bar  */
   padding: 12% 15% 0 15%;
 }
 
-.sub-head {
+#title p {
   margin: 2% 0;
   color: grey;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 1.12rem;
+}
+
+#title i{
+  color: #000;
+  padding: 5% 4% 0 0;
+  font-size: 1.5rem;
 }
 
 .cover-img {
@@ -72,7 +78,7 @@ navigation bar  */
   color: #000;
 }
 
-#blog-post .figure {
+#blog-post img {
   border: 2px solid #000;
   display: block;
   margin: 4% auto;
@@ -100,6 +106,28 @@ navigation bar  */
   font-family: 'Open Sans', sans-serif;
 }
 
+/* More posts */
+
+#more-posts {
+  padding: 5% 5%;
+}
+
+#more-posts .col-md-6 {
+  padding: 5%;
+}
+
+#more-posts h3 {
+  padding-top: 5%;
+}
+
+#more-posts img {
+  width: 100%;
+  box-shadow: 3px 3px 60px grey;
+}
+
+#more-posts img:hover {
+  box-shadow: 5px 5px 60px 5px grey;
+}
 
 /* Footer section */
 
@@ -158,6 +186,10 @@ navigation bar  */
 }
 
 /* darkmode adjustments */
-.darkmode--activated .article-blog {
+.darkmode--activated body {
+  color: #fff;
+}
+
+.darkmode--activated h3 {
   color: #fff;
 }
