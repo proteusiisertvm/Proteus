@@ -11,9 +11,6 @@ p {
 }
 
 /*navigation bar  */
-#navigation-bar {
-  background-image: url("../images/cover.png");
-}
 
 #navigation-bar .navbar-brand {
   font-family: 'David Libre', serif;

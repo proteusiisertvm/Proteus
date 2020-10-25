@@ -138,10 +138,31 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
+/* News section */
+#news {
+  padding: 10% 8%;
+}
+
+#news h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+}
+
+#news p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+}
+
+#news img {
+  border: 1px solid black;
+  margin: 8% auto;
+  width: 70%;
+}
+
 /* Forms section */
 #form{
   text-align: center;
-  padding: 12% 15%;
+  padding: 5% 15% 12% 15%;
 }
 
 #form h2 {
