@@ -140,7 +140,12 @@ p {
 
 /* News section */
 #news {
+  text-align: center;
   padding: 10% 8%;
+}
+
+#news .col-lg-12 {
+  padding: 2%;
 }
 
 #news h2 {

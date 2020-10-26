@@ -1,0 +1,39 @@
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+p {
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.parallax {
+    /* the background image used */
+    background-image: url("../images/cover.jpg");
+    /* Full height of page */
+    height: 100%;
+    /* creating parallax effect */
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+#header h1 {
+  padding: 5% 8%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  color: #000;
+}
+
+#contacts {
+  padding: 0 9%;
+}
+
+#contacts h2 {
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+}
