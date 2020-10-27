@@ -80,7 +80,7 @@ p {
 
 .parallax {
     /* the background image used */
-    background-image: url("../images/cover.jpg");
+    background-image: url("../images/backgrounds/cover.jpg");
     /* Full height of page */
     height: 100%;
     /* creating parallax effect */
@@ -99,7 +99,7 @@ p {
 }
 
 #feature h2 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 2.5rem;
   margin: 35px 0 20px 0;
 }
@@ -114,15 +114,72 @@ p {
   width: 90%;
 }
 
+/* testimonials section */
+#testimonials {
+  text-align: center;
+  padding: 10% 8%;
+}
+
+.testimonials-head {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  padding: 4%;
+}
+
+#testimonials p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#testimonials h4 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+#testimonials img {
+  width: 50%;
+  padding: 10%;
+}
+
+/* News section */
+#news {
+  background-image: url("../images/backgrounds/abstract-cover.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 10% 8%;
+}
+
+#news .col-lg-12 {
+  padding: 2%;
+}
+
+#news h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+}
+
+#news p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+#news img {
+  border: 1px solid black;
+  margin: 8% auto;
+  width: 70%;
+}
+
 /* Crew section */
 #team {
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-image: url("../images/backgrounds/cover-3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   text-align: center;
-  padding: 10% 10%;
+  padding: 10% 10% 0 10%;
 }
 
 #team h2 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
 }
 
@@ -138,40 +195,23 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* News section */
-#news {
-  text-align: center;
-  padding: 10% 8%;
+#team .icon {
+  color: #000;
+  margin: 0 5px 0 5px;
 }
 
-#news .col-lg-12 {
-  padding: 2%;
-}
-
-#news h2 {
-  font-family: 'Merriweather', serif;
-  font-size: 3rem;
-}
-
-#news p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.3rem;
-}
-
-#news img {
-  border: 1px solid black;
-  margin: 8% auto;
-  width: 70%;
+#team .icon:hover {
+  color: #81b214;
 }
 
 /* Forms section */
 #form{
   text-align: center;
-  padding: 5% 15% 12% 15%;
+  padding: 15% 15%;
 }
 
 #form h2 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3.6rem;
 }
 
