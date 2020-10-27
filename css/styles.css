@@ -90,12 +90,13 @@ p {
 
 /* features section */
 #feature {
+  background-image: url("../images/backgrounds/cover-4.png");
   text-align: left;
-  padding: 10% 8%;
+  padding: 5% 8%;
 }
 
-.background-img {
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+.row-padding {
+  margin: 10% auto;
 }
 
 #feature h2 {
@@ -117,7 +118,7 @@ p {
 /* testimonials section */
 #testimonials {
   text-align: center;
-  padding: 10% 8%;
+  padding: 5% 8% 10% 8%;
 }
 
 .testimonials-head {
