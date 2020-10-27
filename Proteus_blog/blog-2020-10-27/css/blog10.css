@@ -49,6 +49,11 @@ navigation bar  */
   padding: 12% 15% 0 15%;
 }
 
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+}
+
 #title p {
   margin: 2% 0;
   color: grey;
@@ -68,11 +73,11 @@ navigation bar  */
 }
 
 #blog-post {
-  padding: 2% 15%;
+  padding: 5% 15%;
 }
 
 #blog-post p {
-  text-align: left;
+  text-align: justify;
   font-family: 'Open Sans', sans-serif;
   line-height: 2;
   color: #000;
@@ -83,12 +88,6 @@ navigation bar  */
   display: block;
   margin: 4% auto;
   width: 60%;
-}
-
-#reference {
-  text-align: left;
-  padding: 2% 15% 5% 15%;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .line {
