@@ -36,14 +36,6 @@ p {
   color: #000;
 }
 
-#navbarDropdown {
-  padding-left: 8px;
-}
-
-.dropdown-menu.show {
-  margin-right: 80%;
-}
-
 .logo {
   border-radius: 100%;
   width: 25%;
@@ -92,7 +84,7 @@ p {
 #feature {
   background-image: url("../images/backgrounds/cover-4.png");
   text-align: left;
-  padding: 5% 8%;
+  padding: 5% 8% 2% 8%;
 }
 
 .row-padding {
@@ -112,7 +104,8 @@ p {
 }
 
 .illustration {
-  width: 90%;
+  width: 80%;
+  object-fit: contain;
 }
 
 /* testimonials section */
@@ -122,7 +115,7 @@ p {
 }
 
 .testimonials-head {
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-family: 'Montserrat', sans-serif;
   padding: 4%;
 }
@@ -155,7 +148,7 @@ p {
 
 #news h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 3.6rem;
 }
 
 #news p {
@@ -181,7 +174,7 @@ p {
 
 #team h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 3.6rem;
 }
 
 .image {
