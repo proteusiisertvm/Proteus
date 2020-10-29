@@ -6,10 +6,6 @@ html,body {
     overflow-x: hidden;
 }
 
-p {
-  color: grey;
-}
-
 /* Title section and
 navigation bar  */
 
@@ -54,7 +50,7 @@ navigation bar  */
   font-size: 3.5rem;
 }
 
-#title p {
+.sub-head {
   margin: 2% 0;
   color: grey;
   font-family: 'Open Sans', sans-serif;
@@ -73,18 +69,18 @@ navigation bar  */
 }
 
 #blog-post {
-  padding: 5% 15%;
+  padding: 5% 10%;
 }
 
 #blog-post .icon {
   color: #000;
 }
 
-#blog-post p {
+.article {
+  padding: 0 5%;
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
   line-height: 2;
-  color: #000;
 }
 
 #blog-post img {
@@ -92,6 +88,10 @@ navigation bar  */
   display: block;
   margin: 4% auto;
   width: 60%;
+}
+
+.figure-legend {
+  padding: 0 20%;
 }
 
 .line {
@@ -188,8 +188,12 @@ navigation bar  */
   color: #fff;
 }
 
+#footer p {
+  color: grey;
+}
+
 /* darkmode adjustments */
-.darkmode--activated body {
+.darkmode--activated .article {
   color: #fff;
 }
 
