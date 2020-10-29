@@ -76,6 +76,10 @@ navigation bar  */
   padding: 5% 15%;
 }
 
+#blog-post .icon {
+  color: #000;
+}
+
 #blog-post p {
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
