@@ -33,7 +33,7 @@
 <body>
 
   <section id="navigation-bar">
-    <div class="container-fluid">
+    <div class="container-fluid" id="container-position">
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light nav-opacity">
         <a class="navbar-brand" id="website-title" href=""><img class="logo" src="images/proteus-logo.png" alt="logo">Proteus</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,21 +46,14 @@
                 <strong>Home</strong>
               </a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <strong>Activities</strong>
+            <li class="nav-item nav-icon">
+              <a class="nav-link" href="../../Proteus_series/series.html">
+                <strong>Series</strong>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="../../Proteus_series/series.html">SERIES</a>
-                <a class="dropdown-item" href="../../Proteus_events/events.html">EVENTS</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="">OPPORTUNITIES</a>
-                <!--link to be added here-->
-              </div>
             </li>
             <li class="nav-item nav-icon">
-              <a class="nav-link" href="">
-                <strong>Link</strong>
+              <a class="nav-link" href="../../Contact-us/contact.html">
+                <strong>Contact us</strong>
               </a>
             </li>
           </ul>
@@ -71,11 +64,8 @@
   <section id="title">
     <div class="row">
       <h1 class="heading">Induced Pluripotent StemCells: A Powerful Technique but still with kinks in its Armor.</h1>
-      <p>
-        Siddharth Shivanandan | Oct 14, 2020
-        <br>
-        <a href="https://www.instagram.com/shivi109678"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:siddharth17@iisertvm.ac.in"><i class="fas fa-envelope-square"></i></a>
+      <p class="sub-head">
+        Oct 14, 2020 | 2 min read
       </p>
     </div>
     <div class="row">
@@ -85,7 +75,8 @@
 
   <section id="blog-post">
     <div class="row">
-      <p>
+      <div class="col-lg-8">
+        <p class="article">
         Pluripotent Stem Cells (PSCs) are simply put cells that can self renew and develop into any cell of the adult body. When a cell in the body, a somatic cell, is induced to show pluripotency, that cell is an Induced PSC (iPSC). Similarly,
         somatic cells nuclei can be transferred into enucleated oocytes to form nuclear transfer human embryonic stem cells (NT-hESCs). This cell is able to once again replicate and differentiate into any cell in the body. This technique is called
         somatic cell nuclear transfer (SCNT). These techniques overlay the broad idea of reprogrammed PSCs.
@@ -119,6 +110,34 @@
         reprogramming of DNA synthesis and the differentiation potential are more complete in iPSCs generated from neonatal cells than in adult cells.
       </p>
     </div>
+
+    <div class="col-lg-4">
+      <div class="row">
+        <div class="card bg-light mb-3 ml-5" style="width: 18rem;">
+          <h5 class="card-header">About this author</h5>
+          <div class="card-body">
+            <p>Siddharth Shivanandan is a Batch 17 BS-MS student at IISER TVM</p>
+            <a href="https://www.instagram.com/shivi109678"><i class="fab fa-instagram icon"></i></a>
+            <a href="mailto:siddharth17@iisertvm.ac.in"><i class="far fa-envelope icon"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card bg-light mb-3 ml-5" style="width: 18rem;">
+          <h5 class="card-header">References</h5>
+          <div class="card-body">
+            <ol>
+              <li><a class="card-link" href="https://doi.org/10.1083/jcb.201909163">Source Article</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
   </section>
 
   <section id="reference">

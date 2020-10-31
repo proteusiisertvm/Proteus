@@ -1,14 +1,9 @@
 /* normal tag selectors */
-
 html,body {
     width: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-}
-
-p {
-  color: grey;
 }
 
 /* Title section and
@@ -50,6 +45,11 @@ navigation bar  */
   padding: 12% 15% 0 15%;
 }
 
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+}
+
 .sub-head {
   margin: 2% 0;
   color: grey;
@@ -57,28 +57,41 @@ navigation bar  */
   font-size: 1.12rem;
 }
 
-.icon2 {
+#title i{
   color: #000;
-  padding: 10% 4% 0 0;
+  padding: 5% 4% 0 0;
   font-size: 1.5rem;
 }
 
 .cover-img {
-  margin: 10% auto;
+  margin: 5% auto;
+  width: 80%;
 }
 
-#blog-post p {
-  text-align: left;
-  padding: 2% 15%;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 2;
+#blog-post {
+  padding: 5% 10%;
+}
+
+#blog-post .icon {
   color: #000;
 }
 
-#reference {
-  text-align: left;
-  padding: 2% 15% 5% 15%;
+.article {
+  padding: 0 5%;
+  text-align: justify;
   font-family: 'Open Sans', sans-serif;
+  line-height: 2;
+}
+
+#blog-post img {
+  border: 2px solid #000;
+  display: block;
+  margin: 4% auto;
+  width: 60%;
+}
+
+.figure-legend {
+  padding: 0 20%;
 }
 
 .line {
@@ -110,19 +123,18 @@ navigation bar  */
   padding-top: 5%;
 }
 
-.figure {
+#more-posts img {
   width: 100%;
   box-shadow: 3px 3px 60px grey;
 }
 
-.figure:hover {
+#more-posts img:hover {
   box-shadow: 5px 5px 60px 5px grey;
 }
 
-/* footer section */
+/* Footer section */
 
 #footer {
-  box-shadow: 10px 10px 50px 3px grey;
   text-align: left;
   background-color: #4c4c4c;
   padding: 3% 8%;
@@ -176,6 +188,15 @@ navigation bar  */
   color: #fff;
 }
 
-darkmode--activated body, h3 {
+#footer p {
+  color: grey;
+}
+
+/* darkmode adjustments */
+.darkmode--activated .article {
+  color: #fff;
+}
+
+.darkmode--activated h3 {
   color: #fff;
 }

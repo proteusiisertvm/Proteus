@@ -6,22 +6,27 @@ html,body {
     overflow-x: hidden;
 }
 
-p {
-  color: grey;
-}
-
 /* Title section and
 navigation bar  */
-#navigation-bar .navbar-brand {
+
+#container-position {
+  padding: 0 ;
+}
+
+#navigation-bar {
+  text-align: center;
+}
+
+#website-title {
   font-family: 'David Libre', serif;
   font-size: 2rem;
-  padding-left: 2%;
 }
 
 .logo {
   border-radius: 100%;
   width: 25%;
-  margin: 0 10px 10px 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .nav-icon {
@@ -40,29 +45,61 @@ navigation bar  */
   padding: 12% 15% 0 15%;
 }
 
-#title i {
-  color: #000;
-  margin: 4% 2% 0 0;
-  font-size: 1.5rem;
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
 }
 
-#title p {
+.sub-head {
   margin: 2% 0;
   color: grey;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.12rem;
 }
 
-#title img {
-  margin: 10% auto;
+#title i{
+  color: #000;
+  padding: 5% 4% 0 0;
+  font-size: 1.5rem;
 }
 
-#blog-post p {
-  text-align: left;
-  padding: 2% 15%;
+.cover-img {
+  margin: 5% auto;
+  width: 80%;
+}
+
+#blog-post {
+  padding: 5% 10%;
+}
+
+#blog-post .icon {
+  color: #000;
+}
+
+.article {
+  padding: 0 5%;
+  text-align: justify;
   font-family: 'Open Sans', sans-serif;
   line-height: 2;
-  color: #000;
+}
+
+#blog-post img {
+  border: 2px solid #000;
+  display: block;
+  margin: 4% auto;
+  width: 60%;
+}
+
+.figure-legend {
+  padding: 0 20%;
+}
+
+.line {
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 10px;
+  border-color: #dddddd;
+  width: 10%;
 }
 
 #reference {
@@ -80,12 +117,14 @@ navigation bar  */
 }
 
 /* Comment section */
+
 #comment-box {
   padding: 5% 15%;
   font-family: 'Open Sans', sans-serif;
 }
 
 /* More posts */
+
 #more-posts {
   padding: 5% 5%;
 }
@@ -98,18 +137,18 @@ navigation bar  */
   padding-top: 5%;
 }
 
-.figure {
+#more-posts img {
   width: 100%;
   box-shadow: 3px 3px 60px grey;
 }
 
-.figure:hover {
+#more-posts img:hover {
   box-shadow: 5px 5px 60px 5px grey;
 }
 
-/* footer section */
+/* Footer section */
+
 #footer {
-  box-shadow: 10px 10px 50px 3px grey;
   text-align: left;
   background-color: #4c4c4c;
   padding: 3% 8%;
@@ -125,7 +164,7 @@ navigation bar  */
   color: #81b214;
 }
 
-#footer h2 {
+.footer-head-main {
   color: #fff;
   font-size: 2.2rem;
 }
@@ -151,7 +190,7 @@ navigation bar  */
   margin: 30px auto;
 }
 
-#footer hr {
+.line-2 {
   border-top: 1px solid white;
   width: 97%;
   margin-top: 50px;
@@ -163,7 +202,15 @@ navigation bar  */
   color: #fff;
 }
 
-/* darkmode */
-darkmode--activated body {
+#footer p {
+  color: grey;
+}
+
+/* darkmode adjustments */
+.darkmode--activated .article {
+  color: #fff;
+}
+
+.darkmode--activated h3 {
   color: #fff;
 }

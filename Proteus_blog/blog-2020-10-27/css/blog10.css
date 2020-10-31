@@ -102,6 +102,20 @@ navigation bar  */
   width: 10%;
 }
 
+#reference {
+  text-align: left;
+  padding: 2% 15% 5% 15%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.line {
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 10px;
+  border-color: #dddddd;
+  width: 10%;
+}
+
 /* Comment section */
 
 #comment-box {
