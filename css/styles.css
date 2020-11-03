@@ -1,13 +1,6 @@
-/* normal tag selectors */
-html,body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+body {
+    padding: 0 2%;
     overflow-x: hidden;
-}
-
-p {
-  color: grey;
 }
 
 /* back to top button */
@@ -27,7 +20,6 @@ p {
 #navigation-bar {
   background-color: #fff;
   padding: 3% 6%;
-  box-shadow: 10px 10px 50px 3px grey;
 }
 
 #navigation-bar .navbar-brand {
@@ -38,8 +30,30 @@ p {
 
 .logo {
   border-radius: 100%;
-  width: 25%;
+  width: 35%;
   margin: 0 10px 10px 0;
+}
+
+.logo:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 .nav-icon {
@@ -50,7 +64,12 @@ p {
 /* Title section */
 #title {
   padding: 5% 8%;
-  font-size: 1.1rem;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 2vw)
+  );
 }
 
 .page-head {
@@ -61,7 +80,8 @@ p {
 
 .sub-head {
   font-family: 'Open Sans', sans-serif;
-  padding: 0 25% 0 1%;
+  padding: 3% 45% 3% 1%;
+  font-size: 1.3rem;
 }
 
 #title button {
@@ -70,7 +90,7 @@ p {
 
 .parallax {
     /* the background image used */
-    background-image: url("../images/backgrounds/website-cover.png");
+    background-image: url("../images/backgrounds/website2-mod.png");
     /* Full height of page */
     height: 100%;
     /* creating parallax effect */
@@ -80,41 +100,61 @@ p {
 
 /* features section */
 #feature {
-  text-align: left;
-  padding: 5% 8%;
+  padding: 8% 8%;
 }
 
-.row-padding {
-  margin: 10% auto;
+.feature-header {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  margin: 5% 0
+}
+.background {
+  background-color: #d9ecf2;
 }
 
-#feature h2 {
+#feature h3 {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 2.5rem;
   margin: 35px 0 20px 0;
 }
 
 #feature p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.3rem;
   color: #000;
+  font-size: 1.3rem;
+}
+
+.col-padding {
+  padding: 2% 4%;
 }
 
 .illustration {
+  transform: skewY(5deg);
+  transition: width 2s ease;
   width: 80%;
   object-fit: contain;
+  cursor: pointer;
+}
+
+.illustration:hover {
+  width: 60%;
 }
 
 /* testimonials section */
 #testimonials {
   text-align: center;
-  padding: 0 8% 10% 8%;
+  padding: 5% 8% 8%;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 3vw)
+  );
 }
 
 .testimonials-head {
   font-size: 3.6rem;
   font-family: 'Montserrat', sans-serif;
-  padding: 4%;
+  margin: 2%;
 }
 
 #testimonials p {
@@ -132,9 +172,6 @@ p {
 
 /* News section */
 #news {
-  background-image: url("../images/backgrounds/abstract-cover.png");
-  background-size: contain;
-  background-repeat: no-repeat;
   text-align: center;
   padding: 10% 8%;
 }
@@ -162,11 +199,14 @@ p {
 
 /* Crew section */
 #team {
-  background-image: url("../images/backgrounds/cover-3.png");
-  background-size: contain;
-  background-repeat: no-repeat;
   text-align: center;
-  padding: 10% 10% 0 10%;
+  padding: 5% 8%;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 2vw)
+  );
 }
 
 #team h2 {
@@ -175,11 +215,14 @@ p {
 }
 
 .image {
-  height: 200px;
-  width: 200px;
-  margin: 5%;
+  width: 15%;
+  margin: 3%;
+  transition: width 2s ease;
 }
 
+.image:hover {
+  width: 20%;
+}
 .name{
   color: #000;
   font-size: 1.2rem;
@@ -188,7 +231,7 @@ p {
 
 #team .icon {
   color: #000;
-  margin: 0 5px 0 5px;
+  margin: 0 10px;
 }
 
 #team .icon:hover {
@@ -198,7 +241,7 @@ p {
 /* Forms section */
 #form{
   text-align: center;
-  padding: 15% 15%;
+  padding: 10% 15%;
 }
 
 #form h2 {
@@ -218,7 +261,6 @@ p {
 
 /* footer section */
 #footer {
-  box-shadow: 10px 10px 50px 3px grey;
   text-align: left;
   background-color: #4c4c4c;
   padding: 3% 8%;
@@ -270,4 +312,8 @@ p {
   font-family: 'David Libre', serif;
   font-size: 2rem;
   color: #fff;
+}
+
+#footer p {
+  color: grey;
 }
