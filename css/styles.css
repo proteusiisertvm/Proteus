@@ -265,6 +265,23 @@ body {
   margin: 2%;
 }
 
+/* Share website buttons */
+#share-buttons {
+  padding: 0 8%;
+}
+
+#share-buttons h4 {
+  display: inline-block;
+  margin-right: 560px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.share-icon {
+  width: 4%;
+  margin: 0 10px;
+  border-radius: 100%;
+}
+
 /* footer section */
 #footer {
   text-align: left;
