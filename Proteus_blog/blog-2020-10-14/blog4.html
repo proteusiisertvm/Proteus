@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@500&family=Merriweather:wght@700&family=Open+Sans&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@500&family=Merriweather:wght@700&family=Open+Sans&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
   <!-- javascript and jquery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -33,7 +33,7 @@
 <body>
 
   <section id="navigation-bar">
-    <div class="container-fluid">
+    <div class="container-fluid" id="container-position">
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light nav-opacity">
         <a class="navbar-brand" id="website-title" href=""><img class="logo" src="images/proteus-logo.png" alt="logo">Proteus</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,21 +46,14 @@
                 <strong>Home</strong>
               </a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <strong>Activities</strong>
+            <li class="nav-item nav-icon">
+              <a class="nav-link" href="../../Proteus_series/series.html">
+                <strong>Series</strong>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="../../Proteus_series/series.html">SERIES</a>
-                <a class="dropdown-item" href="../../Proteus_events/events.html">EVENTS</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="">OPPORTUNITIES</a>
-                <!--link to be added here-->
-              </div>
             </li>
             <li class="nav-item nav-icon">
-              <a class="nav-link" href="">
-                <strong>Link</strong>
+              <a class="nav-link" href="../../Contact-us/contact.html">
+                <strong>Contact us</strong>
               </a>
             </li>
           </ul>
@@ -71,66 +64,76 @@
   <section id="title">
     <div class="row">
       <h1 class="heading">Induced Pluripotent StemCells: A Powerful Technique but still with kinks in its Armor.</h1>
-      <p>
-        Oct 14, 2020 | Siddharth Shivanandan
-        <br>
-        <a href="https://www.instagram.com/shivi109678"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:siddharth17@iisertvm.ac.in"><i class="fas fa-envelope-square"></i></a>
+      <p class="sub-head">
+        Oct 14, 2020 | 2 min read
       </p>
     </div>
     <div class="row">
-      <img src="images/cover.jpg" alt="cover-image">
+      <img src="images/cover.jpg" class="cover-img" alt="cover-image">
     </div>
   </section>
 
   <section id="blog-post">
     <div class="row">
-      <p>
-        Pluripotent Stem Cells (PSCs) are simply put cells that can self renew and develop into any cell of the adult body. When a cell in the body, a somatic cell, is induced to show pluripotency, that cell is an Induced PSC (iPSC). Similarly,
-        somatic cells nuclei can be transferred into enucleated oocytes to form nuclear transfer human embryonic stem cells (NT-hESCs). This cell is able to once again replicate and differentiate into any cell in the body. This technique is called
-        somatic cell nuclear transfer (SCNT). These techniques overlay the broad idea of reprogrammed PSCs.
-        <br>
-        This science and technique of developing pluripotent cells has improved over the years. And one can easily come up with the idea that such a technique would hold tremendous potential for treating a plethora of degenerative and even age
-        related diseases. Especially considering the fact that iPSCs produce patient-matched differentiated cells that theoretically cannot cause immune rejection.However, with great power comes great responsibility. Before a technique comes into
-        light as a revolution in medicine, every test and attribute must be looked at. One challenge to this powerful technique is that iPSCs are somewhat less capable of consistent differentiation than cells derived by the SCNT method. Thus, even
-        though they both come under Reprogrammed PCS, the extent of reprogramming differs. This article by Paniza et. al. tries to understand just that.
-        <br>
-        While generation of PSCs by SCNT, as the somatic nuclei is injected into an enucleated oocyte, selects for the ability of a cell to advance through embryonic developmental steps. Alternatively, the induction of pluripotency is accomplished
-        with defined factors that select for growth in the pluripotent state. Furthermore, reprogramming by SCNT requires donated oocytes, which is seen to limit the scalability of reprogramming. iPSCs are seen to be a more reliable approach for
-        generating PSCs. However the completion of reprogramming has to be taken into account.
-        <br>
-        Embryonic stem cells (ESCs) are the gold standard when comparing for the pluripotency and differentiation potential. Human embryonic stem cells (hECSs) have been reported to show a high number of replicative origins. This has been documented
-        to be an essential characteristic in ensuring sufficient cell growth. A replicative origin.
-        <br>
-        The team looks into the subtle differences in the differential potential of PSCs. This is important due to the fact that these differences hold a profound impact in the functionality of the cells. If used for therapy, PSCs need to be
-        genomically stable and functional. To evaluate genomic stability, Paniza et. al.analyze the process of DNA Replication between NT-hESCs and iPSCs that were both neonatal and adult derived and correlated the difference in differentiation
-        potential .
-        <br>
-        Another interesting aspect investigated was how adult fibroblasts are less amenable to reprogramming than fetal and neonatal fibroblasts.This was determined by the fact that in a setup with all the required factors to induce pluripotency,
-        fetal and neonatal cells formed iPSC colonies faster and yielded greater numbers of cells compared with adult cells.
-        <br>
-        Taking up the technique known as Single Molecule Analysis of Replicated DNA (SMARD) to visualize in vivo DNA replication of single DNA molecules. SMARD revealed that the replication pattern in NT-hESCs and neonatal iPSCs was very similar to
-        that in hESCs. In contrast, isogenic iPSCs had an altered DNA replication program. Thus, comparing the DNA replication patterns among hESCs, NT-hESCs, and iPSCs derived from neonatal or adult cells allowed them to understand the difference in
-        the pluripotency efficiency in the two types of reprogramming techniques.
-        To get deeper into the incomplete reprogrammed DNA replication, the FXN and Nanog loci were examined. These loci have been reported to be genomic loci that regulate the replication fork formation in human cells and therefore DNA replication
-        in these cells. The data reports Our data showed incomplete reprogramming of the replication in these two genomic regions in reprogrammed iPSCs, in particular a decrease in origin activation.
-        <br>
-        The article concludes that NT-hESCs have more completely reprogrammed DNA replication and goes further to show that the DNA replication in reprogrammed neonatal iPSCs is similar to that in hESCs. This brings into consideration the fact that
-        reprogramming of DNA synthesis and the differentiation potential are more complete in iPSCs generated from neonatal cells than in adult cells.
-      </p>
-    </div>
-  </section>
-
-  <section id="reference">
-    <div class="row">
-      <h2>Reference:</h2>
-      <p>
-        Theodore Paniza, Madhura Deshpande, Ning Wang, Ryan O’Neil, Michael V. Zuccaro, Morgan Elizabeth Smith,
-        Advaitha Madireddy, Daylon James, Joseph Ecker, Zev Rosenwaks, Dieter Egli, Jeannine Gerhardt; Pluripotent
-        stem cells with low differentiation potential contain incompletely reprogrammed DNA replication. J Cell Biol
-        7 September 2020; 219 (9): e201909163. doi:
-        <a href="https://doi.org/10.1083/jcb.201909163"> https://doi.org/10.1083/jcb.201909163</a>
-      </p>
+      <div class="col-lg-8">
+        <p class="article">
+          Pluripotent Stem Cells (PSCs) are simply put cells that can self renew and develop into any cell of the adult body. When a cell in the body, a somatic cell, is induced to show pluripotency, that cell is an Induced PSC (iPSC). Similarly,
+          somatic cells nuclei can be transferred into enucleated oocytes to form nuclear transfer human embryonic stem cells (NT-hESCs). This cell is able to once again replicate and differentiate into any cell in the body. This technique is called
+          somatic cell nuclear transfer (SCNT). These techniques overlay the broad idea of reprogrammed PSCs.
+          <br>
+          This science and technique of developing pluripotent cells has improved over the years. And one can easily come up with the idea that such a technique would hold tremendous potential for treating a plethora of degenerative and even age
+          related diseases. Especially considering the fact that iPSCs produce patient-matched differentiated cells that theoretically cannot cause immune rejection.However, with great power comes great responsibility. Before a technique comes into
+          light as a revolution in medicine, every test and attribute must be looked at. One challenge to this powerful technique is that iPSCs are somewhat less capable of consistent differentiation than cells derived by the SCNT method. Thus, even
+          though they both come under Reprogrammed PCS, the extent of reprogramming differs. This article by Paniza et. al. tries to understand just that.
+          <br>
+          While generation of PSCs by SCNT, as the somatic nuclei is injected into an enucleated oocyte, selects for the ability of a cell to advance through embryonic developmental steps. Alternatively, the induction of pluripotency is accomplished
+          with defined factors that select for growth in the pluripotent state. Furthermore, reprogramming by SCNT requires donated oocytes, which is seen to limit the scalability of reprogramming. iPSCs are seen to be a more reliable approach for
+          generating PSCs. However the completion of reprogramming has to be taken into account.
+          <br>
+          Embryonic stem cells (ESCs) are the gold standard when comparing for the pluripotency and differentiation potential. Human embryonic stem cells (hECSs) have been reported to show a high number of replicative origins. This has been
+          documented
+          to be an essential characteristic in ensuring sufficient cell growth. A replicative origin.
+          <br>
+          The team looks into the subtle differences in the differential potential of PSCs. This is important due to the fact that these differences hold a profound impact in the functionality of the cells. If used for therapy, PSCs need to be
+          genomically stable and functional. To evaluate genomic stability, Paniza et. al.analyze the process of DNA Replication between NT-hESCs and iPSCs that were both neonatal and adult derived and correlated the difference in differentiation
+          potential .
+          <br>
+          Another interesting aspect investigated was how adult fibroblasts are less amenable to reprogramming than fetal and neonatal fibroblasts.This was determined by the fact that in a setup with all the required factors to induce pluripotency,
+          fetal and neonatal cells formed iPSC colonies faster and yielded greater numbers of cells compared with adult cells.
+          <br>
+          Taking up the technique known as Single Molecule Analysis of Replicated DNA (SMARD) to visualize in vivo DNA replication of single DNA molecules. SMARD revealed that the replication pattern in NT-hESCs and neonatal iPSCs was very similar to
+          that in hESCs. In contrast, isogenic iPSCs had an altered DNA replication program. Thus, comparing the DNA replication patterns among hESCs, NT-hESCs, and iPSCs derived from neonatal or adult cells allowed them to understand the difference
+          in
+          the pluripotency efficiency in the two types of reprogramming techniques.
+          To get deeper into the incomplete reprogrammed DNA replication, the FXN and Nanog loci were examined. These loci have been reported to be genomic loci that regulate the replication fork formation in human cells and therefore DNA replication
+          in these cells. The data reports Our data showed incomplete reprogramming of the replication in these two genomic regions in reprogrammed iPSCs, in particular a decrease in origin activation.
+          <br>
+          The article concludes that NT-hESCs have more completely reprogrammed DNA replication and goes further to show that the DNA replication in reprogrammed neonatal iPSCs is similar to that in hESCs. This brings into consideration the fact that
+          reprogramming of DNA synthesis and the differentiation potential are more complete in iPSCs generated from neonatal cells than in adult cells.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="card bg-light mb-3 ml-5" style="width: 18rem;">
+            <h5 class="card-header">About this author</h5>
+            <div class="card-body">
+              <p>Siddharth Shivanandan is a Batch 17 BS-MS student at IISER TVM</p>
+              <a href="https://www.instagram.com/shivi109678"><i class="fab fa-instagram icon"></i></a>
+              <a href="mailto:siddharth17@iisertvm.ac.in"><i class="far fa-envelope icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card bg-light mb-3 ml-5" style="width: 18rem;">
+            <h5 class="card-header">References</h5>
+            <div class="card-body">
+              <ol>
+                <li><a class="card-link" href="https://doi.org/10.1083/jcb.201909163">Source Article</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -160,7 +163,7 @@
   <section id="footer">
     <div class="row">
       <div class="col-lg-3 col-md-12">
-        <h2>Find us on</h2>
+        <h2 class="footer-head-main">Find us on</h2>
         <a href="https://www.youtube.com/channel/UCl2xFz0fNma-cW679jgjE0A"><i class="fab fa-youtube icon"></i></a>
         <a href="https://www.instagram.com/proteus.iisertvm/?hl=en"><i class="fab fa-instagram icon"></i></a>
         <a href="https://twitter.com/proteusiisertvm"><i class="fab fa-twitter icon"></i></a>
@@ -180,11 +183,11 @@
       </div>
 
       <div class="col-lg-3 col-md-6">
-        <h3 class="footer-head">Policies</h3>
-        <a class="terms" href="">Terms</a><br>
-        <a class="terms" href="">Privacy</a><br>
-        <a class="terms" href="">Guidelines</a><br>
+        <h3 class="footer-head">Important links</h3>
+        <a class="terms" href="">IISER Thiruvananthapuram</a><br>
+        <a class="terms" href="">School of Biology</a><br>
         <a class="terms" href="">Acknowledgements</a><br>
+        <a class="terms" href="">Club by-laws</a><br>
       </div>
 
       <hr>

@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@500&family=Merriweather:wght@700&family=Open+Sans&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@500&family=Merriweather+Sans:wght@700&family=Open+Sans&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -33,7 +33,7 @@
 </head>
 
 <body>
-  <section id="navigation-bar" class="parallax">
+  <section id="navigation-bar">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href=""><img class="logo" src="images/proteus-logo.png" alt="logo">Proteus</a>
@@ -44,23 +44,32 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item nav-icon">
               <a class="nav-link" href="index.html">
-                <strong>Home</strong>
+                <strong>HOME</strong>
               </a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <strong>Activities</strong>
+            <li class="nav-item nav-icon" title="blog posts">
+              <a class="nav-link" href="Proteus_series/series.html">
+                <strong>SERIES</strong>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="Proteus_series/series.html">SERIES</a>
-                <a class="dropdown-item" href="Proteus_events/events.html">EVENTS</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="">OPPORTUNITIES</a>
-              </div>
             </li>
             <li class="nav-item nav-icon">
-              <a class="nav-link" href="">
-                <strong>Contact us</strong>
+              <a class="nav-link" href="#news" title="Go to bulletin board">
+                <strong>BULLETINS</strong>
+              </a>
+            </li>
+            <li class="nav-item nav-icon">
+              <a class="nav-link" href="#team" title="meet club members">
+                <strong>TEAM</strong>
+              </a>
+            </li>
+            <li class="nav-item nav-icon" title="blog posts">
+              <a class="nav-link" href="#form">
+                <strong>JOIN US</strong>
+              </a>
+            </li>
+            <li class="nav-item nav-icon" title="reach out to us">
+              <a class="nav-link" href="Contact-us/contact.html">
+                <strong>CONTACT US</strong>
               </a>
             </li>
           </ul>
@@ -83,40 +92,29 @@
 
   <section id="feature">
     <div class="row">
-      <div class="col-lg-6" data-aos="flip-left" data-aos-duration="1000">
-        <img class="illustration" src="images/blog.svg" alt="feature-pic">
+      <div class="col-lg-12">
+        <h2 class="feature-header">Quick guide to features</h2>
       </div>
-      <div class="col-lg-6" data-aos="fade-left">
-        <h2>Series</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-padding" data-aos="flip-right" data-aos-duration="1000">
+        <a href="Proteus_series/series.html"><img class="illustration" src="images/illustrations/feature1.png" alt="feature-pic"></a>
+        <h3>Series</h3>
         <p>
           Erevna: An exploration of papers through the ages, acknowledging the ground-breaking
           work that has shaped the field, both past and present
         </p>
       </div>
-    </div>
-  </section>
-
-  <section id="feature" class="background-img">
-    <div class="row">
-      <div class="col-lg-6" data-aos="fade-right">
-        <h2>Events</h2>
+      <div class="col-lg-4 col-md-6 col-padding" data-aos="flip-right" data-aos-duration="1000">
+        <a href="#news"><img class="illustration" src="images/illustrations/feature2.jpg" alt="feature-pic"></a>
+        <h3>Events</h3>
         <p>
           Keep an eye out for our new events, from talk series to debates!
         </p>
       </div>
-      <div class="col-lg-6" data-aos="flip-right" data-aos-duration="1000">
-        <img class="illustration" src="images/event.svg" alt="feature-pic">
-      </div>
-    </div>
-  </section>
-
-  <section id="feature">
-    <div class="row">
-      <div class="col-lg-6" data-aos="flip-left" data-aos-duration="1000">
-        <img class="illustration" src="images/opportunities.svg" alt="feature-pic">
-      </div>
-      <div class="col-lg-6" data-aos="fade-left">
-        <h2>Opportunities</h2>
+      <div class="col-lg-4 col-md-6 col-padding" data-aos="flip-right" data-aos-duration="1000">
+        <img class="illustration" src="images/illustrations/feature3.jpg" alt="feature-pic">
+        <h3>Opportunities</h3>
         <p>
           A network of IISER-TVM alumni, spread across the globe
         </p>
@@ -124,135 +122,41 @@
     </div>
   </section>
 
-  <section id="team">
-    <div id="carousel" class="carousel slide" data-ride="false">
-      <div class="carousel-inner">
-        <h2>Our Crew</h2>
-        <!--Shivi-->
-        <div class="carousel-item active">
-          <img src="images/siddharth.png" class="image" alt="crew member"><br>
-          <em class="name">Siddharth Shivanandan</em><br><br>
-          <a href="https://www.instagram.com/shivi109678"><i class="fab fa-instagram fa-2x icon"></i></a>
-          <a href="mailto:siddharth17@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Parth-->
-        <div class="carousel-item">
-          <img src="images/parth.png" class="image" alt="crew member"><br>
-          <em class="name">Parth Ankam</em><br><br>
-          <a href="https://www.instagram.com/parth_ankam"><i class="fab fa-instagram fa-2x icon"></i></a>
-          <a href="mailto:parthankam19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Shreshth-->
-        <div class="carousel-item">
-          <img src="images/Shreshth.png" class="image" alt="crew member"><br>
-          <em class="name">Shreshth Shekhar</em><br><br>
-          <a href="https://www.instagram.com/shreshth_shekhar/?hl=en"><i class="fab fa-instagram fa-2x icon"></i></a>
-          <a href="mailto:shreshthshekhar18@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Shreya-->
-        <div class="carousel-item">
-          <img src="images/shreya.png" class="image" alt="crew member"><br>
-          <em class="name">Shreya Venkatesan</em><br><br>
-          <a href="mailto:shreyavenkatesan19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Sajesh-->
-        <div class="carousel-item">
-          <img src="images/Sajesh.png" class="image" alt="crew member"><br>
-          <em class="name">Sajesh Vijayan</em><br><br>
-          <a href="https://twitter.com/sajeshksv"><i class="fab fa-twitter fa-2x icon"></i></a>
-          <a href="mailto:sajeshksv17@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Abhi-->
-        <div class="carousel-item">
-          <img src="images/abhishek.png" class="image" alt="crew member"><br>
-          <em class="name">Abhishek Raghunanthan</em><br><br>
-          <a href="https://www.instagram.com/abhiskek_r"><i class="fab fa-instagram fa-2x icon"></i></a>
-          <a href="mailto:abhishek17@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Aswathy-->
-        <div class="carousel-item">
-          <img src="images/aswathy.png" class="image" alt="crew member"><br>
-          <em class="name">Aswathy B J</em><br><br>
-          <a href="mailto:aswathy19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--charu-->
-        <div class="carousel-item">
-          <img src="images/charu.png" class="image" alt="crew member"><br>
-          <em class="name">P Charulekha</em><br><br>
-          <a href="https://www.instagram.com/charu_toons/"><i class="fab fa-instagram fa-2x icon"></i></a>
-          <a href="mailto:charumarch1517@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Sneha-->
-        <div class="carousel-item">
-          <img src="images/Sneha.png" class="image" alt="crew member"><br>
-          <em class="name">Sneha P R</em><br><br>
-          <a href="https://www.instagram.com/snehap_r"><i class="fab fa-instagram fa-2x icon"></i></a>
-          <a href="mailto:sneha19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Rito-->
-        <div class="carousel-item">
-          <img src="images/ritobrato.png" class="image" alt="crew member"><br>
-          <em class="name">Ritobrato Chatterjee</em><br><br>
-          <a href="https://www.instagram.com/ritobratochatterjee/?hl=en"><i class="fab fa-instagram fa-2x icon"></i></a>
-          <a href="mailto:letterbox_rc@outlook.com"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Vidya-->
-        <div class="carousel-item">
-          <img src="images/vidyarashmi.png" class="image" alt="crew member"><br>
-          <em class="name">Vidyarashmi Hanehalli</em><br><br>
-          <a href="https://www.instagram.com/vidyarashmihanehalli"><i class="fab fa-instagram fa-2x icon"></i></a>
-          <a href="mailto:vidyarashmi19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Shivam-->
-        <div class="carousel-item">
-          <img src="images/shivam.png" class="image" alt="crew member"><br>
-          <em class="name">Shivam Bhargava</em><br><br>
-          <a href="https://www.instagram.com/shivambhargava"><i class="fab fa-instagram fa-2x icon"></i></a>
-          <a href="mailto:shivam19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Arunima -->
-        <div class="carousel-item">
-          <img src="images/Arunima.png" class="image" alt="crew member"><br>
-          <em class="name">Arunima Mathew</em><br><br>
-          <a href="https://www.instagram.com/nemo_scape"><i class="fab fa-instagram fa-2x icon"></i></a>
-          <a href="mailto:arunima18@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Prajakta-->
-        <div class="carousel-item">
-          <img src="images/prajakta.png" class="image" alt="crew member"><br>
-          <em class="name">Prajakta Bodkhe</em><br><br>
-          <a href="https://www.instagram.com/prajakta1603"><i class="fab fa-instagram fa-2x icon"></i></a>
-          <a href="mailto:prajakta160317@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
-        <!--Chury-->
-        <div class="carousel-item">
-          <img src="images/Chury.png" class="image" alt="crew member"><br>
-          <em class="name">Shubham Chury</em><br><br>
-          <a href="https://www.instagram.com/thepaperbagmask"><i class="fab fa-instagram fa-2x icon"></i></a>
-          <a href="mailto:shubhamchury19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
-        </div>
+  <section id="testimonials" class="background">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="testimonials-head">Hear from others!</h2>
       </div>
-      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <img src="images/patrons/big-lady.png" alt="image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        <em>Prof. S. Murty Srinivasula | <a href="http://faculty.iisertvm.ac.in/beelab/">Profile</a></em>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="images/patrons/big-man.png" alt="image">
+        <p>The bio club is doing a fantastic job in terms of engaging and enlightening the student community at iiser tvm. I look forward to more such events in future</p>
+        <em>Dr. Sadananda Singh | <a href="http://www.iisertvm.ac.in/faculty/nssingh">Profile</a></em>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="images/patrons/child.png" alt="image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <em>Dr. Nishant KT | <a href="http://faculty.iisertvm.ac.in/nishantkt/">Profile</a></em>
+      </div>
     </div>
   </section>
 
   <section id="news">
     <div class="row">
       <div class="col-lg-12">
-        <h2>Keep an eye out for..</h2>
+        <h2>Bulletin Board</h2>
         <p>All events and opportunities at iiser, now at your fingertips!</p>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-4 col-md-6">
-        <img src="images/symposium1.png" alt="symposium" data-aos="flip-right" data-aos-duration="1000">
+        <img class="img-thumbnail" src="images/bulletins/symposium1.png" alt="symposium" data-aos="flip-right" data-aos-duration="1000">
         <h5>SOB Symposium, Varsha 2020</h5>
         <em>Updated on 20.10.2020 | <a href="" data-toggle="modal" data-target="#exampleModal">Read more</a></em>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -269,7 +173,9 @@
                 viverra. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Ultrices vitae auctor eu augue ut lectus. Pulvinar mattis nunc sed blandit libero volutpat. Rhoncus aenean vel elit scelerisque mauris pellentesque
                 pulvinar. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Magna fringilla urna porttitor rhoncus dolor. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Consequat nisl vel pretium lectus quam id leo in. Interdum
                 varius sit amet mattis vulputate. Lobortis feugiat vivamus at augue eget. Commodo quis imperdiet massa tincidunt nunc pulvinar. Augue neque gravida in fermentum et sollicitudin.
-                Et tortor at risus viverra adipiscing at in tellus integer. In hac habitasse platea dictumst vestibulum rhoncus. Lorem mollis aliquam ut porttitor leo. Dignissim sodales ut eu sem integer vitae justo. Malesuada fames ac turpis egestas. Accumsan in nisl nisi scelerisque eu ultrices vitae. Bibendum enim facilisis gravida neque convallis a cras semper. Id neque aliquam vestibulum morbi. Ultrices dui sapien eget mi proin sed libero. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus.
+                Et tortor at risus viverra adipiscing at in tellus integer. In hac habitasse platea dictumst vestibulum rhoncus. Lorem mollis aliquam ut porttitor leo. Dignissim sodales ut eu sem integer vitae justo. Malesuada fames ac turpis
+                egestas. Accumsan in nisl nisi scelerisque eu ultrices vitae. Bibendum enim facilisis gravida neque convallis a cras semper. Id neque aliquam vestibulum morbi. Ultrices dui sapien eget mi proin sed libero. Adipiscing vitae proin
+                sagittis nisl rhoncus mattis rhoncus.
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -280,46 +186,193 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
-        <img src="images/stem-cell-week.png" alt="stem-cell-week" data-aos="flip-right" data-aos-duration="1000">
+        <img class="img-thumbnail" src="images/bulletins/stem-cell-week.png" alt="stem-cell-week" data-aos="flip-right" data-aos-duration="1000">
         <h5>Stem Cell Week</h5>
         <em>Updated on 16.10.2020 | <a href="">Read more</a></em>
       </div>
       <div class="col-lg-4 col-md-6">
-        <img src="images/student-talk1.png" alt="student-talk" data-aos="flip-right" data-aos-duration="1000">
+        <img class="img-thumbnail" src="images/bulletins/student-talk1.png" alt="student-talk" data-aos="flip-right" data-aos-duration="1000">
         <h5>Student talk series</h5>
         <em>Updated on 15.10.2020 | <a href="">Register</a> </em>
       </div>
       <div class="col-lg-4 col-md-6">
-        <img src="images/jc-poster.png" alt="journal club" data-aos="flip-left" data-aos-duration="1000">
+        <img class="img-thumbnail" src="images/bulletins/jc-poster.png" alt="journal club" data-aos="flip-left" data-aos-duration="1000">
         <h5>Journal Club</h5>
         <em>Updated on 10.10.2020</em>
       </div>
       <div class="col-lg-4 col-md-6">
-        <img src="images/poster2.png" alt="symposium" data-aos="flip-left" data-aos-duration="1000">
-        <h5>SOB SYmposium, Varsha 2020</h5>
+        <img class="img-thumbnail" src="images/bulletins/poster2.png" alt="symposium" data-aos="flip-left" data-aos-duration="1000">
+        <h5>SOB Symposium, Varsha 2020</h5>
         <em>Dr. Deepak Nair</em>
       </div>
       <div class="col-lg-4 col-md-6">
-        <img src="images/nobel.png" alt="symposium" data-aos="flip-left" data-aos-duration="1000">
+        <img class="img-thumbnail" src="images/bulletins/nobel.png" alt="symposium" data-aos="flip-left" data-aos-duration="1000">
         <h5>Nobel talk series</h5>
         <em>Updated on 5.10.2020 | <a href="">Read more</a></em>
       </div>
     </div>
   </section>
 
-  <button type="button" class="btn btn-primary" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+  <section id="team" class="background">
+    <div id="carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <h2>Meet the team</h2>
+        <!--Shivi-->
+        <div class="carousel-item active">
+          <img src="images/team/siddharth.png" class="image" alt="crew member"><br>
+          <em class="name">Siddharth Shivanandan</em><br><br>
+          <a href="https://www.instagram.com/shivi109678"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto:siddharth17@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Parth-->
+        <div class="carousel-item">
+          <img src="images/team/parth.png" class="image" alt="crew member"><br>
+          <em class="name">Parth Ankam</em><br><br>
+          <a href="https://www.instagram.com/parth_ankam"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto:parthankam19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Shreshth-->
+        <div class="carousel-item">
+          <img src="images/team/Shreshth.png" class="image" alt="crew member"><br>
+          <em class="name">Shreshth Shekhar</em><br><br>
+          <a href="https://www.instagram.com/shreshth_shekhar/?hl=en"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto:shreshthshekhar18@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Shreya-->
+        <div class="carousel-item">
+          <img src="images/team/shreya.png" class="image" alt="crew member"><br>
+          <em class="name">Shreya Venkatesan</em><br><br>
+          <a href="mailto:shreyavenkatesan19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Sajesh-->
+        <div class="carousel-item">
+          <img src="images/team/Sajesh.png" class="image" alt="crew member"><br>
+          <em class="name">Sajesh Vijayan</em><br><br>
+          <a href="https://twitter.com/sajeshksv"><i class="fab fa-twitter fa-2x icon"></i></a>
+          <a href="mailto:sajeshksv17@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Abhi-->
+        <div class="carousel-item">
+          <img src="images/team/abhishek.png" class="image" alt="crew member"><br>
+          <em class="name">Abhishek Raghunanthan</em><br><br>
+          <a href="https://www.instagram.com/abhiskek_r"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto:abhishek17@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Aswathy-->
+        <div class="carousel-item">
+          <img src="images/team/aswathy.png" class="image" alt="crew member"><br>
+          <em class="name">Aswathy B J</em><br><br>
+          <a href="mailto:aswathy19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--charu-->
+        <div class="carousel-item">
+          <img src="images/team/charu.png" class="image" alt="crew member"><br>
+          <em class="name">P Charulekha</em><br><br>
+          <a href="https://www.instagram.com/charu_toons/"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto:charumarch1517@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Sneha-->
+        <div class="carousel-item">
+          <img src="images/team/Sneha.png" class="image" alt="crew member"><br>
+          <em class="name">Sneha P R</em><br><br>
+          <a href="https://www.instagram.com/snehap_r"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto:sneha19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Rito-->
+        <div class="carousel-item">
+          <img src="images/team/ritobrato.png" class="image" alt="crew member"><br>
+          <em class="name">Ritobrato Chatterjee</em><br><br>
+          <a href="https://www.instagram.com/ritobratochatterjee/?hl=en"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto:letterbox_rc@outlook.com"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Vidya-->
+        <div class="carousel-item">
+          <img src="images/team/vidyarashmi.png" class="image" alt="crew member"><br>
+          <em class="name">Vidyarashmi Hanehalli</em><br><br>
+          <a href="https://www.instagram.com/vidyarashmihanehalli"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto:vidyarashmi19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Shivam-->
+        <div class="carousel-item">
+          <img src="images/team/shivam.png" class="image" alt="crew member"><br>
+          <em class="name">Shivam Bhargava</em><br><br>
+          <a href="https://www.instagram.com/shivambhargava"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto:shivam19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Arunima -->
+        <div class="carousel-item">
+          <img src="images/team/Arunima.png" class="image" alt="crew member"><br>
+          <em class="name">Arunima Mathew</em><br><br>
+          <a href="https://www.instagram.com/nemo_scape"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto:arunima18@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Prajakta-->
+        <div class="carousel-item">
+          <img src="images/team/prajakta.png" class="image" alt="crew member"><br>
+          <em class="name">Prajakta Bodkhe</em><br><br>
+          <a href="https://www.instagram.com/prajakta1603"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto:prajakta160317@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+        <!--Chury-->
+        <div class="carousel-item">
+          <img src="images/team/Chury.png" class="image" alt="crew member"><br>
+          <em class="name">Shubham Chury</em><br><br>
+          <a href="https://www.instagram.com/thepaperbagmask"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto:shubhamchury19@iisertvm.ac.in"><i class="far fa-envelope fa-2x icon"></i></a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
 
   <section id="form">
-    <div class="col-lg-12 contact-section">
+    <div class="col-lg-12">
       <h2>Get in touch</h2>
       <p>
-        Ready to start your journey? Proteus welcomes you to engage with the
-        student community at IISER. Feel free to contact us
+        Ready to start your journey? Proteus welcomes you to join the club and engage with the
+        student community at IISER. Feel free to <a href="Contact-us/contact.html">contact us</a>
       </p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdamxsiDGKTwnwNec6h4N9lvI-efoL1VmqiWWHIBzmSIKOEkg/viewform"><button type="button" class="btn btn-lg btn-outline-success"><i class="fas fa-arrow-right"></i> Join us</button></a>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfx0YxCOYJrNYsleRMf9r-9mSqNrMG2UIOrY-fXhEX78eHiyA/viewform"><button type="button" class="btn btn-lg btn-dark"><i class="fas fa-address-book"></i> Alumni</button></a>
     </div>
   </section>
+
+  <hr>
+  <div class="row" id="share-buttons">
+    <div class="col-lg-12">
+      <h4>Share the page</h4>
+      <!-- Facebook -->
+      <a href="http://www.facebook.com/sharer.php?u=https://proteusiisertvm.github.io/Proteus/" target="_blank">
+        <img class="share-icon" src="images/share-button-icons/facebook.png" alt="Facebook" />
+      </a>
+
+      <!-- Google+ -->
+      <a href="https://plus.google.com/share?url=https://proteusiisertvm.github.io/Proteus/" target="_blank">
+        <img class="share-icon" src="images/share-button-icons/google.png" alt="Google" />
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://proteusiisertvm.github.io/Proteus/" target="_blank">
+        <img class="share-icon" src="images/share-button-icons/linkedin.png" alt="LinkedIn" />
+      </a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/share?url=https://proteusiisertvm.github.io/Proteus/&amp;text=Proteus&amp;hashtags=proteusiisertvm" target="_blank">
+        <img class="share-icon" src="images/share-button-icons/twitter.png" alt="Twitter" />
+      </a>
+    </div>
+  </div>
+  <hr>
+  <br>
+
+  <button type="button" class="btn btn-primary" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
 
   <section id="footer">
     <div class="row">
@@ -331,26 +384,24 @@
         <a href="https://www.facebook.com/proteus.iisertvm"><i class="fab fa-facebook-square icon"></i></a>
       </div>
 
-      <div class="col-md-3">
-        <h3 class="footer-head">Important links</h3>
-        <a class="terms" href="http://iisertvm.ac.in/">IISER Thiruvananthapuram</a><br>
-        <a class="terms" href="http://biology.iisertvm.ac.in/">School of Biology</a>
+      <div class="col-lg-3">
+
       </div>
 
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-12">
         <h3 class="footer-head">Blogs</h3>
         <a class="terms" href="Proteus_blog/blog-2020-10-02/blog.html">Yamanaka Shinya</a><br>
-        <a class="terms" href="">The Synchrotron</a><br>
-        <a class="terms" href="">The Genetic Code</a><br>
+        <a class="terms" href="Proteus_blog/blog-2020-10-20/blog8.html">The Synchrotron</a><br>
+        <a class="terms" href="Proteus_blog/blog-2020-10-16/blog6.html">The Genetic Code</a><br>
         <a class="terms" href="more-posts/more-posts.html">Archives</a><br>
       </div>
 
-      <div class="col-md-3">
-        <h3 class="footer-head">Policies</h3>
-        <a class="terms" href="">Terms</a><br>
-        <a class="terms" href="">Privacy</a><br>
-        <a class="terms" href="">Guidelines</a><br>
+      <div class="col-lg-3 col-md-12">
+        <h3 class="footer-head">Important links</h3>
+        <a class="terms" href="http://www.iisertvm.ac.in/">IISER Thiruvananthapuram</a><br>
+        <a class="terms" href="http://biology.iisertvm.ac.in/">School of Biology</a><br>
         <a class="terms" href="">Acknowledgements</a><br>
+        <a class="terms" href="">Club by-laws</a>
       </div>
 
       <hr>
@@ -358,13 +409,15 @@
       <div class="col-lg-12 div-position">
         <h2 class="footer-repost">Proteus</h2>
         <p>
-          © Proteus, 2020 @iisertvm. All rights reserved.
+          © 2020 | Proteus @iisertvm | All rights reserved.
         </p>
       </div>
   </section>
 
   <!-- AOS libarary js cdn -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <script type="text/javascript" src="index.js" charset="utf-8"></script>
 

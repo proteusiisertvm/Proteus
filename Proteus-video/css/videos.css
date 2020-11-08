@@ -45,3 +45,12 @@
   background: #ddd;
   color: black;
 }
+
+#infoCont {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#infoCont:hover {
+  opacity: 1;
+}
