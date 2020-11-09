@@ -33,8 +33,9 @@ body {
 }
 
 .logo {
+  box-sizing: border-box;
   border-radius: 100%;
-  width: 35%;
+  width: 32%;
   margin: 0 10px 10px 0;
 }
 
@@ -94,7 +95,7 @@ body {
 
 .parallax {
     /* the background image used */
-    background-image: url("../images/backgrounds/website2-mod.png");
+    background-image: url("../images/backgrounds/website3.png");
     /* Full height of page */
     height: 100%;
     /* creating parallax effect */
@@ -111,9 +112,6 @@ body {
   font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
   margin: 5% 0
-}
-.background {
-  background-color: #d9ecf2;
 }
 
 #feature h3 {
@@ -158,6 +156,13 @@ body {
   );
 }
 
+.background1 {
+  background-image: url("../images/backgrounds/sec-waves1.png");
+  /* creating parallax effect */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .testimonials-head {
   font-size: 3.6rem;
   font-family: 'Montserrat', sans-serif;
@@ -166,15 +171,16 @@ body {
 
 #testimonials p {
   font-family: 'Open Sans', sans-serif;
-}
-
-#testimonials h4 {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.2rem;
 }
 
 #testimonials img {
   width: 50%;
   padding: 10%;
+}
+
+#testimonials img:hover {
+  opacity: 0.7;
 }
 
 /* News section */
@@ -215,6 +221,13 @@ body {
   );
 }
 
+.background2 {
+  background-image: url("../images/backgrounds/sec-waves2.png");
+  /* creating parallax effect */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 #team h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.6rem;
@@ -238,6 +251,7 @@ body {
 #team .icon {
   color: #000;
   margin: 0 10px;
+  background-color:
 }
 
 #team .icon:hover {
@@ -272,14 +286,40 @@ body {
 
 #share-buttons h4 {
   display: inline-block;
-  margin-right: 560px;
+  margin-right: 60%;
   font-family: 'Montserrat', sans-serif;
 }
 
-.share-icon {
-  width: 4%;
-  margin: 0 10px;
+#share-buttons .fab {
+  padding: 10px;
+  width: 50px;
+  margin: 0 10px 0 0;
+  text-align: center;
   border-radius: 100%;
+}
+
+#share-buttons a {
+  text-decoration: none;
+}
+
+#share-buttons .fab:hover {
+  opacity: 0.7;
+}
+
+/* Facebook bg color*/
+#share-buttons .fa-facebook-f {
+  background-color: #3B5998;
+  color: white;
+}
+/* Twitter bg color*/
+#share-buttons .fa-twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+/* LinkedIn bg color */
+#share-buttons .fa-linkedin-in {
+  background-color: #0e76a8;
+  color: white;
 }
 
 /* footer section */

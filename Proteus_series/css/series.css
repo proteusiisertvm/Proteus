@@ -4,6 +4,7 @@ html,body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -22,6 +23,10 @@ p {
   border-radius: 100%;
   width: 25%;
   margin: 0 10px 8px 0;
+}
+
+.logo:hover {
+  opacity: 0.7;
 }
 
 .nav-icon {
