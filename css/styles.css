@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    padding: 0 2%;
-    overflow-x: hidden;
+  padding: 0 2%;
+  overflow-x: hidden;
 }
 
 /* back to top button */
@@ -23,26 +23,18 @@ body {
 /* title section */
 #navigation-bar {
   background-color: #fff;
-  padding: 3% 6%;
-}
-
-#navigation-bar .navbar-brand {
-  font-family: 'David Libre', serif;
-  font-size: 2rem;
-  color: #000;
+  padding: 3% 6% 1%;
 }
 
 .logo {
   box-sizing: border-box;
   border-radius: 100%;
-  width: 32%;
-  margin: 0 10px 10px 0;
+  width: 70%;
 }
 
 .logo:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
-
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
 }
@@ -69,12 +61,6 @@ body {
 /* Title section */
 #title {
   padding: 5% 8%;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 calc(100% - 2vw)
-  );
 }
 
 .page-head {
@@ -85,8 +71,8 @@ body {
 
 .sub-head {
   font-family: 'Open Sans', sans-serif;
-  padding: 3% 45% 3% 1%;
-  font-size: 1.3rem;
+  padding: 2% 42% 3% 1%;
+  font-size: 1.2rem;
 }
 
 #title button {
@@ -148,12 +134,6 @@ body {
 #testimonials {
   text-align: center;
   padding: 5% 8% 8%;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 calc(100% - 3vw)
-  );
 }
 
 .background1 {
@@ -209,20 +189,20 @@ body {
   width: 70%;
 }
 
+.archives:hover {
+  box-sizing: border-box;
+  opacity: 0.7;
+  width: 80%;
+}
+
 /* Crew section */
 #team {
   text-align: center;
   padding: 5% 8%;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 calc(100% - 2vw)
-  );
 }
 
 .background2 {
-  background-image: url("../images/backgrounds/sec-waves2.png");
+  background-image: url("../images/backgrounds/seccov2.png");
   /* creating parallax effect */
   background-attachment: fixed;
   background-size: cover;

@@ -6,10 +6,6 @@ html,body {
     overflow-x: hidden;
 }
 
-p {
-  color: grey;
-}
-
 /* Title section and
 navigation bar  */
 #container-position {
@@ -26,11 +22,14 @@ navigation bar  */
 }
 
 .logo {
-  border: 2px solid green;
   border-radius: 100%;
   width: 25%;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.logo:hover {
+  opacity: 0.7;
 }
 
 .nav-icon {
@@ -45,7 +44,7 @@ navigation bar  */
 /* Title section */
 #page-title {
   padding: 10% 8%;
-  background-image: url("../images/wallpaper.jpg");
+  text-align: center;
 }
 
 .heading1 {
@@ -66,11 +65,19 @@ navigation bar  */
   line-height: 2;
 }
 
+#all-posts h2 {
+  text-align: center;
+}
+
 /* Footer section */
 #footer {
   text-align: left;
   background-color: #4c4c4c;
   padding: 3% 8%;
+}
+
+#footer p {
+  color: grey;
 }
 
 .icon {
