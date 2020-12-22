@@ -4,7 +4,7 @@
 }
 
 #navigation-bar .navbar-brand-size {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .navbar-brand {
@@ -48,6 +48,30 @@
 #myBtn:hover {
   background-color: #555;
 }
+
+/* random tries */
+.column {
+  float: left;
+  width: 50%;
+  padding: 2px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#title {
+  text-align: center;
+  padding: 12% 15% 0 15%;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+}
+
 
 /* Featured posts*/
 #hero-image {
@@ -94,8 +118,8 @@
 
 .text-block {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 150px;
+  left: 150px;
   background-color: #000;
   color: #fff;
   padding: 5px 20px;
@@ -103,7 +127,8 @@
 
 .post-img {
   padding: 0 0 2%;
-  width: 80%;
+
+  width: 50%;
 }
 
 .article-intro{
