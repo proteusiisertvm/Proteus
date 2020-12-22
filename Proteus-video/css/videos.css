@@ -4,6 +4,75 @@
   height: auto;
 }
 
+
+#container-position {
+  padding: 0 ;
+}
+
+#navigation-bar {
+  text-align: center;
+}
+
+#website-title {
+  font-family: 'David Libre', serif;
+  font-size: 2rem;
+}
+
+.logo {
+  border-radius: 100%;
+  width: 25%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-icon {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.nav-opacity {
+  opacity: 0.8;
+}
+
+#title {
+  text-align: left;
+  padding: 12% 15% 0 15%;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+}
+
+.sub-head {
+  margin: 2% 0;
+  color: grey;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.12rem;
+}
+
+#title i{
+  color: #000;
+  padding: 5% 4% 0 0;
+  font-size: 1.5rem;
+}
+
+#blog-post {
+  padding: 5% 10%;
+}
+
+#blog-post .icon {
+  color: #000;
+}
+
+.article {
+  padding: 0 5%;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.7;
+}
+
+
 /* Add some content at the bottom of the video/page */
 .content {
   position: fixed;
