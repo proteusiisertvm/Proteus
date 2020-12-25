@@ -1,14 +1,20 @@
 /* navigation bar features */
 #navigation-bar {
-  padding: 4% 10% 1%;
+  padding: 4% 10% 0;
 }
 
 #navigation-bar .navbar-brand-size {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
-.navbar-brand {
+.navbar-extra {
+  font-size: 1.4rem;
   font-family: 'Merriweather Sans', sans-serif;
+  transition: transform .2s;
+}
+
+.navbar-extra:hover {
+  transform: scale(1.5);
 }
 
 .nav-item-spacing {
@@ -49,91 +55,49 @@
   background-color: #555;
 }
 
-/* random tries */
-.column {
-  float: left;
-  width: 50%;
-  padding: 2px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 #title {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 12% 15% 0 15%;
+  padding: 0 10%;
 }
 
-.heading {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
+/* members section*/
+#members {
+  padding: 2% 10%;
 }
 
-
-/* Featured posts*/
-#hero-image {
-  margin: 2% 10%;
+.row-spacing {
+  margin: 8% auto;
 }
 
-.display-4 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.head-img {
-  background-image: url("../images/featured-img/feature1.png");
-}
-
-#hero-image a {
-  text-decoration: none;
-  color: #fff;
-}
-
-#hero-image a:hover {
-  text-decoration: underline;
-}
-
-#featured-posts {
-  margin: 3% 10%;
-}
-
-.card-title {
-  color: #2ec1ac;
-}
-
-/* All general posts */
-#general-posts {
-  margin: 1% 10% 15%;
-}
-
-.post {
-  padding: 3% 0;
-}
-
-.container {
-  position: relative;
-}
-
-.text-block {
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  background-color: #000;
-  color: #fff;
-  padding: 5px 20px;
-}
-
-.post-img {
-  padding: 0 0 2%;
-
+.member-pic {
+  margin: 15%;
+  border: 2px solid;
+  border-radius: 100%;
   width: 50%;
 }
 
-.article-intro{
+.intro {
+  margin: 5% auto;
   color: grey;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open-Sans', sans-serif;
+  line-height: 2;
+}
+
+.icon2 {
+  margin:  0 10px;
+  text-decoration: none;
+  color: grey;
+  transition: transform .2s;
+}
+
+.icon2:hover {
+  color: #81b214;
+  transform: scale(1.5);
+}
+
+.align {
+  padding: 0 5px;
 }
 
 /* footer section */
