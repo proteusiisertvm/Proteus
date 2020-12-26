@@ -3,12 +3,13 @@
   padding: 4% 10% 1%;
 }
 
-#navigation-bar .navbar-brand-size {
-  font-size: 2rem;
+.navbar-brand-style {
+  font-family: 'Merriweather Sans', sans-serif;
+  transition: transform .2s;
 }
 
-.navbar-brand {
-  font-family: 'Merriweather Sans', sans-serif;
+.navbar-brand-style:hover {
+  transform: scale(1.5);
 }
 
 .nav-item-spacing {
