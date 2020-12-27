@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Proteus</title>
+  <title>Welcome address | Proteus</title>
 
   <!-- favicon -->
   <link rel="icon" href="images/proteus-favicon.ico">
@@ -20,30 +20,34 @@
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@500&family=Merriweather:wght@700&family=Open+Sans&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
-</head>
+  <!-- javascript and jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+</head>
 <body>
   <section id="navigation-bar">
     <div class="container-fluid" id="container-position">
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light nav-opacity">
-        <a class="navbar-brand" id="website-title" href=""><img class="logo" src="images/proteus-logo.png" alt="logo">Proteus</a>
+        <a class="navbar-brand" id="website-title" href="../index.html"><img class="logo" src="images/proteus-logo.png" alt="logo">Proteus</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item nav-icon">
-              <a class="nav-link" href="../../index.html">
+              <a class="nav-link" href="../index.html">
                 <strong>Home</strong>
               </a>
             </li>
             <li class="nav-item nav-icon">
-              <a class="nav-link" href="../../Proteus_series/series.html">
+              <a class="nav-link" href="../blog-site/blog.html">
                 <strong>Series</strong>
               </a>
             </li>
             <li class="nav-item nav-icon">
-              <a class="nav-link" href="../../Contact-us/contact.html">
+              <a class="nav-link" href="../Contact-us/contact.html">
                 <strong>Contact us</strong>
               </a>
             </li>
@@ -51,53 +55,41 @@
         </div>
     </div>
   </section>
-
-  <div class="row">
-    <div class="col-lg-12">
-      <video loop id="myVideo">
-        <source src="media/welcome.mp4" type="video/mp4">
-        Oopsie, your browser does not support HTML5 video!
-      </video>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="content" id="infoCont">
-        <h1>Welcome address</h1>
-        <p>
-          Dr. N Sadananda Singh provides the welcome address to the science community at
-          IISER Thriuvananthapuram and beyond about the nascent club from the school of
-          biology, Proteus. <em>Come join us in our exploration of 'life'</em>
-        </p>
-        <button id="myBtn" onclick="myFunction()">Play</button>
-        <a href="../index.html"><button id="return-btn">Return</button></a>
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <section id="title">
+  <section id="welcome-video">
     <div class="row">
-      <h1 class="heading">Video Transcription</h1>
+      <div class="col-md-8">
+        <video width="100%" controls>
+          <source src="media/welcome.mp4" type="video/mp4">
+          Oopsie, your browser does not support HTML5 video!
+        </video>
+      </div>
+      <div class="col-md-4">
+        <div class="content">
+          <h1>Welcome address</h1>
+          <p>
+            Dr. N Sadananda Singh provides the welcome address to the science community at
+            IISER Thriuvananthapuram and beyond about the nascent club from the school of
+            biology, Proteus. <em>Come join us in our exploration of 'life'</em>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="blog-post">
+  <section id="video-transcription">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-md-12">
+        <h2>Video transcription</h2>
         <p class="article">
-          Dear students and my dear faculty colleagues of the school of Biology, for some time now, the school of Biology wanted to have a Biology club. Today I'm going to introduce our biology club named Proteus. The club is comprised of 11 members for the time being, including Biology major students, BS-MS students, IPh.D., and Ph.D. students of the SoB. The club has planned many exciting and interesting activities weekly, monthly and fortnightly activities. These activities will be informed to you by the club very soon. This club will be all about discussing, learning, and promoting Sciences, especially biological sciences. We have discussed to make the activities and contributors to these activities to be age and valiant, and gender-balanced. I request your full support to make this a successful and interesting place to be.
-    Thank you all very much.
-      </p>
-    </div>
-
+          Dear students and my dear faculty colleagues of the school of Biology, for some time now, the school of Biology wanted to have a Biology club. Today I'm going to introduce our biology club named Proteus. The club is comprised of 11
+          members for the time being, including Biology major students, BS-MS students, IPh.D., and Ph.D. students of the SoB. The club has planned many exciting and interesting activities weekly, monthly and fortnightly activities. These
+          activities will be informed to you by the club very soon. This club will be all about discussing, learning, and promoting Sciences, especially biological sciences. We have discussed to make the activities and contributors to these
+          activities to be age and valiant, and gender-balanced. I request your full support to make this a successful and interesting place to be.
+          Thank you all very much.
+        </p>
+      </div>
 
   <!-- javascript -->
   <script src="videos.js" type="text/javascript" charset="utf-8"></script>
-
 </body>
-
 </html>

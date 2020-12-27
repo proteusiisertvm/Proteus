@@ -1,12 +1,13 @@
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-  max-width: 100%;
-  height: auto;
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-
+/* Navigation bar */
 #container-position {
-  padding: 0 ;
+  padding: 0;
 }
 
 #navigation-bar {
@@ -34,92 +35,35 @@
   opacity: 0.8;
 }
 
-#title {
-  text-align: left;
-  padding: 12% 15% 0 15%;
+/* Content */
+#welcome-video {
+  padding: 15% 10% 2%;
 }
 
-.heading {
+#welcome-video h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
 }
 
-.sub-head {
-  margin: 2% 0;
-  color: grey;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.12rem;
+#welcome-video p {
+  line-height: 2;
+  font-family: 'Open-Sans', sans-serif;
 }
 
-#title i{
-  color: #000;
-  padding: 5% 4% 0 0;
-  font-size: 1.5rem;
-}
-
-#blog-post {
-  padding: 5% 10%;
-}
-
-#blog-post .icon {
-  color: #000;
-}
-
-.article {
-  padding: 0 5%;
-  text-align: justify;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.7;
-}
-
-
-/* Add some content at the bottom of the video/page */
 .content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+  margin: 4% 0;
+  text-align: justify;
 }
 
-/* Style the button used to pause/play the video */
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
+#video-transcription {
+  padding: 2% 10%;
+  text-align: justify;
 }
 
-#myBtn:hover {
-  background: #ddd;
-  color: black;
+#video-transcription h2 {
+  font-family: 'Montserrat',sans-serif;
 }
 
-/* Added a button to return to home page */
-#return-btn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#return-btn:hover {
-  background: #ddd;
-  color: black;
-}
-
-#infoCont {
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-#infoCont:hover {
-  opacity: 1;
+#video-transcription p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2;
 }
