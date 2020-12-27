@@ -24,6 +24,7 @@ body {
 
 /* title section */
 #navigation-bar {
+  text-align: center;
   background-color: #fff;
   padding: 3% 6% 1%;
 }
