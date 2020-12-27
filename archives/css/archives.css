@@ -43,7 +43,7 @@ navigation bar  */
 
 /* Title section */
 #page-title {
-  padding: 10% 8%;
+  padding: 10% 8% 4%;
   text-align: center;
 }
 
@@ -67,35 +67,9 @@ navigation bar  */
 
 #all-posts h2 {
   text-align: center;
-  /*text-align: left;*/
-}
-/*
-.button {
-  margin: 10px 30px 0 0;
-}
-
-.row-spacing {
-  margin: 5% auto;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 300px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-
+  font-size: 2.6rem;
+  font-style: italic;
+  margin: 20px 0 80px 0;
 }
 
 /* Footer section */
