@@ -224,12 +224,13 @@ body {
 .image {
   width: 15%;
   margin: 3%;
-  transition: width 2s ease;
+  transition: transform .2s;
 }
 
 .image:hover {
-  width: 20%;
+  transform: scale(1.4);
 }
+
 .name{
   color: #000;
   font-size: 1.2rem;
