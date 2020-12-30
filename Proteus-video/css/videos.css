@@ -35,7 +35,7 @@ html, body {
   opacity: 0.8;
 }
 
-/* Content */
+/* welcome address */
 #welcome-video {
   padding: 15% 10% 2%;
 }
@@ -65,5 +65,25 @@ html, body {
 
 #video-transcription p {
   font-family: 'Open Sans', sans-serif;
+  line-height: 2;
+}
+
+/* testimonials */
+#testimonials {
+  padding: 4% 10%;
+}
+
+#testimonials h1, h2, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  margin: 2% 0;
+  padding: 10px 0;
+  border: solid 2px red;
+  border-radius: 20px;
+}
+
+.para {
+  font-family: 'Open-Sans', sans-serif;
   line-height: 2;
 }
