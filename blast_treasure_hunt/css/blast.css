@@ -1,0 +1,71 @@
+html, body {
+  overflow-x: hidden;
+}
+
+.bgColor {
+  background-color: #f7f7e8;
+}
+
+#title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 4% 15%;
+}
+
+#entryTicket {
+  margin: 2% 15%;
+  border: 2px solid red;
+  border-radius: 15px;
+  padding: 10px 10px;
+}
+
+#entryTicket h3 {
+  padding: 20px 0;
+}
+
+#entryTicket p {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 1.4rem;
+}
+
+.blastPoster {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.impObject {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+#prelims {
+  margin: 2% 15%;
+  border: 2px solid green;
+  border-radius: 15px;
+  padding: 10px 10px;
+}
+
+#prelims h3 {
+  padding: 20px 0;
+}
+
+#prelims p {
+  font-family: 'Open-Sans',sans-serif;
+  font-size: 1.4rem;
+}
+
+#footer {
+  padding: 20px 0;
+  text-align: center;
+}
