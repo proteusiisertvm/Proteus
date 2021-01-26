@@ -1,0 +1,18 @@
+html,body {
+    overflow-x: hidden;
+}
+
+.bgColor {
+  background-color: #f7f7e8;
+}
+
+#title {
+  text-align: center;
+  margin: 4% 15%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#result {
+  margin: 2% 10%;
+  font-family: 'Open-Sans', sans-serif;
+}
