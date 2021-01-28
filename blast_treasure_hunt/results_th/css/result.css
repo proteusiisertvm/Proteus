@@ -3,7 +3,9 @@ html,body {
 }
 
 .bgColor {
-  background-color: #f7f7e8;
+  background-image: url("../../images/bg2.jpg");
+  background-repeat: repeat-y;
+  background-size: contain;
 }
 
 #title {
