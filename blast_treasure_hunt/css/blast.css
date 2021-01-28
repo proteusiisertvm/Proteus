@@ -37,8 +37,9 @@ html, body {
   margin: 0 auto;
 }
 
-mark {
+em {
   font-size: 1.4rem;
+  background-color: yellow;
 }
 
 #prelims {
