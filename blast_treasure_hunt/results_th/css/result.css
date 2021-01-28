@@ -14,7 +14,12 @@ html,body {
   font-family: 'Montserrat', sans-serif;
 }
 
+#navbar {
+  margin: 0 12%;
+}
+
 #result {
   margin: 2% 10%;
   font-family: 'Open-Sans', sans-serif;
+  font-size: 1.2rem;
 }
