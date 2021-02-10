@@ -84,14 +84,14 @@ navigation bar  */
 }
 
 #blog-post img {
-  border: 2px solid #000;
   display: block;
-  margin: 4% auto;
+  margin: 4% 3.5% 0;
   width: 60%;
 }
 
 .figure-legend {
-  padding: 0 20%;
+  padding: 0 8%;
+  color: #000
 }
 
 .line {
@@ -212,5 +212,8 @@ navigation bar  */
 }
 
 .darkmode--activated h3 {
+  color: #fff;
+}
+.darkmode--activated .figure-legend {
   color: #fff;
 }
