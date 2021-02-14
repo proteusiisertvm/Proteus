@@ -63,6 +63,28 @@ em {
   font-size: 1.4rem;
 }
 
+#qualified_teams {
+  margin: 2% 15%;
+  border: 4px solid hotpink;
+  border-radius: 15px;
+  padding: 10px 10px;
+  background-color: #fff;
+}
+
+#qualified_teams h3 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+#qualified_teams h4 {
+  font-family: 'Open-Sans', sans-serif;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  margin: 10px;
+}
+
 #footer {
   padding: 20px 0;
   text-align: center;
