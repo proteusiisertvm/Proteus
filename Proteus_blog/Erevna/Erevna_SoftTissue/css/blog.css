@@ -82,6 +82,18 @@ navigation bar  */
   font-family: 'Open Sans', sans-serif;
   line-height: 1.7;
 }
+ol {
+  padding: 0 8%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  font-size: 0.95rem;
+}
+ul {
+  padding: 0 8%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  font-size: 0.95rem;
+}
 
 #blog-post img {
   border: 2px solid #000;
@@ -208,6 +220,12 @@ navigation bar  */
 
 /* darkmode adjustments */
 .darkmode--activated .article {
+  color: #fff;
+}
+.darkmode--activated ol {
+  color: #fff;
+}
+.darkmode--activated ul {
   color: #fff;
 }
 
