@@ -85,6 +85,23 @@ em {
   margin: 10px;
 }
 
+#blast_finale {
+  margin: 2% 15%;
+  border: 4px solid #845ec2;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+#blast_finale h3 {
+  padding: 20px 0;
+}
+
+#blast_finale p {
+  font-family: 'Open-Sans',sans-serif;
+  font-size: 1.4rem;
+}
+
 #footer {
   padding: 20px 0;
   text-align: center;
