@@ -8,7 +8,6 @@ html,body {
 
 /* Title section and
 navigation bar  */
-
 #container-position {
   padding: 0 ;
 }
@@ -39,7 +38,6 @@ navigation bar  */
 }
 
 /* content */
-
 #title {
   text-align: left;
   padding: 12% 15% 0 15%;
@@ -90,10 +88,6 @@ navigation bar  */
   width: 60%;
 }
 
-.figure-legend {
-  padding: 0 20%;
-}
-
 .line {
   border-style: none;
   border-top-style: dotted;
@@ -117,14 +111,12 @@ navigation bar  */
 }
 
 /* Comment section */
-
 #comment-box {
   padding: 5% 15%;
   font-family: 'Open Sans', sans-serif;
 }
 
 /* More posts */
-
 #more-posts {
   padding: 5% 5%;
 }
@@ -147,7 +139,6 @@ navigation bar  */
 }
 
 /* Footer section */
-
 #footer {
   text-align: left;
   background-color: #4c4c4c;
