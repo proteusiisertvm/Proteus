@@ -214,3 +214,8 @@ navigation bar  */
 .darkmode--activated h3 {
   color: #fff;
 }
+.darkmode--activated .figure-legend {
+
+  color: #fff;
+
+}
