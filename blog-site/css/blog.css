@@ -65,7 +65,7 @@
 }
 
 .head-img {
-  background-image: url("../images/featured-img/feature1.png");
+  background-image: url("../images/featured-img/feature2.png");
 }
 
 /* All general posts */
@@ -75,15 +75,6 @@
 
 .post {
   padding: 3% 0;
-}
-
-.text-block {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  background-color: #000;
-  color: #fff;
-  padding: 5px 20px;
 }
 
 .post-img {
