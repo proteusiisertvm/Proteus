@@ -210,9 +210,6 @@ navigation bar  */
 .darkmode--activated .article {
   color: #fff;
 }
-.darkmode--activated ol {
-  color: #fff;
-}
 .darkmode--activated ul {
   color: #fff;
 }
