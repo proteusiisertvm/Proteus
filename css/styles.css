@@ -106,7 +106,7 @@ body {
     /* the background image used */
     background-image: url("../images/backgrounds/website3.png");
     /* Full height of page */
-    height: 100%;
+    max-width: 100%;
     /* creating parallax effect */
     background-attachment: fixed;
     background-size: cover;
@@ -162,6 +162,7 @@ body {
 
 .background1 {
   background-image: url("../images/backgrounds/sec-waves1.png");
+  max-width: 100%;
   /* creating parallax effect */
   background-attachment: fixed;
   background-size: cover;
@@ -238,6 +239,7 @@ ol{
 
 .background2 {
   background-image: url("../images/backgrounds/seccov2.png");
+  max-width: 100%;
   /* creating parallax effect */
   background-attachment: fixed;
   background-size: cover;
