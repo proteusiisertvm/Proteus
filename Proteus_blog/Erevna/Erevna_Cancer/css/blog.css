@@ -8,7 +8,6 @@ html,body {
 
 /* Title section and
 navigation bar  */
-
 #container-position {
   padding: 0 ;
 }
@@ -117,14 +116,12 @@ navigation bar  */
 }
 
 /* Comment section */
-
 #comment-box {
   padding: 5% 15%;
   font-family: 'Open Sans', sans-serif;
 }
 
 /* More posts */
-
 #more-posts {
   padding: 5% 5%;
 }
@@ -147,7 +144,6 @@ navigation bar  */
 }
 
 /* Footer section */
-
 #footer {
   text-align: left;
   background-color: #4c4c4c;
