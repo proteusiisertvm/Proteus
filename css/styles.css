@@ -98,10 +98,6 @@ body {
   padding: 10px 2px;
 }
 
-#title button {
-  margin: 20px 6px;
-}
-
 .parallax {
     /* the background image used */
     background-image: url("../images/backgrounds/website3.png");
@@ -214,17 +210,6 @@ body {
   width: 70%;
 }
 
-ol{
-  display: block;
-  list-style-type: decimal;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 40px;
-  text-align: left;
-}
-
 .archives:hover {
   box-sizing: border-box;
   opacity: 0.7;
@@ -297,49 +282,6 @@ ol{
   margin: 2%;
 }
 
-/* Share website buttons */
-#share-buttons {
-  padding: 0 8%;
-}
-
-#share-buttons h4 {
-  display: inline-block;
-  margin-right: 60%;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#share-buttons .fab {
-  padding: 10px;
-  width: 50px;
-  margin: 0 10px 0 0;
-  text-align: center;
-  border-radius: 100%;
-}
-
-#share-buttons a {
-  text-decoration: none;
-}
-
-#share-buttons .fab:hover {
-  opacity: 0.7;
-}
-
-/* Facebook bg color*/
-#share-buttons .fa-facebook-f {
-  background-color: #3B5998;
-  color: white;
-}
-/* Twitter bg color*/
-#share-buttons .fa-twitter {
-  background-color: #55ACEE;
-  color: white;
-}
-/* LinkedIn bg color */
-#share-buttons .fa-linkedin-in {
-  background-color: #0e76a8;
-  color: white;
-}
-
 /* footer section */
 #footer {
   text-align: left;
@@ -357,11 +299,6 @@ ol{
   color: #81b214;
 }
 
-#footer h2 {
-  color: #fff;
-  font-size: 2.2rem;
-}
-
 .footer-head {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
@@ -377,24 +314,4 @@ ol{
 
 .terms:hover {
   color: #81b214;
-}
-
-.div-position {
-  margin: 30px auto;
-}
-
-#footer hr {
-  border-top: 1px solid white;
-  width: 97%;
-  margin-top: 50px;
-}
-
-.footer-repost {
-  font-family: 'David Libre', serif;
-  font-size: 2rem;
-  color: #fff;
-}
-
-#footer p {
-  color: grey;
 }
