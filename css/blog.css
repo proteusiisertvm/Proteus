@@ -1,0 +1,142 @@
+/* navigation bar features */
+#navigation-bar {
+  padding: 4% 10% 1%;
+}
+
+.navbar-brand-style {
+  font-family: 'Merriweather Sans', sans-serif;
+  transition: transform .2s;
+}
+
+.navbar-brand-style:hover {
+  transform: scale(1.5);
+}
+
+.nav-item-format {
+  margin: 0 20px;
+}
+
+.tabs {
+  padding: 2px;
+  text-align: center;
+}
+
+.tabs a {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 4px;
+  color: #000;
+}
+
+.tabs a:hover {
+  color: #fff;
+  background-color: green;
+  text-decoration: none;
+}
+
+/* back to top button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  outline: none;
+  background-color: #2ec1ac;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* Hero image*/
+#hero-image {
+  margin: 2% 10%;
+}
+
+.display-4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.head-img {
+  background-image: url("../images/blog_main/featured-img/feature2.png");
+}
+
+/* All general posts */
+#general-posts {
+  margin: 1% 10% 15%;
+}
+
+.post {
+  padding: 3% 0;
+}
+
+.post-img {
+  margin-top: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.series-intro{
+  background-color: #ffd56b;
+  border-radius: 10px;
+  padding: 4%;
+  margin: 4% 4% 10%;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.article-list-head {
+  background-color: #81b214;
+  border-radius: 5px;
+  color: #fff;
+  padding: 4px;
+  margin-right: 54%;
+}
+
+/* footer section */
+#footer {
+  text-align: left;
+  background-color: #4c4c4c;
+  padding: 3% 8%;
+}
+
+.icon {
+  margin: 20px 20px 0 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.icon:hover {
+  color: #81b214;
+}
+
+#footer h2 {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.footer-head {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.terms {
+  text-decoration: none;
+  color: #ecf4f3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.terms:hover {
+  color: #81b214;
+}

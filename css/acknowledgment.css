@@ -1,0 +1,58 @@
+/* normal tag selectors */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Title section and navigation bar  */
+#container-position {
+  padding: 0;
+}
+
+#navigation-bar {
+  text-align: center;
+}
+
+#website-title {
+  font-family: 'David Libre', serif;
+  font-size: 2rem;
+}
+
+.logo {
+  border-radius: 100%;
+  width: 25%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-icon {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.nav-opacity {
+  opacity: 0.8;
+}
+
+/* Content */
+#title {
+  padding: 12% 0 0;
+}
+
+.heading {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+}
+
+#content {
+  padding: 5% 20%;
+}
+
+.article {
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2;
+}
