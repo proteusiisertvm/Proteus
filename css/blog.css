@@ -17,8 +17,8 @@
 }
 
 .tabs {
-  padding: 2px;
-  text-align: center;
+  display: block;
+  margin: 2px auto
 }
 
 .tabs a {
