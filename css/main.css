@@ -1,8 +1,5 @@
 html {
   scroll-behavior: smooth;
-}
-
-body {
   overflow-x: hidden;
 }
 
@@ -76,14 +73,13 @@ body {
 }
 
 .page-head {
-  color: #000;
   font-family: 'Brawler';
   font-size: 8rem;
 }
 
 .sub-head {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 2% 18% 2% 1%;
   text-align: justify;
 }
@@ -91,11 +87,11 @@ body {
 .highlights {
   font-family: 'Open-Sans',sans-serif;
   background-color: #fff;
+  border: 2px solid black;
   opacity: 0.8;
-  border: 1px solid black;
   border-radius: 10px;
   margin: 12px 0;
-  padding: 10px 2px;
+  padding: 10px;
 }
 
 .parallax {
@@ -314,4 +310,10 @@ body {
 
 .terms:hover {
   color: #81b214;
+}
+
+.iiser_logo {
+  width: 40%;
+  display: block;
+  margin: 20px auto;
 }
