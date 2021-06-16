@@ -213,9 +213,17 @@ ul {
   color: #fff;
 }
 
+.iiser_logo {
+  width: 40%;
+  display: block;
+  margin: 20px auto;
+}
+
 #footer p {
   color: grey;
 }
+
+
 
 /* darkmode adjustments */
 .darkmode--activated .article {

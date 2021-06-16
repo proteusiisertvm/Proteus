@@ -140,3 +140,9 @@
 .terms:hover {
   color: #81b214;
 }
+
+.iiser_logo {
+  width: 40%;
+  display: block;
+  margin: 20px auto;
+}
