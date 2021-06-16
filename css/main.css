@@ -60,11 +60,6 @@ html {
 .nav-item-style {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  transition: transform .2s;
-}
-
-.nav-item-style:hover {
-  transform: scale(1.5);
 }
 
 /* Title section */
