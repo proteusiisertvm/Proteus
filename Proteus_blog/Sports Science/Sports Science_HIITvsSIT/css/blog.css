@@ -226,6 +226,13 @@ p.p1 {
   color: grey;
 }
 
+.iiser_logo {
+  width: 40%;
+  display: block;
+  margin: 20px auto;
+}
+
+
 /* darkmode adjustments */
 .darkmode--activated .article {
   color: #fff;
