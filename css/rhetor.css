@@ -1,0 +1,47 @@
+html {
+  overflow-x: hidden;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+#content {
+  background-color: #e1f1dd;
+  text-align: center;
+  padding: 8% 15%;
+}
+
+#speakers {
+  text-align: left;
+  margin: 5% 0;
+}
+
+#sponsors {
+  text-align: center;
+  padding: 2% 15%;
+  background-color: #e1f1dd;
+}
+
+.sponser-img {
+  width: 80%;
+  display: block;
+  margin: 4% auto;
+  padding: 4% 40px;
+}
+
+#footer {
+  text-align: center;
+  padding: 2% 15%;
+  background-color: #94d0cc;
+}
+
+#footer a {
+  color: #fff;
+  padding: 0 5px;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #e1f1dd;
+}
