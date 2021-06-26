@@ -33,7 +33,7 @@ html {
 .logo {
   box-sizing: border-box;
   border-radius: 100%;
-  width: 70%;
+  width: 100%;
 }
 
 .logo:hover {
@@ -76,8 +76,8 @@ html {
 .sub-head {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3rem;
-  padding: 2% 18% 2% 1%;
-  text-align: justify;
+  padding: 2% 18% 2% 18%;
+  text-align: center;
 }
 
 .highlights {
@@ -142,18 +142,10 @@ html {
   box-shadow: 5px 3px 50px grey;
 }
 
-/* testimonials section */
-#testimonials {
-  text-align: center;
-  padding: 5% 8% 8%;
-}
-
-.background1 {
-  background-image: url("../images/backgrounds/sec-waves1.png");
-  max-width: 100%;
-  /* creating parallax effect */
-  background-attachment: fixed;
-  background-size: cover;
+.iiser2_logo {
+  width: 70%;
+  display: block;
+  margin: 20px auto;
 }
 
 
