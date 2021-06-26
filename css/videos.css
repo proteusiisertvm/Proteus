@@ -63,3 +63,43 @@ h1, h2, h4 {
   border: solid 2px red;
   border-radius: 20px;
 }
+
+/* footer section */
+#footer {
+  text-align: left;
+  background-color: #4c4c4c;
+  padding: 3% 8%;
+}
+
+.icon {
+  margin: 20px 20px 0 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.icon:hover {
+  color: #81b214;
+}
+
+.footer-head {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.terms {
+  text-decoration: none;
+  color: #ecf4f3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.terms:hover {
+  color: #81b214;
+}
+
+.iiser_logo {
+  width: 40%;
+  display: block;
+  margin: 20px auto;
+}
