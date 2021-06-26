@@ -68,6 +68,10 @@
   background-image: url("../images/blog_main/featured-img/feature2.png");
 }
 
+.head2-img {
+  background-image: url("../images/blog_main/featured-img/feature6.png");
+}
+
 /* All general posts */
 #general-posts {
   margin: 1% 10% 15%;
