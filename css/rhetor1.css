@@ -161,60 +161,6 @@ html {
 }
 
 
-/* News section */
-#news {
-  text-align: center;
-  padding: 10% 8%;
-}
-
-#news .col-lg-12 {
-  padding: 2%;
-}
-
-#news h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.6rem;
-}
-
-#news p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;
-  color: #000;
-}
-
-#news img {
-  margin: 8% auto;
-  width: 70%;
-}
-
-.archives:hover {
-  box-sizing: border-box;
-  opacity: 0.7;
-  width: 80%;
-}
-
-
-/* Forms section */
-#form{
-  text-align: center;
-  padding: 10% 15%;
-}
-
-#form h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.6rem;
-}
-
-#form p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.3rem;
-  margin: 40px 0 40px 0;
-}
-
-#form button {
-  margin: 2%;
-}
-
 /* footer section */
 #footer {
   text-align: left;

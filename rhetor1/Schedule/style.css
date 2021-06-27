@@ -1,31 +1,4 @@
-#news {
-  text-align: center;
-  padding: 10% 8%;
-}
-
-#news .col-lg-12 {
-  padding: 2%;
-}
-
-#news h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 5.6rem;
-}
-
-#news p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.3rem;
-  color: #000;
-}
-
-
-
-
-.archives:hover {
-  box-sizing: border-box;
-  opacity: 0.7;
-  width: 80%;
-}
+/* title section */
 #navigation-bar {
   text-align: right;
   background-color: #fff;
@@ -43,12 +16,6 @@
   animation: shake 0.5s;
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
-}
-
-.iiser2_logo {
-  width: 70%;
-  display: block;
-  margin: 20px auto;
 }
 
 @keyframes shake {
@@ -70,6 +37,40 @@
   padding-right: 0.5rem;
 }
 
+/* Title section */
+#title {
+  padding: 5% 9%;
+  text-align: center;
+}
+
+.page-head {
+  font-family: 'Brawler';
+  font-size: 8rem;
+}
+
+.sub-head {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  padding: 2% 18% 2% 18%;
+  text-align: center;
+}
+
+.highlights {
+  font-family: 'Open-Sans',sans-serif;
+  background-color: #fff;
+  border: 2px solid black;
+  opacity: 0.8;
+  border-radius: 10px;
+  margin: 12px 0;
+  padding: 10px;
+}
+
+.iiser2_logo {
+  width: 70%;
+  display: block;
+  margin: 20px auto;
+}
+
 .parallax {
     /* the background image used */
     background-image: url("../../images/rhetor/rhetor2.png");
@@ -80,20 +81,6 @@
     background-size: cover;
 }
 
-
-:root {
-  font-size: 13px;
-  font-family: "Source Sans Pro", sans-serif;
-  line-height: 1.618;
-  font-weight: 400;
-}
-
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
-}
 
 .main-timeline{ position: relative; }
 .main-timeline:before,
@@ -216,7 +203,7 @@
 }
 .main-timeline .circle .img{
     vertical-align: initial;
-    border-radius: 50%;
+    border-radius: 200%;
 }
 .main-timeline .content{
     display: table;
@@ -435,6 +422,7 @@
         text-align: center;
     }
 }
+
 /* footer section */
 #footer {
   text-align: left;
@@ -443,7 +431,6 @@
 }
 
 .icon {
-  margin: 20px 20px 0 0;
   color: #fff;
   font-size: 1.5rem;
 }
@@ -473,28 +460,4 @@
   width: 40%;
   display: block;
   margin: 20px auto;
-}
-
-
-.options {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-.options button {
-  margin-left: 0.5rem;
-}
-
-.light {
-  background-color: #f9f9f9;
-  color: #1a1a1a;
-}
-.light p {
-  color: rgba(26, 26, 26, 0.5);
-}
-.light .item {
-  background: #f5f5f5;
-}
-.light .svg-text {
-  fill: rgba(0, 0, 0, 0.1);
 }
