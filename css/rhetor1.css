@@ -248,3 +248,7 @@ html {
   display: block;
   margin: 20px auto;
 }
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
