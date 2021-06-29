@@ -130,11 +130,11 @@ text {
 }
 
 .svg-text {
-  fill: #545a64;
+  fill: white;
 }
 
 .svg-masked-text {
-  fill: white;
+  fill: #000000;
 }
 
 image {
