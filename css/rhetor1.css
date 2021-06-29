@@ -1,7 +1,55 @@
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+
+/* Crew section */
+#team {
+  text-align: center;
+  padding: 5% 8%;
+}
+
+.background2 {
+  background-image: url("../images/backgrounds/rhetor1.png");
+  max-width: 100%;
+  /* creating parallax effect */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#team h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.6rem;
+}
+
+.image {
+  width: 15%;
+  margin: 3%;
+  transition: transform .2s;
+}
+
+.image:hover {
+  transform: scale(1.4);
+}
+
+.name{
+  color: #000;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#team .icon {
+  color: #000;
+  margin: 0 10px;
+  background-color:
+}
+
+#team .icon:hover {
+  color: #81b214;
+}
+
 
 /* back to top button */
 #myBtn {
