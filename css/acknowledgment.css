@@ -6,6 +6,18 @@ html, body {
   overflow-x: hidden;
 }
 
+#sponsors {
+  text-align: center;
+  padding: 2% 15%;
+}
+
+.sponser-img {
+  width: 80%;
+  display: block;
+  margin: 4% auto;
+  padding: 4% 40px;
+}
+
 /* Title section and navigation bar  */
 #container-position {
   padding: 0;
