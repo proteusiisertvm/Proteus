@@ -90,6 +90,12 @@ html {
   padding: 10px;
 }
 
+.iiser2_logo {
+  width: 70%;
+  display: block;
+  margin: 20px auto;
+}
+
 .parallax {
     /* the background image used */
     background-image: url("../images/rhetor/rhetor2.png");
@@ -142,11 +148,7 @@ html {
   box-shadow: 5px 3px 50px grey;
 }
 
-.iiser2_logo {
-  width: 70%;
-  display: block;
-  margin: 20px auto;
-}
+
 
 
 /* News section */
