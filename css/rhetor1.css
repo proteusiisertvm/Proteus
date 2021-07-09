@@ -43,9 +43,6 @@ font-size: 80px;
   padding: 20px;
 }
 
-.image:hover {
-  transform: scale(1.2);
-}
 
 .name{
   color: #000;
