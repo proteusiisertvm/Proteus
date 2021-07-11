@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Proteus</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="../../../images/proteus-favicon.ico">
+
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="../../../css/blogpost.css">
+
+  <!-- bootsrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- HTML comment box -->
+  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0">
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@500&family=Merriweather:wght@700&family=Open+Sans&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Javascript and Jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <section id="navigation-bar">
+  <div class="container-fluid" id="container-position">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light nav-opacity">
+      <a class="navbar-brand" id="website-title" href="https://www.instagram.com/proteus.iisertvm/?hl=en" target="_blank"><img class="logo" src="../../../images/proteus-logo.png" alt="logo">Proteus</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item nav-icon">
+            <a class="nav-link" href="../../../index.html">
+              <strong>Home</strong>
+            </a>
+          </li>
+          <li class="nav-item nav-icon">
+            <a class="nav-link" href="../../../blog-site/blog.html">
+              <strong>Series</strong>
+            </a>
+          </li>
+          <li class="nav-item nav-icon">
+            <a class="nav-link" href="../../../Contact-us/contact.html">
+              <strong>Contact Us</strong>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </div>
+</section>
+
+
+  <section id="title">
+    <div class="row">
+      <h1 class="heading">Predicting the Unpredictable</h1>
+    </div>
+    <div class="row">
+      <p class="sub-head">
+        July 12, 2021 | 2 min read
+      </p>
+    </div>
+    <div class="row">
+      <img src="images/Cover.png" alt="cover-image" class="cover-img">
+    </div>
+  </section>
+
+  <section id="blog-post">
+    <div class="row">
+      <div class="col-lg-8">
+        <p class="article">
+          Injuries can have a tremendous impact on the sports industry. It affects the mental and physical state of the injured player and reduces the overall performance of the team. It can also lead to financial consequences in the form of the cost associated with medical care, recovery and rehabilitation, and the loss of earnings gained from the popularity of the injured player. The consequences of sports injuries led researchers, coaches and managers to focus on injury forecasting.
+          <br><br>
+          Sports injuries are an outcome of the complex interplay of several factors. Due to the interactions of multiple intrinsic and extrinsic risk factors, a comprehensive model is necessary to achieve the challenging task of injury prediction. A significant drawback of the recent studies conducted in this regard is that they are mono-dimensional. They consider just one parameter at a time to forecast the risk of injuries' ignoring the complex patterns underlying the extracted data. Such models are practically ineffective due to their very low precision. In contrast, a multidimensional model that is entirely data-driven can offer much higher accuracy.
+         <br><br>
+          Several studies have proved the relationship between training workload and injury risk. A finding from the study of Gabbett et al. is that a player whose workloads are increased above certain thresholds faces a relatively higher injury risk.
+         <br><br>
+         The first step in injury forecasting is collecting a substantial amount of relevant data. Alessio Rossi (a sports science researcher) et al. monitored the physical activity of 26 Italian football players for 23 weeks. They initially collected data about personal features such as age, body mass index, height, role on the field etc., of players.
+         <br><br>
+         During training sessions, participants were supposed to wear a tight top equipped with GPS devices integrated with an accelerometer, a gyroscope and a 3D digital compass.
+         <br><br>
+         The researchers extracted 12 features (kinetic, metabolic and mechanical) which provided information about the training workload from the GPS data obtained. Another crucial feature considered was the number of previous injuries the players suffered up to that session.
+         <br><br>
+         Based on the GPS data features, the researchers constructed a training dataset consisting of 55 features and 952 examples. Each example refers to a single player's training session and consists of a vector of features describing both the player's features and his recent workload, including the current training session and an injury label, indicating whether or not the player gets injured in the next game or training session.
+         <br><br>
+         For their analysis, the researchers used a machine learning technique called decision tree classifiers. First, the collected data is split into two parts—training and test data. Next, the algorithm has to learn about the relationship between the outcome of interest (injury or not) and the contributing features from the training data. The test data to which the algorithm has not been exposed can then be used to test the prediction capacity of the algorithm.
+         <br><br>
+         Two important parameters that decide the quality of the forecasting model are precision and recall. Precision indicates how reliable the forecaster is: the higher the precision, the higher the player's probability of getting injured. The recall is the ratio of injuries the forecaster detected to the total number of injuries. A forecaster with higher precision is capable of predicting a higher fraction of injuries.
+        <br><br>
+        A comparison of this multidimensional approach's performance based on decision tree classifiers with other forecasters proves that the performance of the multidimensional model is appreciably higher.
+        <br><br>
+        Machine learning techniques such as deep neural networks can give even greater accuracy. The exact rules used by this technique are not known to the data scientist. Due to this reason, such models are not practical as they are not easy to interpret. In addition to knowing when a player might get hurt, coaches need to understand why they will get hurt. Hence the challenge faced by data scientists while developing injury forecasters is to achieve a balance between accuracy and interpretability.
+        <br><br>
+
+      </p>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="row">
+        <div class="card bg-light mb-3 ml-5" style="width: 18rem;">
+          <h5 class="card-header">About This Author</h5>
+          <div class="card-body">
+            <p>Dea Vincent is a Batch 20  BS-MS student at IISER TVM</p>
+            <a href="https://instagram.com/dea_vincent20?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram icon"></i></a>
+            <a href="mailto:deavincent20@iisertvm.ac.in" target="_blank"><i class="far fa-envelope icon"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card bg-light mb-3 ml-5" style="width: 18rem;">
+          <h5 class="card-header">Sources And Links</h5>
+          <div class="card-body">
+            <ol>
+              <li><a class="card-link" href="https://www.nature.com/articles/d41586-021-00818-1" target="_blank">Predicting sports injuries with an algorithm | Nature</a></li>
+              <br>
+              <li><a class="card-link" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0201264" target="_blank">Effective injury forecasting in soccer with GPS training data and machine learning | PLOS</a></li>
+              <br>
+              <li><a class="card-link" href="https://pubmed.ncbi.nlm.nih.gov/22323001/" target="_blank">Relationship between running loads and soft-tissue injury in elite team sport athletes | NCBI</a></li>
+              <br>
+              <li><a class="card-link" href="https://link.springer.com/article/10.1186/s40634-021-00346-x" target="_blank">Machine learning methods in sport injury prediction and prevention: a systematic review | Springer</a></li>
+              <br>
+
+              <a href="https://www.instagram.com/p/CMCd3k0hwsx/" target="_blank"><i class="fab fa-instagram icon"></i></a>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+      <img src="images/A1.png" alt="picture">
+        <p class="article">
+          <em><strong>Fig 1. Interpretation of the multi-dimensional injury forecaster.<br></strong>(a) The six injury rules extracted from DT. For each rule we show the range of values of every feature, its frequency (Freq) and accuracy (Acc). (b) A schematic visualization of decision tree. Black boxes are decision nodes, green boxes are leaf nodes for class No-Injury, red boxes are leaf nodes for class injury.
+            <a target="_blank" href="https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pone.0201264/1/pone.0201264.g004.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20210711%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20210711T200444Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=6e1252ef27bd60ff059e8c64db82e51f273e5e66c2ef69f086e2af1f784c62d1607fc039547ac7b10248f65bd48b69cd8cca0771cd66fe63f1d8f4219669b1f50c36e0bca962304355f7a43fe985a1fa08e3e9588aff81c5e695823a76ff5113c060e1044988607addf50ad231e042c37b576262ef5adf953b0da42e8df8f5ef3fa70fbb09c27353c07baa7e1d40edd711c17ba274f38b36c0f491444b88af60760a1074592025c863c3622f4e15f4e57b6f1b2ea0094c71a18b7d5376a3224e071a2f82133a1c65f61a0c39a4419608d84132992d05d5708e4ef0fdb7465dedb30b2522630dbf1c976649bbeb010c7e3fe69edb92041466eb8aa6a5c3be1285">Source</i></a></em>
+
+            </p>
+    </div>
+
+    <div class="row">
+      <img src="" alt="picture">
+    </div>
+
+    </section>
+
+  <hr class="line">
+
+  <section id="comment-box">
+    <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+  </section>
+
+  <hr class="line">
+
+  <section id="more-posts">
+    <div class="row">
+      <div class="col-md-6">
+        <a href="../../Sports Science/Sports Science_Unpredictable/blog.html" target="_blank"><img src="../../Z_Preview/Mourning.png" alt="posts"></a>
+        <h3>A Fortuitous Mistake that Saved Lives-The invention of the first implantable pacemaker</h3>
+        <p>July 12, 2021 | 1 min read </p>
+      </div>
+      <div class="col-md-6">
+        <a href="../../Dark Biology/DarkBio_Project/blog.html" target="_blank"><img src="../../Z_Preview/SoftTissue.png" alt="posts"></a>
+        <h3>Project Coast</h3>
+        <p>July 12, 2021 | 3 min read </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="row">
+      <div class="col-lg-3 col-md-12">
+        <h2 style="color: #fff; font-size: 2.2rem;">Find us on</h2>
+        <a target="_blank" href="https://www.youtube.com/channel/UCl2xFz0fNma-cW679jgjE0A"><i class="fab fa-youtube icon"></i></a>
+        <a target="_blank" href="https://www.instagram.com/proteus.iisertvm/?hl=en"><i class="fab fa-instagram icon"></i></a>
+        <a target="_blank" href="https://twitter.com/proteusiisertvm"><i class="fab fa-twitter icon"></i></a>
+        <a target="_blank" href="https://www.facebook.com/proteus.iisertvm"><i class="fab fa-facebook-square icon"></i></a>
+      </div>
+      <div class="col-lg-3">
+        <h3 class="footer-head">Share the page</h3>
+        <a target="_blank" class="terms" href="http://www.facebook.com/sharer.php?u=https://proteusiisertvm.github.io/Proteus/" target="_blank">Facebook</a><br>
+        <a target="_blank" class="terms" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://proteusiisertvm.github.io/Proteus/" target="_blank">LinkedIn</a><br>
+        <a target="_blank" class="terms" href="https://twitter.com/share?url=https://proteusiisertvm.github.io/Proteus/&amp;text=Proteus&amp;hashtags=proteusiisertvm" target="_blank">Twitter</a>
+      </div>
+      <div class="col-lg-3 col-md-12">
+        <h3 class="footer-head">Blogs</h3>
+        <a target="_blank" class="terms" href="../../Anekdota/Anekdota_Human Soul/blog.html">Weight of The Human Soul</a><br>
+        <a target="_blank" class="terms" href="../../Anthropoid/Anthropoid_Personality/blog.html">Do Animals Have Personalities</a><br>
+        <a target="_blank" class="terms" href="../../Erevna/Erevna_Mammoth/blog12.html">Gene Time Bomb Hurt Mammoths</a><br>
+        <a target="_blank" class="terms" href="../../../archives/archives.html">Archives</a><br>
+      </div>
+      <div class="col-lg-3 col-md-12">
+        <h3 class="footer-head">Quick links</h3>
+        <a target="_blank" class="terms" href="http://www.iisertvm.ac.in/">IISER Thiruvananthapuram</a><br>
+        <a target="_blank" class="terms" href="http://biology.iisertvm.ac.in/">School of Biology</a><br>
+        <a target="_blank" class="terms" href="Acknowledgements/page.html">Acknowledgements</a><br>
+      </div>
+      <hr style="border-top: 1px solid #fff; width: 97%; margin-top: 50px">
+    </div>
+    <div class="row">
+      <div class="col-lg-8" style="margin: 30px auto; display: inline-block;">
+        <h2 style="font-family: 'David-Libre'; font-size: 2rem; color: #fff;">Proteus</h2>
+        <p style="color: grey;">Made with ❤ and a bit of code</p>
+      </div>
+      <div class=" col-lg-4">
+        <a target="_blank" href="https://www.iisertvm.ac.in/"><img class="iiser_logo" src="../../../images/iiser_logo2.png" alt="IISER Thiruvananthapuram logo"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Javascript cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <!--HAS TO BE ABOVE THE OTHER JS SCRIPT-->
+
+  <script src="../../../js/blog.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
