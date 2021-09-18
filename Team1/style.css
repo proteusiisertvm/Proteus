@@ -31,7 +31,7 @@ body {
 }
 
 .team-container {
-  padding: 0 30px;
+  padding: 0 100px;
   box-sizing: border-box;
   max-width: 1400px;
   width: 100%;
@@ -60,6 +60,7 @@ body {
 .person-title {
   color: #fff;
   font-size: 2em;
+  margin-top: 15px;
 }
 .person-desc {
   color: rgba(255, 255, 255, 0.2);

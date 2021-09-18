@@ -1,14 +1,14 @@
 const persons = [
   {
-    name: "Simarpreet Kaur",
-    photo: "../images/members/Simar.png",
-    title: "Developer",
+    name: "Vidyarashmi Hanehalli",
+    photo: "../images/members1/Vidyarashmi.jpg",
+    title: "President",
     bio:
       "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",
     social: {
-      facebook: "#",
-      twitter: "https://twitter.com/knyttneve",
-      linkedin: "#"
+
+    instagram: "https://www.instagram.com/vidyarashmihanehalli",
+    envelope: "https://www.gmail.com/vidyarashmi19@iisertvm.ac.in"
     }
   },
   {
