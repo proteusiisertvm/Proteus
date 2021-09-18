@@ -21,16 +21,16 @@ class Footer extends HTMLElement {
         </div>
         <div class="col-lg-3 col-md-12">
           <h3 class="footer-head">Blogs</h3>
-          <a target="_blank" class="terms" href="/Proteus_blog/Anekdota/Anekdota_Human Soul/blog.html">Weight of The Human Soul</a><br>
-          <a target="_blank" class="terms" href="/Proteus_blog/Anthropoid/Anthropoid_Personality/blog.html">Do Animals Have Personalities</a><br>
-          <a target="_blank" class="terms" href="/Proteus_blog/Erevna/Erevna_Mammoth/blog12.html">Gene Time Bomb Hurt Mammoths</a><br>
-          <a target="_blank" class="terms" href="/archives/archives.html">Archives</a><br>
+          <a target="_blank" class="terms" href="/Proteus/Proteus_blog/Anekdota/Anekdota_Human Soul/blog.html">Weight of The Human Soul</a><br>
+          <a target="_blank" class="terms" href="/Proteus/Proteus_blog/Anthropoid/Anthropoid_Personality/blog.html">Do Animals Have Personalities</a><br>
+          <a target="_blank" class="terms" href="/Proteus/Proteus_blog/Erevna/Erevna_Mammoth/blog12.html">Gene Time Bomb Hurt Mammoths</a><br>
+          <a target="_blank" class="terms" href="/Proteus/archives/archives.html">Archives</a><br>
         </div>
         <div class="col-lg-3 col-md-12">
           <h3 class="footer-head">Quick links</h3>
           <a target="_blank" class="terms" href="http://www.iisertvm.ac.in/">IISER Thiruvananthapuram</a><br>
           <a target="_blank" class="terms" href="http://biology.iisertvm.ac.in/">School of Biology</a><br>
-          <a target="_blank" class="terms" href="/Acknowledgements/page.html">Acknowledgements</a><br>
+          <a target="_blank" class="terms" href="/Proteus/Acknowledgements/page.html">Acknowledgements</a><br>
         </div>
         <hr style="border-top: 1px solid #fff; width: 97%; margin-top: 50px">
       </div>
@@ -40,7 +40,7 @@ class Footer extends HTMLElement {
           <p style="color: grey;">Made with ❤ and a bit of code</p>
         </div>
         <div class=" col-lg-4">
-          <a target="_blank" href="https://www.iisertvm.ac.in/"><img title="IISER Thiruvananthapuram website" class="iiser_logo" src="/images/iiser_logo2.png" alt="IISER Thiruvananthapuram logo"></a>
+          <a target="_blank" href="https://www.iisertvm.ac.in/"><img title="IISER Thiruvananthapuram website" class="iiser_logo" src="/Proteus/images/iiser_logo2.png" alt="IISER Thiruvananthapuram logo"></a>
         </div>
       </div>
     </section>`;
