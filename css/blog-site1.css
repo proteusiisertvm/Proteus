@@ -30,13 +30,13 @@ body {
   font-family: var(--body-font);
   color: var(--body-color);
   background-image: linear-gradient(blue, purple, white);
-  /* background-image: url(https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80);*/
+  background-image: url("website3.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   /*background-blend-mode: color-burn;*/
-  /*background-color: #cccccc;
-*/  display: flex;
+  background-color: #cccccc;
+  display: flex;
 /*  justify-content: center;
   align-items: center;
   flex-direction: column;
