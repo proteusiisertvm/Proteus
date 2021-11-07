@@ -29,8 +29,8 @@ img {
 body {
   font-family: var(--body-font);
   color: var(--body-color);
-  background-image: linear-gradient(blue, purple, white);
-  background-image: url("website3.png");
+  background-image: linear-gradient(#385cef,#7547db, white);
+  /*background-image: url("website3.png");*/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
