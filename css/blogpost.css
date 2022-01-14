@@ -102,7 +102,13 @@ ul {
 }
 
 .figure-legend {
-  padding: 0 20%;
+  /*display : block;
+  margin-left: inherit;
+  margin-right: auto;
+  padding-left: 40%;
+  width: 100%;
+*/
+  padding-left: 5%;
 }
 
 .line {
