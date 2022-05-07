@@ -1,11 +1,8 @@
-
-
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 * {
   outline: none;
   box-sizing: content-box;
-} 
+}
 
 html {
   box-sizing: content-box;
@@ -359,7 +356,7 @@ body:before {
   margin-bottom: 30px;
 }
 .main-blog {
-  background-image: url("../blog1_images/sports.gif"); 
+  background-image: url("../blog1_images/Erevna.gif");
   background-size: 100%;
   background-position-x: 0px;
   background-color: #31abbd;
@@ -417,7 +414,7 @@ body:before {
 }
 
 .author-img {
-  
+
   width: 52px;
   height: 52px;
   border: 1px solid rgba(255, 255, 255, 0.75);
@@ -605,8 +602,7 @@ video {
 }
 .show .main-header,
 .show .main-blogs,
-.show .small-header,
-.show .videos {
+.show .small-header {
   display: none;
 }
 
@@ -616,7 +612,7 @@ video {
      object-fit: cover;
   transition: 0.3s;
 }
-.video-stream:hover .video-js .vjs-big-play-button {
+.video-stream:hover .-js .vjs-big-play-button {
   opacity: 1;
 }
 

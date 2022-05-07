@@ -44,7 +44,7 @@ body {
   flex-direction: column;
 */  padding: 1em 2em;
   width: 100%;
-  height: 100vh;*/
+  height: 100vh;
   overflow: hidden;
 }
 body:before {
@@ -377,7 +377,7 @@ body:before {
 .main-blog + .main-blog {
   margin-left: 20px;
   width: 35%;
-  background-image: url(https://c0.anyrgb.com/images/1020/945/venice-beach-2018-outdoors-sport-men-jumping-desert-sunset-extreme-sports-one-person-action.jpg);
+  background-image: url(2.jpg);
   background-color: unset;
   background-position-x: 0;
   background-size: 139%;
