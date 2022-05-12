@@ -5,7 +5,7 @@
 * {
   outline: none;
   box-sizing: content-box;
-} 
+}
 
 html {
   box-sizing: content-box;
@@ -334,7 +334,7 @@ body:before {
   font-size: 24px;
   font-weight: 500;
   color: #fff;
-  margin: 30px 0 20px;
+  margin: 30px 0 20px
 }
 
 .main-blogs {
@@ -359,14 +359,14 @@ body:before {
   margin-bottom: 30px;
 }
 .main-blog {
-  background-image: url("../blog1_images/anekdota.gif"); 
+  background-image: url("../blog1_images/anekdota.gif");
   background-size: 100%;
   background-position-x: 0px;
   background-color: #31abbd;
   display: flex;
   flex-direction: column;
   width: 65%;
-  padding: 30px;
+  padding: 38px;
   border-radius: 20px;
   align-self: stretch;
   overflow: hidden;
@@ -417,7 +417,7 @@ body:before {
 }
 
 .author-img {
-  
+
   width: 52px;
   height: 52px;
   border: 1px solid rgba(255, 255, 255, 0.75);
