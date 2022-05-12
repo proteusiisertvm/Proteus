@@ -352,6 +352,7 @@ body:before {
 }
 .main-blog__title {
   font-size: 25px;
+/*  display : flex; */
   max-width: 12ch;
   font-weight: 600;
   letter-spacing: 1px;
@@ -363,8 +364,8 @@ body:before {
   background-size: 100%;
   background-position-x: 0px;
   background-color: #31abbd;
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+/*  flex-direction:;*/
   width: 65%;
   padding: 38px;
   border-radius: 20px;
@@ -516,6 +517,7 @@ body:before {
   padding: 20px 20px 0px;
   display: inline-flex;
   position: relative;
+  color: white;
 }
 .video-by:before {
   content: "";
