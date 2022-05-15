@@ -5,7 +5,7 @@
 * {
   outline: none;
   box-sizing: content-box;
-} 
+}
 
 html {
   box-sizing: content-box;
@@ -359,7 +359,7 @@ body:before {
   margin-bottom: 30px;
 }
 .main-blog {
-  background-image: url("../blog1_images/sciensations.gif"); 
+  background-image: url("../blog1_images/sciensations.gif");
   background-size: 100%;
   background-position-x: 0px;
   background-color: #31abbd;
@@ -417,7 +417,7 @@ body:before {
 }
 
 .author-img {
-  
+
   width: 52px;
   height: 52px;
   border: 1px solid rgba(255, 255, 255, 0.75);
@@ -501,7 +501,7 @@ body:before {
   background-color: var(--video-bg);
   z-index: 9;
   position: relative;
-  display: -webkit-box;
+  display: flex;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
@@ -542,7 +542,7 @@ body:before {
   right: 8px;
 }
 .video:hover video {
-  transform: scale(1.6);
+  transform: scale(1.05);
   transform-origin: center;
 }
 .video:hover .video-time {
