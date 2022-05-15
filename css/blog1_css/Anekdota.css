@@ -522,7 +522,7 @@ body:before {
 }
 .video-by:before {
   content: "";
-  background-color: #22b07d;
+  background-color: #252836;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -531,7 +531,7 @@ body:before {
   right: 5px;
 }
 .video-by.offline:before {
-  background-color: #ff7551;
+  background-color: #252836;
 }
 .video-time {
   position: absolute;
