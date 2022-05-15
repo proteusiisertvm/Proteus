@@ -116,13 +116,13 @@ body:before {
   font-weight: 600;
 }
 .sidebar-link:hover:nth-child(2n+1) svg, .sidebar-link.is-active:nth-child(2n+1) svg {
-  background: #ff7551;
+  background: #ad058c;
 }
 .sidebar-link:hover:nth-child(2n) svg, .sidebar-link.is-active:nth-child(2n) svg {
-  background: #32a7e2;
+  background: #510d9e;
 }
 .sidebar-link:hover:nth-child(2n+3) svg, .sidebar-link.is-active:nth-child(2n+3) svg {
-  background: #6c5ecf;
+  background: #ad058c;
 }
 .sidebar.collapse {
   width: 90px;
