@@ -553,7 +553,7 @@ body:before {
   z-index: 10;
 }
 .video:hover .video-by {
-  opacity: 0;
+  opacity: 1;
 }
 .video-author {
   position: absolute;
