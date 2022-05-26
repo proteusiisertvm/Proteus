@@ -353,10 +353,10 @@ body:before {
   font-weight: 600;
   letter-spacing: 1px;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .main-blog {
-  background-image: url("../blog1_images/Miracle_biology.gif");
+  background-image: url("../blog1_images/Miracle Biology.gif");
   background-size: 100%;
   background-position-x: 0px;
   background-color: #31abbd;
@@ -465,6 +465,11 @@ body:before {
 .seperate.video-seperate {
   background-color: var(--body-color);
 }
+
+.fit-picture {
+    width: 250px;
+}
+
 
 .videos {
   display: grid;
