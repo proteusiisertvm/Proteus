@@ -498,7 +498,7 @@ body:before {
   color: #fff;
   font-size: 16px;
   line-height: 1.4em;
-  padding: 12px 20px 0;
+  padding: 12px 20px 10px;
   overflow: hidden;
   background-color: var(--video-bg);
   z-index: 9;
