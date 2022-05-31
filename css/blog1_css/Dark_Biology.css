@@ -319,7 +319,7 @@ body:before {
 }
 
 .main-header {
-  font-size: 30px;
+  font-size: 40px;
   color: #fff;
   font-weight: 700;
   padding-bottom: 20px;
@@ -362,7 +362,7 @@ body:before {
   background-image: url("../blog1_images/d.gif");
   background-size: 100%;
   background-position-x: 0px;
-  background-color: #31abbd;
+  background-color: #1f1d2b;
   display: flex;
   flex-direction: column;
   width: 65%;
