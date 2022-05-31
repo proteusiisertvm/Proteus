@@ -393,8 +393,8 @@ body:before {
 }
 @media screen and (max-width: 905px) {
   .main-blog, .main-blog + .main-blog {
-    width: 50%;
-    padding: 30px;
+    width: 15%;
+    padding: 20px;
   }
   .main-blog {
     background-size: cover;
