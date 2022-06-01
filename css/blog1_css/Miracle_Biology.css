@@ -114,6 +114,7 @@ body:before {
 .sidebar-link:hover, .sidebar-link.is-active {
   color: #fff;
   font-weight: 600;
+  text-decoration: none;
 }
 .sidebar-link:hover:nth-child(2n+1) svg, .sidebar-link.is-active:nth-child(2n+1) svg {
   background: #ba1e2b;
@@ -491,6 +492,11 @@ body:before {
   overflow: hidden;
   transition: 0.4s;
 }
+a:hover {
+  color:#fff; 
+  text-decoration:none !important; 
+  cursor:pointer;  
+}
 .video-wrapper {
   position: relative;
 }
@@ -500,7 +506,7 @@ body:before {
   line-height: 1.4em;
   padding: 12px 20px 10px;
   overflow: hidden;
-  background-color: var(--video-bg);
+  /*background-color: var(--video-bg);*/
   z-index: 9;
   position: relative;
   display: flex;

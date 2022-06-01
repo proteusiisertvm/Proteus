@@ -117,6 +117,7 @@ body:before {
 .sidebar-link:hover, .sidebar-link.is-active {
   color: #fff;
   font-weight: 600;
+  text-decoration: none;
 }
 .sidebar-link:hover:nth-child(2n+1) svg, .sidebar-link.is-active:nth-child(2n+1) svg {
   background: #f0691a;
@@ -488,6 +489,11 @@ body:before {
   border-radius: 20px;
   overflow: hidden;
   transition: 0.4s;
+}
+a:hover {
+  color:#fff; 
+  text-decoration:none !important; 
+  cursor:pointer;  
 }
 .video-wrapper {
   position: relative;
