@@ -81,23 +81,107 @@ body {
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-  background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url("../New Team/pictures/archisha.png");
 }
 .card:nth-child(2):before {
-  background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url("../New Team/pictures/vidya.png");
 }
 .card:nth-child(3):before {
-  background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url("../New Team/pictures/avani.png");
 }
 .card:nth-child(4):before {
-  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url("../New Team/pictures/srinanditha.png");
 }
 .card:nth-child(5):before {
-  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url("../New Team/pictures/aaquilah.png");
 }
 .card:nth-child(6):before {
-  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url("../New Team/pictures/aarul.png");
 }
+.card:nth-child(7):before {
+  background-image: url("../New Team/pictures/akhila.png");
+}
+.card:nth-child(8):before {
+  background-image: url("../New Team/pictures/shwetha.png");
+}
+.card:nth-child(9):before {
+  background-image: url("../New Team/pictures/adithya.png");
+}
+.card:nth-child(10):before {
+  background-image: url("../New Team/pictures/jerin.png");
+}
+
+.card:nth-child(11):before {
+  background-image: url("../New Team/pictures/keerthana.png");
+}
+.card:nth-child(12):before {
+  background-image: url("../New Team/pictures/sarthak.png");
+}
+.card:nth-child(13):before {
+  background-image: url("../New Team/pictures/krishna.png");
+}
+.card:nth-child(14):before {
+  background-image: url("../New Team/pictures/ruchi.png");
+}
+.card:nth-child(15):before {
+  background-image: url("../New Team/pictures/umashankar.png");
+}
+.card:nth-child(16):before {
+  background-image: url("../New Team/pictures/anusha.png");
+}
+.card:nth-child(17):before {
+  background-image: url("../New Team/pictures/kasi.png");
+}
+.card:nth-child(18):before {
+  background-image: url("../New Team/pictures/kannanunni.png");
+}
+.card:nth-child(19):before {
+  background-image: url("../New Team/pictures/sourav.png");
+}
+.card:nth-child(20):before {
+  background-image: url("../New Team/pictures/priyadharsinee.png");
+}
+.card:nth-child(21):before {
+  background-image: url("../New Team/pictures/vedaasri.png");
+}
+.card:nth-child(22):before {
+  background-image: url("../New Team/pictures/suhana.png");
+}
+.card:nth-child(23):before {
+  background-image: url("../New Team/pictures/riya.png");
+}
+.card:nth-child(24):before {
+  background-image: url("../New Team/pictures/kaviranjana.png");
+}
+.card:nth-child(25):before {
+  background-image: url("../New Team/pictures/anugraha.png");
+}
+.card:nth-child(26):before {
+  background-image: url("../New Team/pictures/anagha.png");
+}
+.card:nth-child(27):before {
+  background-image: url("../New Team/pictures/arunima.png");
+}
+.card:nth-child(28):before {
+  background-image: url("../New Team/pictures/adheena.png");
+}
+.card:nth-child(29):before {
+  background-image: url("../New Team/pictures/greeshma.png");
+}
+.card:nth-child(30):before {
+  background-image: url("../New Team/pictures/meenakshy.png");
+}
+.card:nth-child(31):before {
+  background-image: url("../New Team/pictures/deopal.png");
+}
+.card:nth-child(32):before {
+  background-image: url("../New Team/pictures/abhishek.png");
+}
+
+
+
+
+
 
 
 .content {
@@ -196,4 +280,3 @@ body {
     border-radius: 100%;
     width: 70%;
   }
-
