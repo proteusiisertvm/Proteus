@@ -521,6 +521,7 @@ body {
   #footer {
     text-align: left;
     background-color: #4c4c4c;
+    width: 100%;
     padding: 3% 8%;
   }
 
