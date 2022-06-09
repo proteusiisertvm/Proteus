@@ -145,7 +145,7 @@ body {
   background-image: url("../New Team/pictures/vedaasri.png");
 }
 .card:nth-child(22):before {
-  background-image: url("../New Team/pictures/suhana.png");
+  background-image: url("../New Team/pictures/suhana.jpeg");
 }
 .card:nth-child(23):before {
   background-image: url("../New Team/pictures/riya.png");
@@ -177,7 +177,12 @@ body {
 .card:nth-child(32):before {
   background-image: url("../New Team/pictures/abhishek.png");
 }
-
+.card:nth-child(33):before {
+  background-image: url("../New Team/pictures/harshini.jpeg");
+}
+.card:nth-child(34):before {
+  background-image: url("../New Team/pictures/arunima.jpeg");
+}
 
 
 
