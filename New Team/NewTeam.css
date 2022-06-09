@@ -582,6 +582,72 @@ body {
     color: grey;
   }
 
+  /* testimonials section */
+  #testimonials {
+    text-align: center;
+    padding: 5% 8% 8%;
+  }
+
+  .background1 {
+    background-image: url("../images/backgrounds/sec-waves1.png");
+    max-width: 100%;
+    /* creating parallax effect */
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .testimonials-head {
+    font-size: 3.6rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2%;
+  }
+
+  #testimonials p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+  }
+
+  #testimonials img {
+    width: 60%;
+    padding: 10%;
+  }
+
+  #testimonials img:hover {
+    opacity: 0.7;
+  }
+
+  /* News section */
+  #news {
+    text-align: center;
+    padding: 10% 8%;
+  }
+
+  #news .col-lg-12 {
+    padding: 2%;
+  }
+
+  #news h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.6rem;
+  }
+
+  #news p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #000;
+  }
+
+  #news img {
+    margin: 8% auto;
+    width: 70%;
+  }
+
+  .archives:hover {
+    box-sizing: border-box;
+    opacity: 0.7;
+    width: 80%;
+  }
+
 
 
   /* darkmode adjustments */
