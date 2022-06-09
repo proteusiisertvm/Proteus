@@ -20,6 +20,7 @@ const persons = [
     social: {
     }
   },
+
   {
     name: "Suhana Nujum G",
     photo: "../images/members1/Suhana.jpg",

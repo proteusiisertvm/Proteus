@@ -1,8 +1,9 @@
+
 const persons = [
   {
     name: "Vidyarashmi Hanehalli",
-    photo: "../images/members1/Vidyarashmi.jpg",
     title: "President",
+    photo: "../images/members1/Vidyarashmi.jpg",
     bio:
       "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",
     social: {
@@ -20,9 +21,8 @@ const persons = [
     social: {
     }
   },
+
 };
-
-
 
 
 
@@ -40,13 +40,13 @@ const app = new Vue({
   data() {
     return {
       persons: persons,
-      selectedpersonIndex: null,
+      selectedPersonIndex: null,
       isSelected: false,
-      selectedperson: null,
+      selectedPerson: null,
       inlineStyles: null,
       isReady: false,
       isOk: false,
-      selectedpersonData: {
+      selectedPersonData: {
         name: null,
         title: null,
         photo: null,
@@ -59,26 +59,26 @@ const app = new Vue({
     };
   },
   methods: {
-    selectperson(index, el) {
+    selectPerson(index, el) {
       if (!this.isOk) {
-        this.selectedpersonIndex = index;
+        this.selectedPersonIndex = index;
         this.isSelected = true;
         el.target.parentElement.className == "person-details"
-          ? (this.selectedperson = el.target.parentElement.parentElement)
-          : (this.selectedperson = el.target.parentElement);
+          ? (this.selectedPerson = el.target.parentElement.parentElement)
+          : (this.selectedPerson = el.target.parentElement);
 
-        this.selectedperson.classList.add("person-selected");
-        this.selectedperson.setAttribute(
+        this.selectedPerson.classList.add("person-selected");
+        this.selectedPerson.setAttribute(
           "style",
-          `width:${this.selectedperson.offsetWidth}px;`
+          `width:${this.selectedPerson.offsetWidth}px;`
         );
-        this.selectedpersonData = this.persons[index];
+        this.selectedPersonData = this.persons[index];
         window.setTimeout(() => {
-          this.inlineStyles = `width:${this.selectedperson
-            .offsetWidth}px;height:${this.selectedperson
-            .offsetHeight}px;left:${this.selectedperson.offsetLeft}px;top:${this
-            .selectedperson.offsetTop}px;position:fixed`;
-          this.selectedperson.setAttribute("style", this.inlineStyles);
+          this.inlineStyles = `width:${this.selectedPerson
+            .offsetWidth}px;height:${this.selectedPerson
+            .offsetHeight}px;left:${this.selectedPerson.offsetLeft}px;top:${this
+            .selectedPerson.offsetTop}px;position:fixed`;
+          this.selectedPerson.setAttribute("style", this.inlineStyles);
         }, 400);
         window.setTimeout(() => {
           this.isReady = true;
@@ -91,14 +91,14 @@ const app = new Vue({
     reset() {
       this.isReady = false;
       window.setTimeout(() => {
-        this.selectedperson.classList.add("person-back");
+        this.selectedPerson.classList.add("person-back");
       }, 280);
       window.setTimeout(() => {
-        this.selectedperson.setAttribute("style", "");
+        this.selectedPerson.setAttribute("style", "");
       }, 340);
       window.setTimeout(() => {
         this.isSelected = false;
-        this.selectedperson.classList.remove("person-back", "person-selected");
+        this.selectedPerson.classList.remove("person-back", "person-selected");
         this.isOk = false;
       }, 400);
     }
