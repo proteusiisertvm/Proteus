@@ -207,6 +207,9 @@ body {
 .card:nth-child(42):before {
   background-image: url("../New Team/pictures/gayathri b.png");
 }
+.card:nth-child(43):before {
+  background-image: url("../New Team/pictures/amber.png");
+}
 
 
 
