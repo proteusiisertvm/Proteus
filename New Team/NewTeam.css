@@ -210,6 +210,9 @@ body {
 .card:nth-child(43):before {
   background-image: url("../New Team/pictures/amber.png");
 }
+.card:nth-child(44):before {
+  background-image: url("../New Team/pictures/paarth.jpeg");
+}
 
 
 
