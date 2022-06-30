@@ -213,6 +213,10 @@ body {
 .card:nth-child(44):before {
   background-image: url("../New Team/pictures/paarth.jpeg");
 }
+.card:nth-child(45):before {
+  background-image: url("../New Team/pictures/gati.jpg");
+}
+
 
 
 
