@@ -92,7 +92,7 @@ html {
 
 .parallax {
     /* the background image used */
-    background-image: url("../images/backgrounds/website3.png");
+    background-image: url("../images/backgrounds/sec-waves2.png");
     /* Full height of page */
     max-width: 100%;
     /* creating parallax effect */
@@ -149,7 +149,7 @@ html {
 }
 
 .background1 {
-  background-image: url("../images/backgrounds/sec-waves1.png");
+  background-image: url("../images/backgrounds/sec-waves2.png");
   max-width: 100%;
   /* creating parallax effect */
   background-attachment: fixed;
@@ -215,7 +215,7 @@ html {
 }
 
 .background2 {
-  background-image: url("../images/backgrounds/seccov2.png");
+  background-image: url("../images/backgrounds/sec-waves2.png");
   max-width: 100%;
   /* creating parallax effect */
   background-attachment: fixed;
