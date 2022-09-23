@@ -216,6 +216,9 @@ body {
 .card:nth-child(45):before {
   background-image: url("../New Team/pictures/gati.jpg");
 }
+.card:nth-child(46):before {
+  background-image: url("../New Team/pictures/abhiram.jpg");
+}
 
 
 
