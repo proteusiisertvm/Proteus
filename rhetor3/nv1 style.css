@@ -10,9 +10,7 @@
     font-weight: normal;
     font-style: normal;
 }
-body {
-	background-color:#edecec;
-}
+
 ul, li {
   list-style: none outside none;
 }
@@ -21,7 +19,12 @@ ul, li {
   display: block;
 	background: #74adaa;
 	width:951px;
-	margin: 50px auto 150px;
+    position:absolute;
+    top:0px;
+    bottom:1000px;
+    left: 0px;
+    right: 850px;
+    z-index: 1;
 }
 .nav-menu > li {
   display: inline;
@@ -39,7 +42,7 @@ ul, li {
 	font-family: 'sansationregular';
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
-	font-smoothing: antialiased;
+	font-smooth: antialiased;
 	text-transform: capitalize;
 	overflow: visible;
 	line-height: 20px;
@@ -189,104 +192,3 @@ ul, li {
   -o-transform: rotateX(0deg);
 	transform: rotateX(0deg);
 }
-
-body{
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-  font-weight: 400;
-  color: white;
-  background-color: #4c4177;
-  background-image: linear-gradient(315deg, #4c4177 0%, #2a5476 74%);
-}
-
-
-
-/* timeline */
-
-.container-time{
-  padding: 2rem;
-  padding-bottom: 400px;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-.timeline{
-  position: relative;
-  min-height: 150px;
-}
-
-.line{
-  position: absolute;
-  z-index: 2;
-  left: calc(50% -  1px);
-  width: 2px;
-  top: -50px;
-  bottom: -50px;
-  background-color: #000;
-}
- 
-.line::before,
-.line:after{
-  position: absolute;
-  display: block;
-  content: '';
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  background-color: #000;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.line:after{
-  bottom: 0;
-}
-
-.section{
-  display: flex;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: 600ms ease;
-  position: relative;
-  z-index: 1;
-  margin: 50px 0;
-  padding: 1rem;
-  border-radius: 1rem;
-  align-items: center;
-  min-height: 300px;
-}
-
-.section:nth-child(odd){
-  flex-direction: row-reverse;
-  transform: translateX(100%);
-}
-
-.bead{
-  position: absolute;
-  display: block;
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  background-color: #000;
-  left: 50%;
-  top: 20%;
-  transform: translateX(-50%);
-}
-
-.content{
-  width: calc(50%-2rem);
-}
-
-.show-me:nth-child(n){
-  transform: none;
-  opacity: 1;
-}
-
-h1{
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
-
