@@ -27,7 +27,7 @@ list-style: none outside none;
 }
 /* basic menu styles */
 .nav-menu {
-display: block;
+display: inline-block;
 background: #6cbac8;
 width:37.46%;
 position:absolute;
