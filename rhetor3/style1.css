@@ -27,7 +27,7 @@ list-style: none outside none;
 }
 /* basic menu styles */
 .nav-menu {
-display: block;
+display: inline-block;
 background: #6cbac8;
 width:37.46%;
 position:absolute;
@@ -37,7 +37,8 @@ z-index: 1;
 }
 .nav-menu > li {
 display: inline;
-float:left;			
+float:left;		
+width:7.41vw;	
 border-right:1px solid #3f0b4e;
 position: relative;
 }
