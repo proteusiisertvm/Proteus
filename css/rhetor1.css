@@ -47,13 +47,13 @@ font-size: 80px;
 .name{
   color: #000;
   font-size: 2.3rem;
-  font-family: 'Staatliches', cursive;
+  font-family: 'Staatliches', 'cursive';
 }
 
 #team .icon {
   color: #000;
   margin: 0 10px;
-  background-color:
+  
 }
 
 #team .icon:hover {
