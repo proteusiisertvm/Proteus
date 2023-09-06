@@ -39,7 +39,6 @@ z-index: 1;
 .nav-menu > li {
 display: inline;
 float:left;		
-width:7.4102vw;	
 border-right:1px solid #000000;
 position: relative;
 }
@@ -192,8 +191,8 @@ background-image: linear-gradient(45deg, #478480 25%, transparent 25%, transpare
 }
 .nav-menu ul {
 position: absolute;
-left: -40px;
-text-align: left;
+/*left: -40px;*/
+text-align: center;
 line-height: 40px;
 font-size: 14px;
 width: 7.4102vw;
