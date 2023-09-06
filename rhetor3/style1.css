@@ -28,10 +28,8 @@ list-style: none outside none;
 /* basic menu styles */
 .nav-menu {
 display: inline-block;
-background: #6cbac8;
-
-
-width:37.46%;
+background: #000000;
+/*width:37.46%;*/
 position:absolute;
 top:0px;
 right: 0px;
@@ -41,8 +39,8 @@ z-index: 1;
 .nav-menu > li {
 display: inline;
 float:left;		
-width:7.41vw;	
-border-right:1px solid #3f0b4e;
+width:7.4102vw;	
+border-right:1px solid #000000;
 position: relative;
 }
 .nav-menu > li:last-child {
@@ -198,7 +196,7 @@ left: -40px;
 text-align: left;
 line-height: 40px;
 font-size: 14px;
-width: 200px;
+width: 7.4102vw;
 -webkit-transition: all 0.3s ease-in;
 -moz-transition: all 0.3s ease-in;
 -ms-transition: all 0.3s ease-in;
