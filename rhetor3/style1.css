@@ -25,12 +25,15 @@ body {
 /* proteus logo and iiser tvm logo*/
 .navbar-brand {
   display: inline-block;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
+  position: inherit;
+  padding-top: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
   white-space: nowrap;
+}
+
+.logo{
+  transform: scale(0.8);
 }
 
 ul, li {
@@ -40,10 +43,9 @@ list-style: none outside none;
 .nav-menu {
 display: inline-block;
 background:#EDD6B4;
-/*width:37.46%;*/
 position:absolute;
-top:0px;
-right: 0px;
+top:9%;
+right: 5%;
 z-index: 1;
 
 }
@@ -57,7 +59,7 @@ position: relative;
 border-right: none;
 }
 .nav-menu li a {
-color: #fff;
+color: #ffffff;
 display: block;
 text-decoration: none;
 font-family: 'sansationregular';
@@ -79,7 +81,7 @@ position: relative;
 left: 15vh;
 right:65vh;
 top:5vh;
-color: white;
+color: rgb(11, 0, 0);
 }
 
 .sub-head {
@@ -91,7 +93,7 @@ top:7vh;
 right:60vh;
 padding: 2% 4% 5% 5%;
 text-align: left;
-color: white;
+color: rgb(14, 0, 0);
 }
 
 /* animation domination */
@@ -177,7 +179,7 @@ top: 0;
 left: 0;
 background: #EDD6B4;
 padding: 15px 30px 15px 31px;	
-color: white;
+color: rgb(8, 0, 0);
 -webkit-pointer-events: none;
 -moz-pointer-events: none;
 -ms-pointer-events: none;
@@ -316,8 +318,8 @@ transform: rotateX(0deg);
   }
 }
 .dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   -webkit-animation-name: dot-elastic-x;
           animation-name: dot-elastic-x;
   -webkit-animation-duration: 1.25s;
@@ -717,8 +719,13 @@ transform: rotateX(0deg);
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
 
-
 /* Layout */
+
+.text{
+  text-decoration: none;
+  color: #a83279
+}
+
 * {
 -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box;
