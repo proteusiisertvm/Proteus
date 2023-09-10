@@ -707,15 +707,15 @@ transform: rotateX(0deg);
 }
 
 .dot--aqua::before {
-  background-color: rgb(240, 237, 60);
+  background-color: rgb(235, 4, 4);
 }
 
 .dot--gold::before {
-  background-color: rgb(243, 50, 156);
+  background-color: rgb(37, 25, 201);
 }
 
 .dot--tomato::before {
-  background-color: rgb(14, 198, 201);
+  background-color: rgb(13, 187, 22);
 }
 /* Variables */
 /* Fonts */
