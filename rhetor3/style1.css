@@ -39,7 +39,7 @@ list-style: none outside none;
 /* basic menu styles */
 .nav-menu {
 display: inline-block;
-background: #000000;
+background:#EDD6B4;
 /*width:37.46%;*/
 position:absolute;
 top:0px;
@@ -50,7 +50,7 @@ z-index: 1;
 .nav-menu > li {
 display: inline;
 float:left;		
-border-right:1px solid #000000;
+border-right:1px solid #EDD6B4;
 position: relative;
 }
 .nav-menu > li:last-child {
@@ -175,7 +175,7 @@ height: 100%;
 position: absolute;
 top: 0;
 left: 0;
-background: #3f0b4e;
+background: #EDD6B4;
 padding: 15px 30px 15px 31px;	
 color: white;
 -webkit-pointer-events: none;
