@@ -25,12 +25,15 @@ body {
 /* proteus logo and iiser tvm logo*/
 .navbar-brand {
   display: inline-block;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
+  position: inherit;
+  padding-top: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
   white-space: nowrap;
+}
+
+.logo{
+  transform: scale(0.8);
 }
 
 ul, li {
@@ -315,8 +318,8 @@ transform: rotateX(0deg);
   }
 }
 .dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   -webkit-animation-name: dot-elastic-x;
           animation-name: dot-elastic-x;
   -webkit-animation-duration: 1.25s;
@@ -716,8 +719,8 @@ transform: rotateX(0deg);
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
 
-
 /* Layout */
+
 * {
 -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box;
