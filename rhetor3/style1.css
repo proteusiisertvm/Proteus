@@ -721,6 +721,11 @@ transform: rotateX(0deg);
 
 /* Layout */
 
+.text{
+  text-decoration: none;
+  color: #a83279
+}
+
 * {
 -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box;
