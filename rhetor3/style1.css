@@ -1,15 +1,7 @@
-body {
-  overflow: auto;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat:no-repeat;
-  background:#EDD6B4;
-  width: 70vw;
-  height:100%;
-  
-}
+
 
 @import url("https://www.w3cplus.com/demo/css3/base.css");
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 
 @font-face {
   font-family: 'sansationregular';
@@ -22,6 +14,16 @@ body {
   font-style: normal;
 }
 
+body {
+  overflow: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background:#EDD6B4;
+  width: 70vw;
+  height:100%;
+  
+}
 /* proteus logo and iiser tvm logo*/
 .navbar-brand {
   display: inline-block;
@@ -75,7 +77,7 @@ padding: 15px 30px 15px 31px;
 
 
 .page-head {
-font-family: 'Poor Richard';
+font-family: 'League Spartan', sans-serif;
 font-size: 8rem;
 position: relative;
 left: 15vh;
@@ -717,7 +719,7 @@ transform: rotateX(0deg);
 }
 /* Variables */
 /* Fonts */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
+
 
 /* Layout */
 
