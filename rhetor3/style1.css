@@ -240,15 +240,14 @@ transform: rotateX(0deg);
 
 .canvas {
   position: fixed;
-  top:25px;
-  bottom:0;
-  right:0px;
-  left: 1100px;
-  width: 100%;
+  top:5px;
+  /*bottom:0;*/
+  right:0%;
+  /*left: 1100px;*/
+  width: 25%;
   height: 150vh;
   max-width: 500px;
   max-height: 150vh;
-  
 }
 
 .group {
