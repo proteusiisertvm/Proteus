@@ -40,10 +40,9 @@ list-style: none outside none;
 .nav-menu {
 display: inline-block;
 background:#EDD6B4;
-/*width:37.46%;*/
 position:absolute;
-top:0px;
-right: 0px;
+top:9%;
+right: 5%;
 z-index: 1;
 
 }
