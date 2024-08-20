@@ -19,7 +19,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat:no-repeat;
-  background:#EDD6B4;
+  background:#a022c7;
   width: 70vw;
   height:100%;
   
@@ -44,7 +44,7 @@ list-style: none outside none;
 /* basic menu styles */
 .nav-menu {
 display: inline-block;
-background:#EDD6B4;
+background:#f3f3f0;
 position:absolute;
 top:9%;
 right: 5%;
@@ -179,7 +179,7 @@ height: 100%;
 position: absolute;
 top: 0;
 left: 0;
-background: #EDD6B4;
+background: #ecdd04;
 padding: 15px 30px 15px 31px;	
 color: rgb(8, 0, 0);
 -webkit-pointer-events: none;
@@ -194,7 +194,7 @@ box-sizing: border-box;
 .nav-menu li .active .back,
 .nav-menu li a:hover .front,
 .nav-menu li a:hover .back {
-background-color: #51938f;
+background-color: #07f18f;
 -webkit-background-size: 5px 5px;
 background-size: 5px 5px;
 background-position: 0 0, 30px 30px;
@@ -707,15 +707,15 @@ transform: rotateX(0deg);
 }
 
 .dot--aqua::before {
-  background-color: rgb(235, 4, 4);
+  background-color: rgb(238, 196, 8);
 }
 
 .dot--gold::before {
-  background-color: rgb(37, 25, 201);
+  background-color: rgb(227, 232, 233);
 }
 
 .dot--tomato::before {
-  background-color: rgb(13, 187, 22);
+  background-color: rgb(212, 12, 5);
 }
 /* Variables */
 /* Fonts */
