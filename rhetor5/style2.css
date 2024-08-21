@@ -37,6 +37,86 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+  .canvas {
+    
+    position: fixed;
+    top:200px;
+    bottom:0;
+    right:0px;
+    left: 1100px;
+    width: 100%;
+    height: 150vh;
+    max-width: 500px;
+    max-height: 150vh;
+    
+  }
+  
+  .group {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @-webkit-keyframes dot-elastic-x {
+    0%, 100% {
+      opacity: 0.5;
+      transform: translateX(0) scale(0.75);
+      -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+              animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    25% {
+      opacity: 0.75;
+      transform: translateX(600%) scale(1);
+      -webkit-animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+              animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0) scale(1.5);
+      -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+              animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    75% {
+      opacity: 0.75;
+      transform: translateX(-600%) scale(1);
+      -webkit-animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+              animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    }
+  }
+  
+  @keyframes dot-elastic-x {
+    0%, 100% {
+      opacity: 0.5;
+      transform: translateX(0) scale(0.75);
+      -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+              animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    25% {
+      opacity: 0.75;
+      transform: translateX(600%) scale(1);
+      -webkit-animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+              animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0) scale(1.5);
+      -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+              animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    75% {
+      opacity: 0.75;
+      transform: translateX(-600%) scale(1);
+      -webkit-animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+              animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    }
+  }
+
   
   /* Title section */
   #title {
@@ -73,8 +153,8 @@
   }
   
   .parallax {
-      /* the background image used */
-      background-image: url("../../images/rhetor/rhetor2.png");
+      
+      
       /* Full height of page */
       max-width: 100%;
       /* creating parallax effect */
