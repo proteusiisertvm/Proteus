@@ -711,11 +711,11 @@ transform: rotateX(0deg);
 }
 
 .dot--gold::before {
-  background-color: rgb(227, 232, 233);
+  background-color: rgb(135, 140, 141);
 }
 
 .dot--tomato::before {
-  background-color: rgb(212, 12, 5);
+  background-color: rgb(245, 240, 240);
 }
 /* Variables */
 /* Fonts */
