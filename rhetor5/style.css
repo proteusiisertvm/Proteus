@@ -6,7 +6,7 @@
 /* title section */
 #navigation-bar {
   text-align: right;
-  background-color: #fff;
+  background-color: #000000;
   padding: 3% 6% 1%;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .iiser2_logo {
-  width: 70%;
+  width: 35%;
   display: block;
   margin: 20px auto;
 }
@@ -48,59 +48,19 @@
   padding-right: 0.5rem;
 }
 
-
-.navbar-brand {
-  display: inline-block;
-  position: inherit;
-  padding-top: 5%;
-  padding-left: 3%;
-  padding-right: 3%;
-  white-space: nowrap;
-}
-
-.logo{
-  transform: scale(0.8);
-}
-
-ul, li {
-list-style: none outside none;
-}
-/* basic menu styles */
-.nav-menu {
-display: inline-block;
-background:#EDD6B4;
-position:absolute;
-top:9%;
-right: 5%;
-z-index: 1;
-
-}
-.nav-menu > li {
-display: inline;
-float:left;		
-border-right:1px solid #EDD6B4;
-position: relative;
-}
-.nav-menu > li:last-child {
-border-right: none;
-}
-.nav-menu li a {
-color: #ffffff;
-display: block;
-text-decoration: none;
-font-family: 'sansationregular';
--webkit-font-smoothing: antialiased;
--moz-font-smoothing: antialiased;
-font-smooth: antialiased;
-text-transform: capitalize;
-overflow: visible;
-line-height: 20px;
-font-size: 20px;
-padding: 15px 30px 15px 31px;			
+.parallax {
+    /* the background image used */
+    background-image: url("../rhetor5/image.png");
+    /* Full height of page */
+    max-width: 100%;
+    /* creating parallax effect */
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
 :root {
+  color: white;
   font-size: 13px;
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.618;
@@ -108,7 +68,7 @@ padding: 15px 30px 15px 31px;
 }
 
 body {
-  background-color: #050800;
+  background-color: #0000;
   color: #0000;
 }
 
@@ -179,7 +139,7 @@ text {
 }
 
 image {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transform-origin: 50% 50%;
   transition: transform 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -200,7 +160,7 @@ image {
   height: 200px;
   margin: 5px;
   cursor: pointer;
-  background-color: #3b3e46;
+  background-color: #6d4580;
   border-radius: 2px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02), inset 0 0px 0px 1px rgba(0, 0, 0, 0.07);
   transform: translateZ(0);
@@ -268,7 +228,7 @@ html {
 /* footer section */
 #footer {
   text-align: left;
-  background-color: #4c4c4c;
+  background-color: #6d4580;
   padding: 3% 8%;
 }
 
@@ -285,13 +245,13 @@ html {
 .footer-head {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 15px;
 }
 
 .terms {
   text-decoration: none;
-  color: #ecf4f3;
+  color: #fff;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -306,25 +266,3 @@ html {
 }
 
 
-.options {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-.options button {
-  margin-left: 0.5rem;
-}
-
-.light {
-  background-color: #f9f9f9;
-  color: #1a1a1a;
-}
-.light p {
-  color: rgba(26, 26, 26, 0.5);
-}
-.light .item {
-  background: #f5f5f5;
-}
-.light .svg-text {
-  fill: rgba(0, 0, 0, 0.1);
-}
