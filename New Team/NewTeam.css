@@ -219,12 +219,39 @@ body {
 .card:nth-child(46):before {
   background-image: url("../New Team/pictures/abhiram.jpg");
 }
-
-
-
-
-
-
+.card:nth-child(54):before {
+  background-image: url("../New Team/pictures/Tanay.jpg");
+}
+.card:nth-child(56):before {
+  background-image: url("../New Team/pictures/Himanshu.jpg");
+}
+.card:nth-child(57):before {
+  background-image: url("../New Team/pictures/Gowri.jpg");
+}
+.card:nth-child(58):before {
+  background-image: url("../New Team/pictures/ParthG_1.jpg");
+}
+.card:nth-child(59):before {
+  background-image: url("../New Team/pictures/MeghaM.jpg");
+}
+.card:nth-child(60):before {
+  background-image: url("../New Team/pictures/Vihaan.jpg");
+}
+.card:nth-child(61):before {
+  background-image: url("../New Team/pictures/Gehna.jpg");
+}
+.card:nth-child(62):before {
+  background-image: url("../New Team/pictures/RoseJ.jpg");
+}
+.card:nth-child(63):before {
+  background-image: url("../New Team/pictures/Ankita.jpg");
+}
+.card:nth-child(64):before {
+  background-image: url("../New Team/pictures/Lizbeth.jpg");
+}
+.card:nth-child(65):before {
+  background-image: url("../New Team/pictures/Able.jpg");
+}
 
 .content {
   position: relative;
