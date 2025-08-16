@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Schedule | Rhetor 6.0</title>
+  <link rel="icon" href="../../images/rhetor.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #e6f0ee;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('C:/Users/himan/OneDrive/Documents/GitHub/Proteus/images/rhetor6_bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(30,40,40,0.45);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .top-bar {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2.2rem 4rem 1.2rem 4rem;
+      background: #7c8b8b;
+    }
+    .top-logos-group {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+    .top-logo-window {
+      background: #4b6e6d;
+      border-radius: 32px;
+      padding: 0.7rem 3.5rem;
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      box-shadow: 0 2px 16px rgba(44,62,80,0.10);
+    }
+    .top-logo-window img {
+      height: 100px;
+      width: 100px;
+      background: #4b6e6d;
+      border-radius: 50%;
+      padding: 12px;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+      object-fit: contain;
+      display: block;
+    }
+    .top-logo-names {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2.5rem;
+      margin-top: 0.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-align: center;
+      background: #4b6e6d;
+      border-radius: 0 0 28px 28px;
+      padding: 0.2rem 0 0.5rem 0;
+      width: fit-content;
+      min-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 2px 16px rgba(44,62,80,0.10);
+    }
+    .top-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.rem;
+    }
+    .top-nav .nav-btn {
+      background: none;
+      border: none;
+      color: #4b6e6d;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 0.3rem 0.8rem;
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+      cursor: pointer;
+      outline: none;
+    }
+    .top-nav .nav-btn:hover, .top-nav .nav-btn:focus {
+      background: #e6e6e6;
+      color: #2e3d3c;
+      text-decoration: none;
+    }
+    .top-nav .contact-btn {
+      background: #4b6e6d;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 0.35rem 1.2rem;
+      margin-left: 1.2rem;
+      border: none;
+      transition: background 0.18s;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    }
+    .top-nav .contact-btn:hover, .top-nav .contact-btn:focus {
+      background: #2e3d3c;
+      color: #fff;
+      text-decoration: none;
+    }
+    /* Floating schedule title window */
+    .floating-schedule-title {
+      position: absolute;
+      left: 50%;
+      top: 210px;
+      transform: translateX(-50%);
+      background: #4b6e6d;
+      color: #fff;
+      padding: 1.2rem 3.5rem 1.2rem 3.5rem;
+      border-radius: 32px;
+      box-shadow: 0 4px 32px rgba(44,62,80,0.13);
+      text-align: center;
+      z-index: 10;
+      min-width: 340px;
+      max-width: 90vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .floating-schedule-title h1 {
+      font-size: 2.7rem;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    .floating-schedule-title img {
+      height: 60px;
+      margin-bottom: 0.7rem;
+    }
+    .timeline-container {
+      position: relative;
+      margin: 0 auto;
+      padding: 8rem 0 4rem 0; /* Add top padding for floating window */
+      width: 90%;
+      max-width: 1100px;
+      min-height: 100vh;
+      z-index: 1;
+    }
+    .timeline-line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 6px;
+      height: 100%;
+      background: #7a9997;
+      transform: translateX(-50%);
+      z-index: 0;
+      border-radius: 3px;
+    }
+    .day-banner {
+      position: relative;
+      background: #e6e6e6;
+      color: #2e3d3c;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      width: 180px;
+      margin: 2rem auto 2rem auto;
+      padding: 0.5rem 0;
+      border-radius: 12px;
+      border: 2px solid #4b6e6d;
+      z-index: 2;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+    }
+    .timeline-event {
+      position: relative;
+      width: 100%;
+      min-height: 120px;
+      margin-bottom: 0;
+    }
+    .timeline-event.left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .timeline-event.right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+    .timeline-event .talk-card {
+      position: relative;
+      width: 390px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+      padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+      z-index: 2;
+      transition: box-shadow 0.2s;
+      border-left: 8px solid #4b6e6d;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+    }
+    .timeline-event.right .talk-card {
+      border-left: none;
+      border-right: 8px solid #4b6e6d;
+      align-items: flex-end;
+      margin-left: auto;
+    }
+    .timeline-event.left .talk-card {
+      margin-right: auto;
+    }
+    .talk-card .speaker-img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #4b6e6d;
+      margin-bottom: 0.5rem;
+      background: #e6f0ee;
+    }
+    .talk-card .talk-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2e3d3c;
+      margin-bottom: 0.2rem;
+    }
+    .talk-card .talk-affil {
+      font-size: 0.95rem;
+      color: #6b8a89;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    .talk-card .talk-desc {
+      font-size: 0.98rem;
+      color: #444;
+      margin-bottom: 0.5rem;
+    }
+    .talk-card .talk-time {
+      font-size: 0.95rem;
+      color: #fff;
+      background: #4b6e6d;
+      display: inline-block;
+      padding: 0.2rem 0.7rem;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .talk-num {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #4b6e6d;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 38px;
+      border: 3px solid #e6f0ee;
+      z-index: 3;
+      box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+    }
+    .timeline-event.left .talk-num {
+      right: -57px;
+      left: auto;
+    }
+    .timeline-event.right .talk-num {
+      left: -57px;
+      right: auto;
+    }
+    /* Remove the connector line from each talk card */
+    .timeline-event .connector {
+      display: none;
+    }
+    .workshop-banner {
+        position: relative;
+      background: #3e5c5b;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-align: center;
+      width: 160px;
+      margin: 2rem auto 1rem auto;
+      padding: 0.4rem 0;
+      border-radius: 10px;
+      border: 2px solid #4b6e6d;
+      z-index: 2;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+    }
+    /* Vertical spacing for timeline events by serial number */
+    .timeline-event.serial-1 { margin-top: 0; }
+    .timeline-event.serial-2 { margin-top: -240px; }
+    .timeline-event.serial-3 { margin-top: -250px; }
+    .timeline-event.serial-4 { margin-top: -230px; }
+    .timeline-event.serial-5 { margin-top: 36px; }
+    .timeline-event.serial-6 { margin-top: -200px; }
+    .timeline-event.workshop { margin-top: 20px; margin-bottom: 20px; }
+    .timeline-event.serial-7 { margin-top: 120px; }
+    .timeline-event.serial-8 { margin-top: -200px; }
+    .timeline-event.serial-9 { margin-top: -110px; }
+    .timeline-event.serial-10 { margin-top: -110px; }
+    .timeline-event.serial-11 { margin-top: -110px; }
+    .timeline-event.serial-12 { margin-top: -120px; }
+    
+    /* Center the workshop card */
+    .timeline-event.workshop {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 36px;
+      margin-bottom: 36px;
+      position: relative;
+      width: 100%;
+    }
+
+    .timeline-event.workshop .talk-card {
+      width: 420px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+      padding: 1.5rem;
+      z-index: 2;
+      border-left: 8px solid #4b6e6d;
+      border-right: 8px solid #4b6e6d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    /* Clean footer */
+    footer {
+      background: #4b6e6d;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 2rem;
+      font-size: 1rem;
+      border-radius: 0 0 16px 16px;
+      box-shadow: 0 -2px 8px rgba(44, 62, 80, 0.06);
+      z-index: 2;
+      position: relative;
+    }
+    footer .footer-brand {
+      font-size: 1.2rem;
+      font-family: 'Montserrat',sans-serif;
+      margin-bottom: 0.2rem;
+    }
+    footer .footer-note {
+      color: #b2cfcf;
+      font-size: 0.98rem;
+    }
+    /* Tooltip for speaker image, does NOT affect card size */
+.speaker-img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.speaker-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: 400px;
+  background: #4b6e6d;
+  color: #fff;
+  text-align: left;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: 0.98rem;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.13);
+  transition: opacity 0.2s;
+  pointer-events: none;
+  white-space: normal;
+}
+
+.speaker-img-wrapper:hover .speaker-tooltip {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+    @media (max-width: 1100px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.8rem 1rem 1rem 1rem;
+        gap: 0.7rem;
+      }
+      .top-logo-window {
+        padding: 0.5rem 1.2rem;
+        gap: 1.2rem;
+      }
+      .top-logo-window img {
+        height: 64px;
+        width: 64px;
+        padding: 7px;
+      }
+      .top-logo-names {
+        font-size: 0.95rem;
+        min-width: 180px;
+        padding: 0.2rem 0 0.4rem 0;
+      }
+      .floating-schedule-title {
+        padding: 1.2rem 1.2rem 0.8rem 1.2rem;
+        min-width: 180px;
+        top: 120px;
+      }
+      .floating-schedule-title h1 {
+        font-size: 1.5rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .top-logo-window img { height: 38px; width: 38px; padding: 4px; }
+      .top-logo-window { padding: 0.2rem 0.5rem; }
+      .top-bar { padding: 0.7rem 0.5rem 0.3rem 0.5rem; }
+      .top-logo-names { font-size: 0.8rem; min-width: 100px; }
+      .floating-schedule-title { padding: 0.7rem 0.5rem; top: 90px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top bar with fused logos and navigation -->
+  <div class="top-bar">
+    <div>
+      <div class="top-logo-window">
+        <img src="C:/Users/himan/OneDrive/Documents/GitHub/Proteus/images/rhetor.ico" alt="Mic Logo" title="Rhetor Mic Logo">
+        <img src="C:/Users/himan/OneDrive/Documents/GitHub/Proteus/images/iiser_logo2.png" alt="IISER Thiruvananthapuram Logo" title="IISER Thiruvananthapuram">
+        <img src="C:/Users/himan/OneDrive/Documents/GitHub/Proteus/images/proteus-logo.png" alt="Proteus Logo" title="Proteus">
+      </div>
+    </div>
+    <div class="top-nav">
+      <button class="nav-btn" onclick="window.location.href='home.html'">Home</button>
+      <button class="nav-btn" onclick="window.location.href='merch.html'">Merch</button>
+      <button class="contact-btn" onclick="window.location.href='C:\\Users\\himan\\OneDrive\\Documents\\GitHub\\Proteus\\contact\\contact.html'">Contact Us</button>
+    </div>
+  </div>
+  <!-- Floating schedule title window -->
+  <div class="floating-schedule-title">
+    <h1>RHETOR 6.0 SCHEDULE</h1>
+  </div>
+  <div class="timeline-container">
+    <div class="timeline-line"></div>
+    <div class="day-banner">DAY 1</div>
+    <!-- Talk 1 -->
+    <div class="timeline-event left serial-1">
+      <div class="talk-card">
+        <span class="talk-num left">1</span>
+        <div class="connector left"></div>
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\\Users\\himan\OneDrive\\Documents\\GitHub\\Proteus\\Rhetor6\\images\\L S ShashiDhara.jpg" alt="Speaker 1">
+          <div class="speaker-tooltip">
+            Prof. L S Shashidhara<br>
+            NCBS<br>
+            Prof. LS Shashidhara, a leading scientist in Genetics, Molecular Biology, and Evolutionary Biology, has significantly contributed to cancer research and scientific education in India. As a founding academic member of IISER Pune and Ashoka University, he played a significant role in their growth.
+          </div>
+        </div>
+        <div class="talk-title">Prof. L S Shashidhara</div>
+        <div class="talk-affil">NCBS</div>
+        <div class="talk-time">23rd August | 10:30 AM</div>
+        <div class="talk-desc">Prof. LS Shashidhara, a leading scientist in Genetics, Molecular Biology, and Evolutionary Biology, has significantly contributed to cancer research and scientific education in India. As a founding academic member of IISER Pune and Ashoka University, he played a significant role in their growth.</div>
+      </div>
+    </div>
+    <!-- Talk 2 -->
+    <div class="timeline-event right serial-2">
+      <div class="talk-card">
+        <span class="talk-num right">2</span>
+        <div class="connector right"></div>
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\Users\himan\OneDrive\Documents\GitHub\Proteus\Rhetor6\images\Subba Rao.jpg" alt="Speaker 2">
+          <div class="speaker-tooltip">
+            Dr. Subba Rao Gangi Setty<br>
+            IISc<br>
+            Eukaryotic cells are basic units of a tissue/organ that conduct their respective function through membrane-enclosed intracellular organelles. These membranous compartments maintain the organelle’s characteristics through intracellular transport mechanisms. Dr. Subba Rao Gangi Setty's laboratory is interested in understanding how this process works.
+          </div>
+        </div>
+        <div class="talk-title">Dr. Subba Rao Gangi Setty</div>
+        <div class="talk-affil">IISc</div>
+        <div class="talk-time">23rd August | 11:45 AM</div>
+        <div class="talk-desc">This study uncovers a non-neuronal role of the Qa-SNARE protein STX1A in HeLa cells. We found STX1A localizes mainly to lysosomes, where its overexpression reduced lysosome number and dispersion, while depletion increased peripheral lysosomes but impaired proteolytic activity and exocytosis. Mechanistically, STX1A pairs with SNAP23 and VAMP2 to drive lysosomal exocytosis. These results reveal a novel role for STX1A in lysosomal dynamics, essential for membrane and organelle repair, extending SNARE function beyond neurons.</div>
+      </div>
+    </div>
+    <!-- Talk 3 -->
+    <div class="timeline-event left serial-3">
+      <div class="talk-card">
+        <span class="talk-num left">3</span>
+        <div class="connector left"></div>
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\Users\himan\OneDrive\Documents\GitHub\Proteus\Rhetor6\images\Nishant K T.jpg" alt="Speaker 3">
+          <div class="speaker-tooltip">
+            Prof. Nishant K T<br>
+            IISER TVM<br>
+            Prof. Nishant K T is professor at IISER TVM. His research area include investigating mechanisms that maintain genome stability using the baker’s yeast Saccharomyces cerevisiae as a model system. It includes use of high-throughput genomic technologies, classical genetics and molecular biology approaches.
+          </div>
+        </div>
+        <div class="talk-title">Prof. Nishant K T</div>
+        <div class="talk-affil">IISER TVM</div>
+        <div class="talk-time">23rd August | 2:30 PM</div>
+        <div class="talk-desc">Loss of Heterozygosity (LOH) from mitotic recombination is a major yet underexplored source of genetic variation. Using hybrid Saccharomyces cerevisiae and whole-genome sequencing, we show LOH is widespread and contributes more to genomic change than base mutations. We generated an LOH hotspot map, discovered the regulator gene IRC20, and found that pre-existing LOH promotes further instability, similar to cancer cells. In industrial yeast, LOH drives colony morphology changes that impair bioethanol fermentation. These findings highlight LOH as a central mechanism shaping genome evolution and phenotypic diversity.</div>
+      </div>
+    </div>
+    <!-- Talk 4 -->
+    <div class="timeline-event right serial-4">
+      <div class="talk-card">
+        <span class="talk-num right">4</span>
+        <div class="connector right"></div>
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\Users\himan\OneDrive\Documents\GitHub\Proteus\Rhetor6\images\Nimesh Gupta.jpg" alt="Speaker 4">
+          <div class="speaker-tooltip">
+            Dr. Nimesh Gupta (Online)<br>
+            NII<br>
+            I am a virologist and immunologist with over 20 years of experience in T-cell immunity to viral infection and vaccination. Trained at the Institut Pasteur, my lab focuses on how long-term protective immunity develops to guide vaccine design, with a special emphasis on T follicular helper (Tfh) cells. I also established the Human Immune Monitoring and T-cell Assay platform, which supported the phase 3 trial of an intranasal COVID-19 vaccine.
+          </div>
+        </div>
+        <div class="talk-title">Dr. Nimesh Gupta (Online)</div>
+        <div class="talk-affil">NII</div>
+        <div class="talk-time">23rd August | 3:30 PM</div>
+        <div class="talk-desc">The COVID-19 pandemic highlights the need for vaccines that offer broad and lasting protection. Beyond antibodies, T cells are crucial for clearing infection and sustaining immune memory. This talk will present how advances in human immunology and our research on T-cell repertoire guide next-generation vaccine design. We will also discuss T-cell bioassays for vaccine evaluation, with applications in heterologous boosters and intranasal vaccine trials.</div>
+      </div>
+    </div>
+    <div class="day-banner">DAY 2</div>
+    <!-- Talk 5 -->
+    <div class="timeline-event left serial-5">
+      <div class="talk-card">
+        <span class="talk-num left">5</span>
+        <div class="connector left"></div>
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\Users\himan\OneDrive\Documents\GitHub\Proteus\Rhetor6\images\Rashmi Mishra.jpg" alt="Speaker 5">
+          <div class="speaker-tooltip">
+            Dr. Rashmi Mishra<br>
+            BRIC-RGCB<br>
+            Dr. Rashmi Mishra, Group Leader and Ramalingaswami Fellow at BRIC-RGCB, is a neuroscientist trained at NBRC, Max Planck Institute, and the Curie Institute. Her lab investigates how cells sense and respond to mechanical stresses, with implications for cancer, neuro- and cardio-degeneration, and aging. She focuses on developing biomarkers and phytodrug-based therapeutics to enable early diagnosis and translational solutions for fatal diseases.
+          </div>
+        </div>
+        <div class="talk-title">Dr. Rashmi Mishra</div>
+        <div class="talk-affil">BRIC-RGCB</div>
+        <div class="talk-time">24th August | 10:00 AM</div>
+        <div class="talk-desc">I will present our translational vision of decoding and reprogramming the mechanical algorithms that govern cell fate—disrupting cancer defenses or enhancing survival in degenerating heart and brain tissues. By linking fundamental force-biology with bedside-ready phytochemical interventions, we aim to turn mechanobiology from a hidden cellular language into a therapeutic toolkit for precision medicine.</div>
+      </div>
+    </div>
+    <!-- Talk 6 -->
+    <div class="timeline-event right serial-6">
+      <div class="talk-card">
+        <span class="talk-num right">6</span>
+        <div class="connector right"></div>
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\Users\himan\OneDrive\Documents\GitHub\Proteus\Rhetor6\images\Rita Mulherkar.jpg" alt="Speaker 6">
+          <div class="speaker-tooltip">
+            Dr. Rita Mulherkar (Online)<br>
+            ACTREC<br>
+            Dr. Rita Mulherkar, former Scientist H at ACTREC, is a cancer biologist and Fellow of the National Academy of Sciences, India. With a Ph.D. in cancer biology, her research has focused on genetic predisposition and cancer genomics, particularly in cervical and oral cancers. She has explored how low-penetrance genes interact with environmental and endogenous factors, with the broader aim of advancing personalized medicine, early diagnosis, and improved strategies for cancer care.
+          </div>
+        </div>
+        <div class="talk-title">Dr. Rita Mulherkar (Online)</div>
+        <div class="talk-affil">ACTREC</div>
+        <div class="talk-time">24th August | 11:00 AM</div>
+        <div class="talk-desc">Biotechnology has grown into a transformative force in healthcare, agriculture, and industry. In this talk, I will share my journey from early lab work to advances in gene editing, cell therapy, and diagnostics, reflecting on curiosity, collaboration, and ethics in science. I will also discuss the challenges of translating research to patient care and my recent work on regulatory approval for a novel cell therapy. The session aims to inspire young scientists to innovate with responsibility and passion.</div>
+      </div>
+    </div>
+    <div class="workshop-banner">WORKSHOP</div>
+    <!-- Workshop -->
+    <div class="timeline-event workshop">
+      <div class="talk-card">
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\Users\himan\OneDrive\Documents\GitHub\Proteus\Rhetor6\images\Bhaskar Datta.jpg" alt="Workshop Speaker">
+          <div class="speaker-tooltip">
+            Prof. Bhaskar Datta<br>
+            IIT Gandhinagar<br>
+            Prof. Bhaskar Datta, Associate Professor of Biological Engineering and Chemistry at IIT Gandhinagar, holds a Ph.D. in Chemistry from Carnegie Mellon University. His research spans nucleic acid structures, long non-coding RNAs, and antimicrobial hybrids, alongside the design of adsorbent materials and hydrogels for critical metal recovery. His group’s work bridges fundamental molecular science with translational applications in health, nutrition, and sustainability.
+          </div>
+        </div>
+        <div class="talk-title">Prof. Bhaskar Datta</div>
+        <div class="talk-affil">IIT Gandhinagar</div>
+        <div class="talk-time">24th August | 5:00 PM</div>
+        <div class="talk-desc">This workshop explores the emerging role of long non-coding RNAs (lncRNAs) as key regulators of gene expression. Once dismissed as transcriptional noise, lncRNAs are now recognized for their diverse regulatory roles—acting as decoys, scaffolds, guides, signaling molecules, and molecular sponges. Despite their importance, studying lncRNAs is challenging due to their low expression, structural complexity, and poor sequence conservation.</div>
+      </div>
+    </div>
+    <div class="day-banner">DAY 3</div>
+    <div class="timeline-event left serial-7">
+      <div class="talk-card">
+        <span class="talk-num left">7</span>
+        <div class="connector left"></div>
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\Users\himan\OneDrive\Documents\GitHub\Proteus\Rhetor6\images\Sunil Laxman.jpg" alt="Speaker 5">
+          <div class="speaker-tooltip">
+            Dr. Sunil Laxman<br>
+            BRIC-inStem<br>
+            Dr. Sunil Laxman, Associate Investigator at DBT-inStem, leads research in cell and microbial metabolism, signaling, systems biology, and synthetic biology. His lab studies how nutrients and metabolites act as signals that determine cell fate decisions such as growth, differentiation, autophagy, or death. By integrating metabolite sensing with systems-level frameworks, his group seeks to uncover how metabolic information flow governs cellular states and transitions.
+          </div>
+        </div>
+        <div class="talk-title">Dr. Sunil Laxman</div>
+        <div class="talk-affil">BRIC-inStem</div>
+        <div class="talk-time">30th August | 9:30 AM</div>
+        <div class="talk-desc">This talk explores the chemical logic and organizational principles of cellular metabolic networks. Using interdisciplinary biochemical, genetic, systems-level, and computational approaches, the lab investigates how cells optimize metabolic efficiency and exchange. Applications include synthetic biology and engineering microbial cell factories.</div>
+      </div>
+    </div>
+    <!-- Talk 8 -->
+    <div class="timeline-event right serial-8">
+      <div class="talk-card">
+        <span class="talk-num right">8</span>
+        <div class="connector right"></div>
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\Users\himan\OneDrive\Documents\GitHub\Proteus\Rhetor6\images\Megha Kumar.jpg" alt="Speaker 8">
+          <div class="speaker-tooltip">
+            Dr. Megha Kumar<br>
+            CCMB<br>
+            Dr. Megha Kumar is a Senior Scientist at the Centre for Cellular and Molecular Biology (CCMB) in Hyderabad. Her research focuses on the molecular mechanisms underlying cell division during embryonic development, using zebrafish as a model system for live imaging, genetic manipulation, and high-throughput genetic screens. Her lab also investigates ecotoxicology and embryotoxicity, aiming to elucidate how industrial byproducts impact embryonic development at the molecular level.
+          </div>
+        </div>
+        <div class="talk-title">Dr. Megha Kumar</div>
+        <div class="talk-affil">CCMB</div>
+        <div class="talk-time">30th August | 10:30 AM</div>
+        <div class="talk-desc">In this talk, I will discuss our findings on DIS3L2, an RNA exoribonuclease implicated in cancer and congenital disorders. Using zebrafish models, we uncovered its critical roles in neural crest specification, neuronal survival, and early mitosis, acting through the Akt–GSK3β pathway. These results reveal how DIS3L2 shapes cell fate and development, offering new insights into the basis of disorders like Perlman syndrome.</div>
+      </div>
+    </div>
+    <!-- Talk 9 -->
+    <div class="timeline-event left serial-9">
+      <div class="talk-card">
+        <span class="talk-num left">9</span>
+        <div class="connector left"></div>
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\Users\himan\OneDrive\Documents\GitHub\Proteus\Rhetor6\images\Elizabeth Vinod.jpeg" alt="Speaker 9">
+          <div class="speaker-tooltip">
+            Dr. Elizabeth Vinod<br>
+            CMC Vellor<br>
+            Dr. Elizabeth Vinod is an Associate Professor of Physiology at CMC Vellore and Adjunct Scientist at the Centre for Stem Cell Research. Her research focuses on cartilage tissue engineering and regeneration, particularly on cartilage-derived chondroprogenitors for potential therapies in osteoarthritis. Her lab develops animal models, explores xeno-free cell therapies, and studies the molecular mechanisms of cartilage repair to advance regenerative medicine.
+          </div>
+        </div>
+        <div class="talk-title">Dr. Elizabeth Vinod</div>
+        <div class="talk-affil">CMC Vellore</div>
+        <div class="talk-time">30th August | 12:00 PM</div>
+        <div class="talk-desc">Advances in Cartilage Repair and Regeneration.</div>
+      </div>
+    </div>
+    <!-- Talk 10 -->
+    <div class="timeline-event right serial-10">
+      <div class="talk-card">
+        <span class="talk-num right">10</span>
+        <div class="connector right"></div>
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\Users\himan\OneDrive\Documents\GitHub\Proteus\Rhetor6\images\Debasis Chattopadhyay.jpg" alt="Speaker 10">
+          <div class="speaker-tooltip">
+            Dr. Debasis Chattopadhyay<br>
+            BRIC-NIPGR<br>
+            Dr. Debasis Chattopadhyay, Scientist VII and Director (Additional Charge) at DBT–NIPGR, works on molecular mechanisms of abiotic stress tolerance in crops, with a focus on drought and salinity resilience in chickpea. He earned his Ph.D. from the University of Calcutta and trained at The Cleveland Clinic Foundation, USA. His group integrates genomics, molecular biology, and physiology to discover stress-associated traits. Dr. Chattopadhyay is a Fellow of all major Indian science academies and recipient of several prestigious awards, including the J.C. Bose National Fellowship.
+          </div>
+        </div>
+        <div class="talk-title">Dr. Debasis Chattopadhyay</div>
+        <div class="talk-affil">BRIC-NIPGR</div>
+        <div class="talk-time">30th August | 2:30 PM</div>
+        <div class="talk-desc">Deciphering the Code of Crop Domestication</div>
+      </div>
+    </div>
+    <!-- Talk 11 -->
+    <div class="timeline-event left serial-11">
+      <div class="talk-card">
+        <span class="talk-num left">11</span>
+        <div class="connector left"></div>
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\Users\himan\OneDrive\Documents\GitHub\Proteus\Rhetor6\images\Elrika D_Souza.jpg" alt="Speaker 11">
+          <div class="speaker-tooltip">
+            Dr. Elrika D'Souza<br>
+            NCF<br>
+            Dr. Elrika D’Souza is a marine biologist and Programme Manager of the Oceans and Coasts Program at NCF. Her research focuses on conserving seagrass ecosystems and their key species like dugongs across the Andaman, Nicobar, and Lakshadweep islands. She studies plant–animal interactions, blue carbon, and leads restoration efforts to build ecosystem resilience.
+          </div>
+        </div>
+        <div class="talk-title">Dr. Elrika D'Souza</div>
+        <div class="talk-affil">NCF</div>
+        <div class="talk-time">30th August | 3:30 PM</div>
+        <div class="talk-desc">Megaherbivores in seagrass ecosystems: Case studies from the Andaman and Nicobar and Lakshadweep archipelagoes.</div>
+      </div>
+    </div>
+    <!-- Talk 12 -->
+    <div class="timeline-event right serial-12">
+      <div class="talk-card">
+        <span class="talk-num right">12</span>
+        <div class="connector right"></div>
+        <div class="speaker-img-wrapper">
+          <img class="speaker-img" src="C:\Users\himan\OneDrive\Documents\GitHub\Proteus\Rhetor6\images\Sharmila Mande.jpg" alt="Speaker 12">
+          <div class="speaker-tooltip">
+            Dr. Sharmila Mande<br>
+            TCS<br>
+            Dr. Sharmila S. Mande is Advisor to Life Sciences R&D at TCS Research and a pioneer in bioinformatics and computational biology. With a Ph.D. in Physics from IISc Bangalore and postdoctoral training in the Netherlands and USA, her work focuses on microbiomes, metagenomics, and computational platforms for disease diagnostics and health monitoring. She holds 65+ patents, 100+ publications, and is a Fellow of INSA and INAE.
+          </div>
+        </div>
+        <div class="talk-title">Dr. Sharmila Mande</div>
+        <div class="talk-affil">TCS</div>
+        <div class="talk-time">30th August | 4:30 PM</div>
+        <div class="talk-desc">In this talk, I will share how advances in science and technology help us study diverse microbiomes and their impact on human health. I will discuss how high-throughput data can reveal their role in diseases, guide new diagnostics and therapies, and highlight ways to harness their vast functional potential for innovative applications.</div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-brand">Proteus</div>
+    <div class="footer-note">Made with ❤ and a bit of code</div>
+  </footer>
+</body>
+</html>
