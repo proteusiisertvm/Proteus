@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home | Rhetor 6.0</title>
+  <link rel="icon" href="../../images/rhetor.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #e6f0ee;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('../images/rhetor6_bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(30,40,40,0.45);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .top-bar {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 2.2rem 4rem 1.2rem 4rem;
+      background: #7c8b8b;
+    }
+    .top-logos-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .top-logo-window {
+      background: #4b6e6d;
+      border-radius: 32px;
+      padding: 1.2rem 2.5rem 1.2rem 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      box-shadow: 0 2px 16px rgba(44,62,80,0.10);
+    }
+    .top-logo-window img {
+      height: 90px;
+      width: 90px;
+      background: #4b6e6d;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+      object-fit: contain;
+      display: block;
+      transition: box-shadow 0.2s;
+    }
+    .top-logo-names {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.13rem;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: center;
+      background: #4b6e6d;
+      border-radius: 0 0 28px 28px;
+      padding: 0.4rem 0 0.7rem 0;
+      width: 100%;
+      min-width: 340px;
+      margin: 0;
+      box-shadow: 0 2px 16px rgba(44,62,80,0.10);
+      border-top: 1px solid #5a7e7d;
+    }
+    .top-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 1.2rem;
+    }
+    .top-nav .nav-btn {
+      background: none;
+      border: none;
+      color: #4b6e6d;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 0.3rem 0.8rem;
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+      cursor: pointer;
+      outline: none;
+    }
+    .top-nav .nav-btn:hover, .top-nav .nav-btn:focus {
+      background: #e6e6e6;
+      color: #2e3d3c;
+      text-decoration: none;
+    }
+    .top-nav .contact-btn {
+      background: #4b6e6d;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 0.35rem 1.2rem;
+      margin-left: 1.2rem;
+      border: none;
+      transition: background 0.18s;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    }
+    .top-nav .contact-btn:hover, .top-nav .contact-btn:focus {
+      background: #2e3d3c;
+      color: #fff;
+      text-decoration: none;
+    }
+    .floating-home-title {
+      position: absolute;
+      left: 50%;
+      top: 230px;
+      transform: translateX(-50%);
+      background: #4b6e6d;
+      color: #fff;
+      padding: 2.2rem 3.5rem 1.2rem 3.5rem;
+      border-radius: 32px;
+      box-shadow: 0 4px 32px rgba(44,62,80,0.13);
+      text-align: center;
+      z-index: 10;
+      min-width: 340px;
+      max-width: 90vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .floating-home-title .circle-image-window {
+      width: 250px;
+      height: 250px;
+      background: #fff;
+      border-radius: 50%;
+      margin: 0 auto 1.2rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 12px #2c3e5021;
+      border: 5px solid #4b6e6d;
+    }
+    .floating-home-title .circle-image-img {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+    .floating-home-title h1 {
+      font-size: 2.7rem;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    .floating-home-title p {
+      font-size: 1.2rem;
+      margin-top: 1.2rem;
+      color: #e6f0ee;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      max-width: 600px;
+    }
+    .home-content {
+      position: relative;
+      z-index: 1;
+      margin: 0 auto;
+      padding: 41.85rem 0 4rem 0; /* Increased from 10rem to 16rem */
+      width: 90%;
+      max-width: 1100px;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .home-card {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 2px 16px rgba(44,62,80,0.10);
+      padding: 2.5rem 2.5rem 2rem 2.5rem;
+      margin-bottom: 2.5rem;
+      max-width: 750px;
+      width: 100%;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .home-card h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #4b6e6d;
+      margin-bottom: 1rem;
+    }
+    .home-card p {
+      font-size: 1.1rem;
+      color: #2e3d3c;
+      margin-bottom: 0.5rem;
+    }
+    .home-card .btn-main {
+      background: #4b6e6d;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 0.7rem 2.2rem;
+      border: none;
+      font-size: 1.1rem;
+      margin-top: 1.2rem;
+      transition: background 0.18s;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+      cursor: pointer;
+    }
+    .home-card .btn-main:hover {
+      background: #2e3d3c;
+      color: #fff;
+    }
+    footer {
+      background: #4b6e6d;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 2rem;
+      font-size: 1rem;
+      border-radius: 0 0 16px 16px;
+      box-shadow: 0 -2px 8px rgba(44, 62, 80, 0.06);
+      z-index: 2;
+      position: relative;
+    }
+    footer .footer-brand {
+      font-size: 1.2rem;
+      font-family: 'Montserrat',sans-serif;
+      margin-bottom: 0.2rem;
+    }
+    footer .footer-note {
+      color: #b2cfcf;
+      font-size: 0.98rem;
+    }
+    .merch-banner-window {
+      width: 100%;
+      max-width: 900px;
+      margin: 3rem auto 2rem auto;
+      background: #4b6e6d;
+      border-radius: 32px;
+      box-shadow: 0 4px 32px rgba(44,62,80,0.13);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .merch-banner-img {
+      width: 100%;
+      max-width: 750px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 2px 16px rgba(44,62,80,0.10);
+    }
+    @media (max-width: 1000px) {
+      .merch-banner-window { max-width: 98vw; padding: 1rem 0.2rem; }
+      .merch-banner-img { max-width: 96vw; }
+    }
+    @media (max-width: 1100px) {
+      .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.8rem 1rem 1rem 1rem;
+        gap: 0.7rem;
+      }
+      .top-logo-window {
+        padding: 0.7rem 1.2rem;
+        gap: 1.2rem;
+      }
+      .top-logo-window img {
+        height: 54px;
+        width: 54px;
+        padding: 5px;
+      }
+      .top-logo-names {
+        font-size: 0.95rem;
+        min-width: 180px;
+        padding: 0.2rem 0 0.4rem 0;
+      }
+      .floating-home-title {
+        padding: 1.2rem 1.2rem 0.8rem 1.2rem;
+        min-width: 180px;
+        top: 120px;
+      }
+      .floating-home-title h1 {
+        font-size: 1.5rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .top-logo-window img { height: 32px; width: 32px; padding: 2px; }
+      .top-logo-window { padding: 0.2rem 0.5rem; }
+      .top-bar { padding: 0.7rem 0.5rem 0.3rem 0.5rem; }
+      .top-logo-names { font-size: 0.8rem; min-width: 100px; }
+      .floating-home-title { padding: 0.7rem 0.5rem; top: 90px; }
+      .home-card { padding: 1.2rem 0.7rem; }
+    }
+    .custom-footer {
+      background: #4b6e6d;
+      color: #fff;
+      padding: 3rem 0 1.5rem 0;
+      font-family: 'Open Sans', sans-serif;
+      margin-top: 3rem;
+      border-radius: 0 0 0 0;
+      box-shadow: 0 -2px 8px rgba(44, 62, 80, 0.06);
+    }
+    .footer-main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 2.5rem;
+      max-width: 1400px;
+      margin: 0 auto 2rem auto;
+    }
+    .footer-section {
+      min-width: 180px;
+      max-width: 260px;
+      margin-bottom: 1.5rem;
+    }
+    .footer-section h2, .footer-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    .footer-section h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.7rem;
+    }
+    .footer-section a {
+      color: #c9e3e3;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.15s;
+    }
+    .footer-section a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .footer-social-icons {
+      display: flex;
+      gap: 0.7rem;
+      align-items: center;
+      margin-bottom: 0.7rem;
+    }
+    .footer-social-icons img {
+      width: 28px;
+      height: 28px;
+      background: #fff;
+      border-radius: 50%;
+      padding: 3px;
+      box-shadow: 0 1px 4px rgba(44,62,80,0.10);
+      transition: background 0.2s;
+    }
+    .footer-social-icons img:hover {
+      background: #e6f0ee;
+    }
+    .custom-footer hr {
+      border: none;
+      border-top: 1px solid #c9b6d3;
+      margin: 2rem 0 1.5rem 0;
+    }
+    .footer-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .footer-brand {
+      font-size: 1.4rem;
+      font-family: 'Montserrat',sans-serif;
+      margin-bottom: 0.2rem;
+    }
+    .footer-note {
+      color: #c9b6d3;
+      font-size: 1.05rem;
+    }
+    .footer-logo {
+      margin-top: 1rem;
+    }
+    @media (max-width: 900px) {
+      .footer-main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding-left: 2rem;
+      }
+      .footer-bottom {
+        align-items: flex-start;
+        padding-left: 2rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .footer-main, .footer-bottom {
+        padding-left: 0.5rem;
+      }
+      .footer-section {
+        min-width: 120px;
+        max-width: 98vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top bar with fused logos and navigation -->
+  <div class="top-bar">
+    <div class="top-logos-block">
+      <div class="top-logo-window">
+        <img src="../images/rhetor.ico" alt="Rhetor Logo" title="Rhetor">
+        <img src="../images/iiser_logo2.png" alt="IISER Thiruvananthapuram Logo" title="IISER Thiruvananthapuram">
+        <img src="../images/proteus-logo.png" alt="Proteus Logo" title="Proteus">
+      </div>
+    </div>
+    <div class="top-nav">
+      <button class="nav-btn" onclick="window.location.href='home.html'">Home</button>
+      <button class="nav-btn" onclick="window.location.href='schedule.html'">Schedule</button>
+      <button class="nav-btn" onclick="window.location.href='merch.html'">Merch</button>
+      <button class="contact-btn" onclick="window.location.href='contact.html'">Contact Us</button>
+    </div>
+  </div>
+  <!-- Floating home title window -->
+  <div class="floating-home-title">
+    <div class="circle-image-window">
+      <img src="C:/Users/himan/OneDrive/Documents/GitHub/Proteus/images/rhetor.ico" alt="Rhetor Feature" class="circle-image-img">
+    </div>
+    <h1>WELCOME TO RHETOR 6.0</h1>
+    <p>
+      On behalf of Proteus, the Biology Club of the Indian Institute of Science Education and Research (IISER) Thiruvananthapuram, we would like to extend our heartfelt invitation to you for Rhetor 6.0, our annual student-organised symposium. This year's symposium will be held at our picturesque campus in Thiruvananthapuram, Kerala. It is scheduled for the 23rd, 24th, 30th and 31st of August. 
+    </p>
+  </div>
+  <div class="home-content">
+    <div class="home-card">
+      <h2>About Rhetor</h2>
+      <p>
+        Rhetor is a national-level science symposium organized by IISER Thiruvananthapuram, featuring talks by eminent scientists, interactive workshops, and vibrant discussions. The event aims to foster curiosity, collaboration, and scientific thinking among students and researchers. This year's Rhetor's theme is <b>“Codes of creation: Deciphering life's blueprints”</b>. We aim to invite researchers from the different disciplines of biology, to shed light on Life's Blueprints and how modern science works to decipher this code that creates all living beings  We believe that your work and interests align perfectly with this year's theme.
+      </p>
+      <button class="btn-main" onclick="window.location.href='schedule.html'">View Schedule</button>
+    </div>
+    <div class="home-card">
+      <h2>Workshops & Activities</h2>
+      <p>
+        Participate in hands-on workshops, panel discussions, and networking sessions. Rhetor 6.0 offers a unique platform to learn, share, and connect with peers and experts from across the country.
+      </p>
+      <button class="btn-main" onclick="window.location.href='merch.html'">Get Merch</button>
+    </div>
+  </div>
+  <div class="merch-banner-window">
+    <img src="../images/merch-banner.jpg" alt="Rhetor 6.0 Merch Banner" class="merch-banner-img">
+  </div>
+  <footer class="custom-footer">
+    <div class="footer-main">
+      <div class="footer-section">
+        <h2>Find us on</h2>
+        <div class="footer-social-icons">
+          <a href="https://www.youtube.com/channel/UCl2xFz0fNma-cW679jgjE0A" target="_blank" title="YouTube">
+            <svg width="28" height="28" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#fff"/><path d="M38.5 17.5c-.3-1.2-1.2-2.1-2.4-2.4C34 15 24 15 24 15s-10 0-12.1.1c-1.2.3-2.1 1.2-2.4 2.4C9 19.6 9 24 9 24s0 4.4.5 6.5c.3 1.2 1.2 2.1 2.4 2.4C14 33 24 33 24 33s10 0 12.1-.1c1.2-.3 2.1-1.2 2.4-2.4.5-2.1.5-6.5.5-6.5s0-4.4-.5-6.5zM21.5 28.5v-9l8 4.5-8 4.5z" fill="#FF0000"/></svg>
+          </a>
+          <a href="https://instagram.com/proteus.iisertvm" target="_blank" title="Instagram">
+            <svg width="28" height="28" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#fff"/><radialGradient id="ig" cx="24" cy="24" r="20" gradientUnits="userSpaceOnUse"><stop stop-color="#fd5"/><stop offset=".5" stop-color="#ff543e"/><stop offset="1" stop-color="#c837ab"/></radialGradient><rect x="14" y="14" width="20" height="20" rx="6" fill="url(#ig)"/><circle cx="24" cy="24" r="5" fill="#fff"/><circle cx="31" cy="17" r="1.5" fill="#fff"/></svg>
+          </a>
+          <a href="https://x.com/proteusiisertvm" target="_blank" title="X">
+            <svg width="28" height="28" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#fff"/><path d="M17 16h4.7l4.1 5.7L30.7 16H34l-6.1 8.2L34 32h-4.7l-4.5-6.2L17.3 32H14l6.3-8.5L14 16zm3.2 1.2l3.8 5.3 3.7-5.3h-7.5zm7.6 13.6l-4.1-5.7-4.1 5.7h8.2z" fill="#000"/></svg>
+          </a>
+          <a href="https://www.facebook.com/proteus.iisertvm" target="_blank" title="Facebook">
+            <svg width="28" height="28" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#fff"/><path d="M27.5 24H30l.5-3.5h-3V18.5c0-.8.2-1.5 1.5-1.5H30V14.2c-.3 0-1.2-.2-2.3-.2-2.3 0-3.7 1.4-3.7 3.9V20.5H21V24h3v8h3.5v-8z" fill="#1877F3"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Share the page</h3>
+        <a href="https://facebook.com/proteus.iisertvm" target="_blank">Facebook</a><br>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://proteusiisertvm.github.io/Proteus/" target="_blank">LinkedIn</a><br>
+        <a href="https://x.com/proteusiisertvm" target="_blank">X</a>
+      </div>
+      <div class="footer-section">
+        <h3>Blogs</h3>
+        <a href="#">Weight of The Human Soul</a><br>
+        <a href="#">Do Animals Have Personalities</a><br>
+        <a href="#">Gene Time Bomb Hurt Mammoths</a><br>
+        <a href="#">Archives</a>
+      </div>
+      <div class="footer-section">
+        <h3>Quick links</h3>
+        <a href="https://www.iisertvm.ac.in" target="_blank">IISER Thiruvananthapuram</a><br>
+        <a href="https://www.iisertvm.ac.in/faculty/school-of-biology" target="_blank">School of Biology</a><br>
+        <a href="#">Acknowledgements</a>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <div class="footer-brand">Proteus</div>
+      <div class="footer-note">Made with <span style="color:#e25555;">❤</span> and a bit of code</div>
+      <div class="footer-logo">
+        <img src="../images/iiser_logo2.png" alt="IISER Thiruvananthapuram logo" style="height:32px;vertical-align:middle;">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
