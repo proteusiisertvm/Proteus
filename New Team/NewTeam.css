@@ -267,6 +267,9 @@ body {
 .card:nth-child(67):before {
   background-image: url("../New Team/pictures/Adrija.jpg");
 }
+.card:nth-child(68):before {
+  background-image: url("../New Team/pictures/tanishq.jpg");
+}
 
 .content {
   position: relative;
